@@ -105,12 +105,12 @@ override func viewDidLoad() {
 
 ### Just(1)
 
-<img src="https://user-images.githubusercontent.com/40102795/130323841-ff6c8ae1-f40f-4d26-a285-ca1369a79ba4.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 36" style="zoom: 25%;" />
+<img src="https://user-images.githubusercontent.com/40102795/130323841-ff6c8ae1-f40f-4d26-a285-ca1369a79ba4.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 36" width="200" height="400" />
 
 ### of(1, 2, 3)
 
-<img src="https://user-images.githubusercontent.com/40102795/130323843-d0c0e5dc-048d-4052-996b-7113262fe6bd.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 48" style="zoom:25%;" />
+<img src="https://user-images.githubusercontent.com/40102795/130323843-d0c0e5dc-048d-4052-996b-7113262fe6bd.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 48" width="200" height="400" />
 
 ### from([1, 2, 3])
 
-<img src="https://user-images.githubusercontent.com/40102795/130323845-fa6575f3-c2df-4af4-b94d-7e959c33c6a6.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 52" style="zoom:25%;" />
+<img src="https://user-images.githubusercontent.com/40102795/130323845-fa6575f3-c2df-4af4-b94d-7e959c33c6a6.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-21 at 22 48 52" width="200" height="400" />
