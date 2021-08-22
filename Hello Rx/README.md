@@ -187,6 +187,82 @@ override func viewDidLoad() {
 }
 ```
 
+### Observable.create()
+
+```swift
+static func create(_ subscribe: @escaping (AnyObserver<Int>) -> Disposable) -> Observable<Int>
+```
+
+
+
+```swift
+var createObservable: Observable<Int>?
+
+override func viewDidLoad() {
+  //...
+  createObservable = Observable<Int>.create({ observer in
+  	observer.onNext(1)
+  	observer.onNext(2)
+  	observer.onCompleted()
+  	observer.onNext(3)
+  	
+  	return Disposables.create()
+	})
+  //...
+}
+
+@IBAction func createAction(_ sender: UIButton) {
+  //...
+	createObservable
+	.subscribe(onNext: { [weak self] number in
+	  self?.textLabel.append("\(number)")
+	},
+	onCompleted: { [weak self] in
+	  self?.onCompletedLabel.text = "onCompleted: ✅"
+	})
+	.disposed(by: disposeBag)
+}
+```
+
+
+
+### Observable.deferred()
+
+```swift
+static func deferred(_ observableFactory: @escaping () throws -> Observable<Int>) -> Observable<Int>
+```
+
+
+
+```swift
+var deferredObservable: Observable<Int>?
+
+override func viewDidLoad() {
+  //...
+	deferredObservable = Observable<Int>.deferred({ [weak self] in
+	  guard let flag = self?.flag else { return Observable.error(CustomError.myError) }
+	  if flag {
+	    return Observable<Int>.of(1, 2, 3)
+	  } else {
+	    return Observable<Int>.of(4, 5, 6)
+	  }
+	})
+}
+
+@IBAction func deferredAction(_ sender: UIButton) {
+  //...
+  deferredObservable
+  .subscribe(onNext: { [weak self] number in
+    self?.textLabel.append("\(number)")
+  },
+  onCompleted: { [weak self] in
+    self?.flag.toggle()
+    self?.onCompletedLabel.text = "onCompleted: ✅"
+  })
+  .disposed(by: disposeBag)
+}
+```
+
 
 
 ## Screen
@@ -198,4 +274,8 @@ override func viewDidLoad() {
 ### Empty() / Never() / Range(1~10)
 
 <img src="https://user-images.githubusercontent.com/40102795/130326894-c5ec96cf-8213-4f11-a2f2-e9cf1a08db60.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-22 at 00 29 24" width="200" height="400" /><img src="https://user-images.githubusercontent.com/40102795/130326896-7b638b83-59c7-4c2a-b2e8-ca3660160a70.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-22 at 00 29 29" width="200" height="400" /><img src="https://user-images.githubusercontent.com/40102795/130326900-640f91df-4093-4305-abf6-f4daa20f7ccf.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-22 at 00 29 34" width="200" height="400" />
+
+### Create() / Deferred()
+
+<img src="https://user-images.githubusercontent.com/40102795/130342837-8cf7556b-a912-4213-891a-51569045c1de.png" alt="Simulator Screen Shot - iPhone 12 - 2021-08-22 at 13 55 44" width="200" height="400" />![Simulator Screen Recording - iPhone 12 - 2021-08-22 at 13 55 58](https://user-images.githubusercontent.com/40102795/130342838-2ec1fb9d-647e-4a00-b8bf-385669d3e01e.gif)
 
