@@ -164,10 +164,6 @@ static func range(start: Int,
 									scheduler: ImmediateSchedulerType = CurrentThreadScheduler.instance) -> Observable<Int>
 ```
 
-
-
-
-
 ```swift
 var rangeObservable: Observable<Int>?
 
