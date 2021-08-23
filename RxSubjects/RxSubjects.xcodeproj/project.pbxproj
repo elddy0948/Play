@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		B4B9B07B26D36C29008B6ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B9B07926D36C29008B6ACC /* Main.storyboard */; };
 		B4B9B07D26D36C29008B6ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B9B07C26D36C29008B6ACC /* Assets.xcassets */; };
 		B4B9B08026D36C29008B6ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B9B07E26D36C29008B6ACC /* LaunchScreen.storyboard */; };
+		B4D5BD6A26D3782000003EE4 /* BehaviorSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D5BD6926D3782000003EE4 /* BehaviorSubjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B4B9B07C26D36C29008B6ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4B9B07F26D36C29008B6ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4B9B08126D36C29008B6ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D5BD6926D3782000003EE4 /* BehaviorSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubjectViewController.swift; sourceTree = "<group>"; };
 		C338066B9EBFD6E7552E4B0E /* Pods-RxSubjects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSubjects.debug.xcconfig"; path = "Target Support Files/Pods-RxSubjects/Pods-RxSubjects.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				B4B9B07C26D36C29008B6ACC /* Assets.xcassets */,
 				B4B9B07E26D36C29008B6ACC /* LaunchScreen.storyboard */,
 				B4B9B08126D36C29008B6ACC /* Info.plist */,
+				B4D5BD6926D3782000003EE4 /* BehaviorSubjectViewController.swift */,
 			);
 			path = RxSubjects;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				C338066B9EBFD6E7552E4B0E /* Pods-RxSubjects.debug.xcconfig */,
 				1C3DF708A6E6AD0A5FF16D3E /* Pods-RxSubjects.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4B9B07826D36C29008B6ACC /* ViewController.swift in Sources */,
+				B4D5BD6A26D3782000003EE4 /* BehaviorSubjectViewController.swift in Sources */,
 				B4B9B07426D36C29008B6ACC /* AppDelegate.swift in Sources */,
 				B4B9B07626D36C29008B6ACC /* SceneDelegate.swift in Sources */,
 			);
