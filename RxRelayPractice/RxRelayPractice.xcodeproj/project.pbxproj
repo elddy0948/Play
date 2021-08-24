@@ -76,11 +76,11 @@
 				B4D6DC8126D4B2CE00183391 /* AppDelegate.swift */,
 				B4D6DC8326D4B2CE00183391 /* SceneDelegate.swift */,
 				B4D6DC8526D4B2CE00183391 /* ViewController.swift */,
+				B4D6DC9526D4B86F00183391 /* BehaviorRelayViewController.swift */,
 				B4D6DC8726D4B2CE00183391 /* Main.storyboard */,
 				B4D6DC8A26D4B2CE00183391 /* Assets.xcassets */,
 				B4D6DC8C26D4B2CE00183391 /* LaunchScreen.storyboard */,
 				B4D6DC8F26D4B2CE00183391 /* Info.plist */,
-				B4D6DC9526D4B86F00183391 /* BehaviorRelayViewController.swift */,
 			);
 			path = RxRelayPractice;
 			sourceTree = "<group>";
