@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		B4D6DC8926D4B2CE00183391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D6DC8726D4B2CE00183391 /* Main.storyboard */; };
 		B4D6DC8B26D4B2CE00183391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D6DC8A26D4B2CE00183391 /* Assets.xcassets */; };
 		B4D6DC8E26D4B2CE00183391 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D6DC8C26D4B2CE00183391 /* LaunchScreen.storyboard */; };
+		B4D6DC9626D4B86F00183391 /* BehaviorRelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6DC9526D4B86F00183391 /* BehaviorRelayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B4D6DC8A26D4B2CE00183391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4D6DC8D26D4B2CE00183391 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4D6DC8F26D4B2CE00183391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4D6DC9526D4B86F00183391 /* BehaviorRelayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorRelayViewController.swift; sourceTree = "<group>"; };
 		CA54A587F452C5C972237C6F /* Pods-RxRelayPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelayPractice.debug.xcconfig"; path = "Target Support Files/Pods-RxRelayPractice/Pods-RxRelayPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				B4D6DC8A26D4B2CE00183391 /* Assets.xcassets */,
 				B4D6DC8C26D4B2CE00183391 /* LaunchScreen.storyboard */,
 				B4D6DC8F26D4B2CE00183391 /* Info.plist */,
+				B4D6DC9526D4B86F00183391 /* BehaviorRelayViewController.swift */,
 			);
 			path = RxRelayPractice;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				CA54A587F452C5C972237C6F /* Pods-RxRelayPractice.debug.xcconfig */,
 				4D20F0922EC8F9381D35929C /* Pods-RxRelayPractice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D6DC9626D4B86F00183391 /* BehaviorRelayViewController.swift in Sources */,
 				B4D6DC8626D4B2CE00183391 /* ViewController.swift in Sources */,
 				B4D6DC8226D4B2CE00183391 /* AppDelegate.swift in Sources */,
 				B4D6DC8426D4B2CE00183391 /* SceneDelegate.swift in Sources */,
