@@ -96,12 +96,126 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GKJ-zd-a5M">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="HyP-ir-KHA"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="HyP-ir-KHA">
+                            <connections>
+                                <action selector="editAction:" destination="BYZ-38-t0r" id="D0k-2q-8xZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="americanoLabel" destination="P4z-OV-Keb" id="UcN-bp-Sar"/>
+                        <outlet property="emojiLabel" destination="e1g-p3-2z7" id="sQJ-61-xJD"/>
+                        <outlet property="hotsixLabel" destination="aq9-Gc-mHe" id="fhg-vF-EFu"/>
+                        <outlet property="latteLabel" destination="b91-tA-nO6" id="M9R-8p-Pmg"/>
+                        <outlet property="monsterLabel" destination="Z9P-uG-4rq" id="gKd-Cl-jrx"/>
+                        <outlet property="redbullLabel" destination="MAP-1o-krO" id="SzN-bU-9nc"/>
+                        <outlet property="totalMgLabel" destination="2Fh-ny-Ahw" id="PVu-bF-7JV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="107.8125"/>
+        </scene>
+        <!--Edit Caffeine View Controller-->
+        <scene sceneID="m4J-4D-0NE">
+            <objects>
+                <viewController storyboardIdentifier="EditCaffeineViewController" id="1B9-64-sS4" customClass="EditCaffeineViewController" customModule="TodayCaffeine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFV-iY-5et">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-j0-1oQ">
+                                <rect key="frame" x="120" y="163" width="135.5" height="341"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아메리카노 x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNB-w1-Le4">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="8Vd-oh-xq8">
+                                        <rect key="frame" x="20.5" y="33" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="americanoStepper:" destination="1B9-64-sS4" eventType="valueChanged" id="DZS-Cu-FtC"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라떼 x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-6d-KN7">
+                                        <rect key="frame" x="31" y="69" width="73.5" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qzg-kZ-GzM">
+                                        <rect key="frame" x="20.5" y="102" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="latteStepper:" destination="1B9-64-sS4" eventType="valueChanged" id="nfF-7E-ijF"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="레드불 x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ela-7m-cHd">
+                                        <rect key="frame" x="20.5" y="138" width="94" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zgm-z6-qxv">
+                                        <rect key="frame" x="20.5" y="171" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="redbullStepper:" destination="1B9-64-sS4" eventType="valueChanged" id="VIC-cT-CAi"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핫식스 x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGy-VE-4Dg">
+                                        <rect key="frame" x="20.5" y="207" width="94" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="NK0-S6-Std">
+                                        <rect key="frame" x="20.5" y="240" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="hotsixStepper:" destination="1B9-64-sS4" eventType="valueChanged" id="WPe-c1-oDl"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="몬스터 x0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czY-MX-Ex6">
+                                        <rect key="frame" x="20.5" y="276" width="94" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="mYC-23-duy">
+                                        <rect key="frame" x="20.5" y="309" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="monsterStepper:" destination="1B9-64-sS4" eventType="valueChanged" id="8hX-UU-2nr"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gYP-fL-2YA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hyo-j0-1oQ" firstAttribute="centerX" secondItem="DFV-iY-5et" secondAttribute="centerX" id="ZLr-th-Zd2"/>
+                            <constraint firstItem="hyo-j0-1oQ" firstAttribute="centerY" secondItem="DFV-iY-5et" secondAttribute="centerY" id="lOi-zh-QWq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ydO-5k-HdF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fbL-9s-qOR"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="americanoLabel" destination="rNB-w1-Le4" id="gTn-d0-FRy"/>
+                        <outlet property="americanoStepper" destination="8Vd-oh-xq8" id="uRB-Rk-4y0"/>
+                        <outlet property="hotsixLabel" destination="QGy-VE-4Dg" id="RZB-ka-XHI"/>
+                        <outlet property="hotsixStepper" destination="NK0-S6-Std" id="Kh0-sP-LVR"/>
+                        <outlet property="latteLabel" destination="rMA-6d-KN7" id="C3D-Lb-AvH"/>
+                        <outlet property="latteStepper" destination="Qzg-kZ-GzM" id="8tr-us-r94"/>
+                        <outlet property="monsterLabel" destination="czY-MX-Ex6" id="6SZ-bM-321"/>
+                        <outlet property="monsterStepper" destination="mYC-23-duy" id="0cC-TK-Bb3"/>
+                        <outlet property="redbullLabel" destination="ela-7m-cHd" id="0LY-ug-NCp"/>
+                        <outlet property="redbullStepper" destination="Zgm-z6-qxv" id="1sT-qr-3at"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGQ-Gf-BNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="107"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gh7-gr-Kpg">

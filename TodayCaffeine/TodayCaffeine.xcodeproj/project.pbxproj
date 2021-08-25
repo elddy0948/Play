@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		342B74ED8D77701AA0095B86 /* Pods_TodayCaffeine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AD30F2D49A25F74BB4532D /* Pods_TodayCaffeine.framework */; };
 		B42B3B2E26D614F400C442FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B3B2D26D614F400C442FB /* User.swift */; };
+		B42B3B3026D61DD000C442FB /* EditCaffeineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B3B2F26D61DD000C442FB /* EditCaffeineViewController.swift */; };
 		B42B4FE826D6102800B1317D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B4FE726D6102800B1317D /* AppDelegate.swift */; };
 		B42B4FEA26D6102800B1317D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B4FE926D6102800B1317D /* SceneDelegate.swift */; };
 		B42B4FEC26D6102800B1317D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B4FEB26D6102800B1317D /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		46C6236A2A4949A48015555B /* Pods-TodayCaffeine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayCaffeine.release.xcconfig"; path = "Target Support Files/Pods-TodayCaffeine/Pods-TodayCaffeine.release.xcconfig"; sourceTree = "<group>"; };
 		7DB9DB8AD6795922E1456918 /* Pods-TodayCaffeine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodayCaffeine.debug.xcconfig"; path = "Target Support Files/Pods-TodayCaffeine/Pods-TodayCaffeine.debug.xcconfig"; sourceTree = "<group>"; };
 		B42B3B2D26D614F400C442FB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B42B3B2F26D61DD000C442FB /* EditCaffeineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCaffeineViewController.swift; sourceTree = "<group>"; };
 		B42B4FE426D6102800B1317D /* TodayCaffeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodayCaffeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42B4FE726D6102800B1317D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B42B4FE926D6102800B1317D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				B42B4FE726D6102800B1317D /* AppDelegate.swift */,
 				B42B4FE926D6102800B1317D /* SceneDelegate.swift */,
 				B42B4FEB26D6102800B1317D /* ViewController.swift */,
+				B42B3B2F26D61DD000C442FB /* EditCaffeineViewController.swift */,
 				B42B4FED26D6102800B1317D /* Main.storyboard */,
 				B42B4FF026D6102800B1317D /* Assets.xcassets */,
 				B42B4FF226D6102800B1317D /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B42B3B2E26D614F400C442FB /* User.swift in Sources */,
+				B42B3B3026D61DD000C442FB /* EditCaffeineViewController.swift in Sources */,
 				B42B4FEC26D6102800B1317D /* ViewController.swift in Sources */,
 				B42B4FE826D6102800B1317D /* AppDelegate.swift in Sources */,
 				B42B4FEA26D6102800B1317D /* SceneDelegate.swift in Sources */,

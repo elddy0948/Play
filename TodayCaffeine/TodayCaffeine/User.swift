@@ -1,11 +1,11 @@
 import Foundation
 
-struct User {
-  let name: String
-  let americano: Int = 0
-  let latte: Int = 0
-  let redbull: Int = 0
-  let hotsix: Int = 0
-  let monster: Int = 0
-  let totalMg: Int = 0
+class User {
+  var name: String = ""
+  var americano: Int = 0
+  var latte: Int = 0
+  var redbull: Int = 0
+  var hotsix: Int = 0
+  var monster: Int = 0
+  var totalMg: Int = 0
 }
