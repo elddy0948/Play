@@ -14,6 +14,7 @@
 		B488EE5A26D7CA05003EF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B488EE5926D7CA05003EF97B /* Assets.xcassets */; };
 		B488EE5D26D7CA05003EF97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B488EE5B26D7CA05003EF97B /* LaunchScreen.storyboard */; };
 		B488EE6526D7F979003EF97B /* ElementAtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488EE6426D7F979003EF97B /* ElementAtViewController.swift */; };
+		B488EE6726D7FEBE003EF97B /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488EE6626D7FEBE003EF97B /* FilterViewController.swift */; };
 		ED369BB379CB3E91C9F27B51 /* Pods_RxFilteringOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9225B14EC5C341EDBBC273 /* Pods_RxFilteringOperators.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		B488EE5C26D7CA05003EF97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B488EE5E26D7CA05003EF97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B488EE6426D7F979003EF97B /* ElementAtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementAtViewController.swift; sourceTree = "<group>"; };
+		B488EE6626D7FEBE003EF97B /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		EB9225B14EC5C341EDBBC273 /* Pods_RxFilteringOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFilteringOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				B488EE5226D7CA04003EF97B /* SceneDelegate.swift */,
 				B488EE5426D7CA04003EF97B /* ViewController.swift */,
 				B488EE6426D7F979003EF97B /* ElementAtViewController.swift */,
+				B488EE6626D7FEBE003EF97B /* FilterViewController.swift */,
 				B488EE5626D7CA04003EF97B /* Main.storyboard */,
 				B488EE5926D7CA05003EF97B /* Assets.xcassets */,
 				B488EE5B26D7CA05003EF97B /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 				B488EE5126D7CA04003EF97B /* AppDelegate.swift in Sources */,
 				B488EE6526D7F979003EF97B /* ElementAtViewController.swift in Sources */,
 				B488EE5326D7CA04003EF97B /* SceneDelegate.swift in Sources */,
+				B488EE6726D7FEBE003EF97B /* FilterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
