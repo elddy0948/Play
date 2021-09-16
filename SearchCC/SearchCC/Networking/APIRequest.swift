@@ -6,10 +6,25 @@ class APIRequest {
   
   static let shared = APIRequest()
   
-  private let baseURL = URL(string: "https://api.coingecko.com/api/v3")
+  private let baseURL = URL(string: "https://api.coingecko.com/api/v3/coins")
   
   //MARK: - Initializer
   private init() {}
+  
+  func fetchCoin(name: String) -> Observable<Coin> {
+    guard let request = buildRequest(pathComponent: name, params: [
+      ("localization", "false"),
+      ("tickers", "false"),
+      ("market_data", "false"),
+      ("community_data", "false"),
+      ("developer_data", "false"),
+      ("sparkline", "false")
+    ]) else { return Observable<Coin>.empty() }
+    
+    return request.map { data in
+      try JSONDecoder().decode(Coin.self, from: data)
+    }
+  }
   
   private func buildRequest(method: String = "GET", pathComponent: String, params: [(String, String)]) -> Observable<Data>? {
     guard let baseURL = baseURL else { return nil }
