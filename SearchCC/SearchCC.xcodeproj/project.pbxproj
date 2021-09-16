@@ -15,7 +15,6 @@
 		B4D2D0E126F1EE20001A561A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2D0DF26F1EE20001A561A /* Main.storyboard */; };
 		B4D2D0E326F1EE20001A561A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D2D0E226F1EE20001A561A /* Assets.xcassets */; };
 		B4D2D0E626F1EE20001A561A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4D2D0E426F1EE20001A561A /* LaunchScreen.storyboard */; };
-		B4D2D0EF26F1F198001A561A /* SearchCryptoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2D0EE26F1F198001A561A /* SearchCryptoView.swift */; };
 		B4D2D0F326F1F32B001A561A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2D0F226F1F32B001A561A /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		B4D2D0E226F1EE20001A561A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4D2D0E526F1EE20001A561A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4D2D0E726F1EE20001A561A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4D2D0EE26F1F198001A561A /* SearchCryptoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCryptoView.swift; sourceTree = "<group>"; };
 		B4D2D0F226F1F32B001A561A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		FB04B3336D47B832A265CB6C /* Pods_SearchCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 		B4D2D0ED26F1F18B001A561A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B4D2D0EE26F1F198001A561A /* SearchCryptoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,7 +248,6 @@
 				B4D2D0DA26F1EE20001A561A /* AppDelegate.swift in Sources */,
 				B4D2D0DC26F1EE20001A561A /* SceneDelegate.swift in Sources */,
 				B4D2D0F326F1F32B001A561A /* APIRequest.swift in Sources */,
-				B4D2D0EF26F1F198001A561A /* SearchCryptoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

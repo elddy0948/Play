@@ -5,6 +5,8 @@ struct Coin: Decodable {
   let symbol: String
   let name: String
   let image: ImageSize
+  
+  static let empty = Coin(id: "?", symbol: "", name: "", image: ImageSize(thumb: "", small: "", large: ""))
 }
 
 struct ImageSize: Decodable {
