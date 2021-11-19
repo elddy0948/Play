@@ -16,6 +16,9 @@
 		B4D8C2A02747D91B00F4BCA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C29F2747D91B00F4BCA7 /* HomeViewController.swift */; };
 		B4D8C2A32747DBAA00F4BCA7 /* CityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C2A22747DBAA00F4BCA7 /* CityListViewController.swift */; };
 		B4D8C2A82747E39900F4BCA7 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C2A72747E39900F4BCA7 /* StoryView.swift */; };
+		B4D8C2AA2747EB0A00F4BCA7 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C2A92747EB0A00F4BCA7 /* StoryCollectionViewCell.swift */; };
+		B4D8C2AE2747EB6F00F4BCA7 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C2AD2747EB6F00F4BCA7 /* ProfileImageView.swift */; };
+		B4D8C2B12747F0AC00F4BCA7 /* UserStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8C2B02747F0AC00F4BCA7 /* UserStory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		B4D8C29F2747D91B00F4BCA7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B4D8C2A22747DBAA00F4BCA7 /* CityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListViewController.swift; sourceTree = "<group>"; };
 		B4D8C2A72747E39900F4BCA7 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		B4D8C2A92747EB0A00F4BCA7 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4D8C2AD2747EB6F00F4BCA7 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		B4D8C2B02747F0AC00F4BCA7 /* UserStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		B4D8C2862747D47200F4BCA7 /* Travlers */ = {
 			isa = PBXGroup;
 			children = (
+				B4D8C2AB2747EB6400F4BCA7 /* CustomViews */,
 				B4D8C29E2747D90D00F4BCA7 /* Screens */,
 				B4D8C29B2747D8BE00F4BCA7 /* Controllers */,
 				B4D8C2872747D47200F4BCA7 /* AppDelegate.swift */,
@@ -102,6 +109,7 @@
 		B4D8C2A42747DBBB00F4BCA7 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B4D8C2AF2747F0A300F4BCA7 /* Models */,
 				B4D8C2A62747E38C00F4BCA7 /* Views */,
 				B4D8C2A52747E38900F4BCA7 /* Controllers */,
 			);
@@ -120,8 +128,33 @@
 			isa = PBXGroup;
 			children = (
 				B4D8C2A72747E39900F4BCA7 /* StoryView.swift */,
+				B4D8C2A92747EB0A00F4BCA7 /* StoryCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B4D8C2AB2747EB6400F4BCA7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B4D8C2AC2747EB6700F4BCA7 /* ImageViews */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B4D8C2AC2747EB6700F4BCA7 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				B4D8C2AD2747EB6F00F4BCA7 /* ProfileImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		B4D8C2AF2747F0A300F4BCA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4D8C2B02747F0AC00F4BCA7 /* UserStory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,11 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D8C2AA2747EB0A00F4BCA7 /* StoryCollectionViewCell.swift in Sources */,
 				B4D8C2A02747D91B00F4BCA7 /* HomeViewController.swift in Sources */,
 				B4D8C28C2747D47200F4BCA7 /* ViewController.swift in Sources */,
 				B4D8C29D2747D8D400F4BCA7 /* TabBarController.swift in Sources */,
 				B4D8C2A82747E39900F4BCA7 /* StoryView.swift in Sources */,
 				B4D8C2882747D47200F4BCA7 /* AppDelegate.swift in Sources */,
+				B4D8C2B12747F0AC00F4BCA7 /* UserStory.swift in Sources */,
+				B4D8C2AE2747EB6F00F4BCA7 /* ProfileImageView.swift in Sources */,
 				B4D8C28A2747D47200F4BCA7 /* SceneDelegate.swift in Sources */,
 				B4D8C2A32747DBAA00F4BCA7 /* CityListViewController.swift in Sources */,
 			);

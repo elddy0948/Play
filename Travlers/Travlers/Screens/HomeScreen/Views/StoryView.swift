@@ -23,16 +23,15 @@ class StoryView: UIView {
     collectionView.showsHorizontalScrollIndicator = false
     collectionView.dataSource = self
 //    collectionView.delegate = self
-    collectionView.backgroundColor = .systemBlue
-    collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
+    collectionView.register(StoryCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
     return collectionView
   }()
   
   private let cellIdentifier = "cellIdentifier"
+  private let userStories: 
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    backgroundColor = .systemBlue
     setupCollectionView()
   }
   
@@ -72,7 +71,6 @@ extension StoryView: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath)
-    cell.backgroundColor = .systemRed
     return cell
   }
 }
