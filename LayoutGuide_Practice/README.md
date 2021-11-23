@@ -65,4 +65,4 @@ NSLayoutConstraint.activate([
 ```
 
 ## Screen
-![screenshot](/screenshot.png)
+<image src="screenshot.png" width="250">
