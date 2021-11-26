@@ -17,6 +17,9 @@
 		B4FED58D2750A1CA00D43EC8 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED58C2750A1CA00D43EC8 /* Privacy.swift */; };
 		B4FED5912750A2A900D43EC8 /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED5902750A2A900D43EC8 /* URLSession+Rx.swift */; };
 		B4FED5932750A3DE00D43EC8 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED5922750A3DE00D43EC8 /* Errors.swift */; };
+		B4FED5952750AB7E00D43EC8 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED5942750AB7E00D43EC8 /* ArticleService.swift */; };
+		B4FED5982750AD5C00D43EC8 /* ArticleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED5972750AD5C00D43EC8 /* ArticleResponse.swift */; };
+		B4FED59A2750AD6000D43EC8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FED5992750AD6000D43EC8 /* Article.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		B4FED58C2750A1CA00D43EC8 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		B4FED5902750A2A900D43EC8 /* URLSession+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Rx.swift"; sourceTree = "<group>"; };
 		B4FED5922750A3DE00D43EC8 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		B4FED5942750AB7E00D43EC8 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		B4FED5972750AD5C00D43EC8 /* ArticleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResponse.swift; sourceTree = "<group>"; };
+		B4FED5992750AD6000D43EC8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F6B2F090E904EBA01FA4C96F /* Pods-RxNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.debug.xcconfig"; path = "Target Support Files/Pods-RxNews/Pods-RxNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +92,7 @@
 		B438539327509DC300B7CA7A /* RxNews */ = {
 			isa = PBXGroup;
 			children = (
+				B4FED5962750AD5400D43EC8 /* Models */,
 				B4FED58F2750A29F00D43EC8 /* Rx+Ext */,
 				B4FED58E2750A23300D43EC8 /* Services */,
 				B4FED58B2750A1BF00D43EC8 /* Utilities */,
@@ -128,6 +135,7 @@
 		B4FED58E2750A23300D43EC8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B4FED5942750AB7E00D43EC8 /* ArticleService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -138,6 +146,15 @@
 				B4FED5902750A2A900D43EC8 /* URLSession+Rx.swift */,
 			);
 			path = "Rx+Ext";
+			sourceTree = "<group>";
+		};
+		B4FED5962750AD5400D43EC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4FED5972750AD5C00D43EC8 /* ArticleResponse.swift */,
+				B4FED5992750AD6000D43EC8 /* Article.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +275,9 @@
 				B438539927509DC300B7CA7A /* ViewController.swift in Sources */,
 				B4FED58D2750A1CA00D43EC8 /* Privacy.swift in Sources */,
 				B438539527509DC300B7CA7A /* AppDelegate.swift in Sources */,
+				B4FED59A2750AD6000D43EC8 /* Article.swift in Sources */,
+				B4FED5952750AB7E00D43EC8 /* ArticleService.swift in Sources */,
+				B4FED5982750AD5C00D43EC8 /* ArticleResponse.swift in Sources */,
 				B438539727509DC300B7CA7A /* SceneDelegate.swift in Sources */,
 				B4FED58A27509F8900D43EC8 /* UINavigationBar+Ext.swift in Sources */,
 				B4FED5932750A3DE00D43EC8 /* Errors.swift in Sources */,
