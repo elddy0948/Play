@@ -1,6 +1,8 @@
 import UIKit
 import RxSwift
 
+private var internalCache = [String: Data]()
+
 extension Reactive where Base: URLSession {
   func response(request: URLRequest) -> Observable<(HTTPURLResponse, Data)> {
     return Observable.create({ observer in
@@ -23,6 +25,7 @@ extension Reactive where Base: URLSession {
   
   func data(request: URLRequest) -> Observable<Data> {
     return response(request: request)
+      .cache()
       .map({ httpResponse, data in
         guard 200..<300 ~= httpResponse.statusCode else {
           throw RxURLSessionError.requestFailed
@@ -35,6 +38,19 @@ extension Reactive where Base: URLSession {
     return data(request: request).map({ data in
       let decoder = JSONDecoder()
       return try decoder.decode(D.self, from: data)
+    })
+  }
+}
+
+
+extension ObservableType where Element == (HTTPURLResponse, Data) {
+  func cache() -> Observable<Element> {
+    return self.do(onNext: { response, data in
+      guard let url = response.url?.absoluteString,
+            200 ..< 300 ~= response.statusCode else {
+              return
+            }
+      internalCache[url] = data
     })
   }
 }
