@@ -71,6 +71,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B4148B582750EB9C00B1FA9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B438539D27509DC400B7CA7A /* Assets.xcassets */,
+				B438539F27509DC400B7CA7A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4148B592750EBAF00B1FA9B /* AppSceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B438539427509DC300B7CA7A /* AppDelegate.swift */,
+				B438539627509DC300B7CA7A /* SceneDelegate.swift */,
+			);
+			path = AppSceneDelegate;
+			sourceTree = "<group>";
+		};
 		B438538827509DC300B7CA7A = {
 			isa = PBXGroup;
 			children = (
@@ -92,16 +110,14 @@
 		B438539327509DC300B7CA7A /* RxNews */ = {
 			isa = PBXGroup;
 			children = (
+				B4148B592750EBAF00B1FA9B /* AppSceneDelegate */,
+				B4148B582750EB9C00B1FA9B /* Resources */,
 				B4FED5962750AD5400D43EC8 /* Models */,
 				B4FED58F2750A29F00D43EC8 /* Rx+Ext */,
 				B4FED58E2750A23300D43EC8 /* Services */,
 				B4FED58B2750A1BF00D43EC8 /* Utilities */,
 				B4FED58827509F7F00D43EC8 /* Extensions */,
 				B4FED58727509EDD00D43EC8 /* Controllers */,
-				B438539427509DC300B7CA7A /* AppDelegate.swift */,
-				B438539627509DC300B7CA7A /* SceneDelegate.swift */,
-				B438539D27509DC400B7CA7A /* Assets.xcassets */,
-				B438539F27509DC400B7CA7A /* LaunchScreen.storyboard */,
 				B43853A227509DC400B7CA7A /* Info.plist */,
 			);
 			path = RxNews;
