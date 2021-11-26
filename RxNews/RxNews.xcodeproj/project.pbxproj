@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A4DE090811EA847A08B5AF /* Pods_RxNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B7AB139BAD239B82A726AB /* Pods_RxNews.framework */; };
 		B438539527509DC300B7CA7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438539427509DC300B7CA7A /* AppDelegate.swift */; };
 		B438539727509DC300B7CA7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438539627509DC300B7CA7A /* SceneDelegate.swift */; };
 		B438539927509DC300B7CA7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B438539827509DC300B7CA7A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79B7AB139BAD239B82A726AB /* Pods_RxNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		826621DD23510732F0099114 /* Pods-RxNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.release.xcconfig"; path = "Target Support Files/Pods-RxNews/Pods-RxNews.release.xcconfig"; sourceTree = "<group>"; };
 		B438539127509DC300B7CA7A /* RxNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B438539427509DC300B7CA7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B438539627509DC300B7CA7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B438539D27509DC400B7CA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B43853A027509DC400B7CA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B43853A227509DC400B7CA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B2F090E904EBA01FA4C96F /* Pods-RxNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNews.debug.xcconfig"; path = "Target Support Files/Pods-RxNews/Pods-RxNews.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A4DE090811EA847A08B5AF /* Pods_RxNews.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		202296402624BEF35D48F208 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B2F090E904EBA01FA4C96F /* Pods-RxNews.debug.xcconfig */,
+				826621DD23510732F0099114 /* Pods-RxNews.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		530EC1671F0D5F1CAA3E15C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79B7AB139BAD239B82A726AB /* Pods_RxNews.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B438538827509DC300B7CA7A = {
 			isa = PBXGroup;
 			children = (
 				B438539327509DC300B7CA7A /* RxNews */,
 				B438539227509DC300B7CA7A /* Products */,
+				202296402624BEF35D48F208 /* Pods */,
+				530EC1671F0D5F1CAA3E15C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B43853A527509DC400B7CA7A /* Build configuration list for PBXNativeTarget "RxNews" */;
 			buildPhases = (
+				C656D167C23220779F33DC56 /* [CP] Check Pods Manifest.lock */,
 				B438538D27509DC300B7CA7A /* Sources */,
 				B438538E27509DC300B7CA7A /* Frameworks */,
 				B438538F27509DC300B7CA7A /* Resources */,
+				1CB24A98F19A71BF29158365 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB24A98F19A71BF29158365 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxNews/Pods-RxNews-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxNews/Pods-RxNews-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxNews/Pods-RxNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C656D167C23220779F33DC56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B438538D27509DC300B7CA7A /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		B43853A627509DC400B7CA7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B2F090E904EBA01FA4C96F /* Pods-RxNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		B43853A727509DC400B7CA7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 826621DD23510732F0099114 /* Pods-RxNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
