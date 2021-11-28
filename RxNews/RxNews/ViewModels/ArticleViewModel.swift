@@ -23,6 +23,10 @@ struct ArticleViewModel {
     return article.author
   }
   
+  var imageUrl: String? {
+    return article.urlToImage
+  }
+  
   init(article: Article) {
     self.article = article
   }

@@ -48,4 +48,16 @@ final class ArticleService {
         return Observable.just(self.cache)
       })
   }
+  
+  func downloadImage(url: String) -> Observable<UIImage> {
+    guard let url = URL(string: url) else {
+      return Observable.error(ArticleServiceError.invalidRequest)
+    }
+    let request = URLRequest(url: url)
+    return URLSession.shared.rx
+      .image(request: request)
+      .catch({ error in
+        return Observable.just(UIImage())
+      })
+  }
 }

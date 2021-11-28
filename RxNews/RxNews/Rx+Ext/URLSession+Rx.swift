@@ -40,8 +40,13 @@ extension Reactive where Base: URLSession {
       return try decoder.decode(D.self, from: data)
     })
   }
+  
+  func image(request: URLRequest) -> Observable<UIImage> {
+    return data(request: request).map({ data in
+      return UIImage(data: data) ?? UIImage()
+    })
+  }
 }
-
 
 extension ObservableType where Element == (HTTPURLResponse, Data) {
   func cache() -> Observable<Element> {
