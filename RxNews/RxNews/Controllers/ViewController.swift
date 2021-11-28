@@ -22,19 +22,40 @@ class ViewController: UIViewController {
   }()
   
   private let bag = DisposeBag()
+  private let articleResponseViewModel = ArticleResponseViewModel()
+  private var articleViewModels = [ArticleViewModel]() {
+    didSet {
+      DispatchQueue.main.async { [weak self] in
+        self?.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
+      }
+    }
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
     setupTableView()
+    
+    articleResponseViewModel.fetchArticleResponse()
+      .subscribe(onNext: { [weak self] articleViewModels in
+        self?.articleViewModels = articleViewModels
+      }, onError: { _ in
+        print("Error occured!")
+      }, onCompleted: {
+        print("Completed!")
+      })
+      .disposed(by: bag)
   }
 }
 
-
 //MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 1
+  }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return articleViewModels.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +64,8 @@ extension ViewController: UITableViewDataSource {
       return UITableViewCell()
     }
     
-    cell.backgroundColor = .systemBlue
+    let articleViewModel = articleViewModels[indexPath.row]
+    cell.setupCellData(with: articleViewModel)
     
     return cell
   }

@@ -39,10 +39,10 @@ class ArticleTableViewCell: UITableViewCell {
     setupLayoutUI()
   }
   
-  func setupCellData(with article: Article) {
-    titleLabel.text = article.title
-    descriptionLabel.text = article.description
-    authorLabel.text = article.author
+  func setupCellData(with articleViewModel: ArticleViewModel) {
+    titleLabel.text = articleViewModel.title
+    descriptionLabel.text = articleViewModel.description
+    authorLabel.text = articleViewModel.author
   }
   
   private func setupLayoutUI() {

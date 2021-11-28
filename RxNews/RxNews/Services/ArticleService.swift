@@ -25,7 +25,7 @@ final class ArticleService {
     urlComponents.queryItems = [
       URLQueryItem(name: "q", value: "bitcoin"),
       URLQueryItem(name: "apiKey", value: Privacy.myApiKey),
-      URLQueryItem(name: "pageSize", value: "50"),
+      URLQueryItem(name: "pageSize", value: "10"),
       URLQueryItem(name: "page", value: "1")
     ]
     
