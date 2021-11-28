@@ -9,8 +9,19 @@ import Foundation
 
 
 struct ArticleViewModel {
-  let article: Article
+  private let article: Article
   
+  var title: String {
+    return article.title
+  }
+  
+  var description: String {
+    return article.description
+  }
+  
+  var author: String? {
+    return article.author
+  }
   
   init(article: Article) {
     self.article = article
