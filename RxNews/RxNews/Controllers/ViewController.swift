@@ -15,10 +15,19 @@ class ViewController: UIViewController {
     tableView.backgroundColor = .systemBackground
     tableView.dataSource = self
     
+    tableView.tableFooterView = UIView()
+    
     //Register Cells
     tableView.register(ArticleTableViewCell.self,
                        forCellReuseIdentifier: ArticleTableViewCell.reuseIdentifier)
     return tableView
+  }()
+  
+  private lazy var activityIndicator: UIActivityIndicatorView = {
+    let indicator = UIActivityIndicatorView(style: .large)
+    indicator.hidesWhenStopped = true
+    indicator.tintColor = .label
+    return indicator
   }()
   
   private let bag = DisposeBag()
@@ -35,14 +44,18 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
     setupTableView()
+    setupActivityIndicator()
     
+    activityIndicator.startAnimating()
     articleResponseViewModel.fetchArticleResponse()
       .subscribe(onNext: { [weak self] articleViewModels in
         self?.articleViewModels = articleViewModels
       }, onError: { _ in
         print("Error occured!")
-      }, onCompleted: {
-        print("Completed!")
+      }, onCompleted: { [weak self] in
+        DispatchQueue.main.async {
+          self?.activityIndicator.stopAnimating()
+        }
       })
       .disposed(by: bag)
   }
@@ -84,6 +97,16 @@ extension ViewController {
       tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
       tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
       tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+    ])
+  }
+  
+  private func setupActivityIndicator() {
+    tableView.addSubview(activityIndicator)
+    activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+    
+    NSLayoutConstraint.activate([
+      activityIndicator.centerXAnchor.constraint(equalTo: tableView.centerXAnchor),
+      activityIndicator.centerYAnchor.constraint(equalTo: tableView.centerYAnchor),
     ])
   }
 }
