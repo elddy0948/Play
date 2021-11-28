@@ -20,8 +20,17 @@ final class ArticleService {
   
   let baseURL = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=\(Privacy.myApiKey)"
   
-  func buildRequest() -> URLRequest? {
-    guard let url = URL(string: baseURL) else { return nil }
+  private func buildRequest() -> URLRequest? {
+    guard var urlComponents = URLComponents(string: baseURL) else { return nil }
+    urlComponents.queryItems = [
+      URLQueryItem(name: "q", value: "bitcoin"),
+      URLQueryItem(name: "apiKey", value: Privacy.myApiKey),
+      URLQueryItem(name: "pageSize", value: "50"),
+      URLQueryItem(name: "page", value: "1")
+    ]
+    
+    guard let url = urlComponents.url else { return nil }
+    
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     return request
