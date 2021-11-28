@@ -2,7 +2,7 @@
 
 ## 코드를 좀 체계적으로 작성하려는 노력중..
 
-[structure-1](/Images/structure-1.png)
+![structure](Images/structure-1.png)
 
 ## 사용한 기술
 - RxSwift
