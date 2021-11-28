@@ -15,10 +15,11 @@ enum ArticleServiceError: Error {
 final class ArticleService {
   
   static let shared = ArticleService()
+  let cache: ArticleResponse = .empty
   
   private init() { }
   
-  let baseURL = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=\(Privacy.myApiKey)"
+  let baseURL = "https://newsapi.org/v2/everything"
   
   private func buildRequest() -> URLRequest? {
     guard var urlComponents = URLComponents(string: baseURL) else { return nil }
@@ -40,8 +41,11 @@ final class ArticleService {
     guard let request = buildRequest() else {
       return Observable.error(ArticleServiceError.invalidRequest)
     }
-    
     return URLSession.shared.rx
       .decodable(request: request, type: ArticleResponse.self)
+      .catch({ [weak self] error in
+        guard let self = self else { return .empty() }
+        return Observable.just(self.cache)
+      })
   }
 }

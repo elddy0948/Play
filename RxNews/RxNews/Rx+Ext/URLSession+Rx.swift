@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-private var internalCache = [String: Data]()
+public var internalCache = [String: Data]()
 
 extension Reactive where Base: URLSession {
   func response(request: URLRequest) -> Observable<(HTTPURLResponse, Data)> {

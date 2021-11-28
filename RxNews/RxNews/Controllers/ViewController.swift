@@ -9,7 +9,6 @@ import UIKit
 import RxSwift
 
 class ViewController: UIViewController {
-  
   private lazy var tableView: UITableView = {
     let tableView = UITableView()
     tableView.backgroundColor = .systemBackground
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
   
   private let bag = DisposeBag()
   private let articleResponseViewModel = ArticleResponseViewModel()
+  private let globalScheduler = ConcurrentDispatchQueueScheduler(queue: DispatchQueue.global())
   private var articleViewModels = [ArticleViewModel]() {
     didSet {
       DispatchQueue.main.async { [weak self] in
@@ -48,6 +48,8 @@ class ViewController: UIViewController {
     
     activityIndicator.startAnimating()
     articleResponseViewModel.fetchArticleResponse()
+      .subscribe(on: globalScheduler)
+      .observe(on: MainScheduler.instance)
       .subscribe(onNext: { [weak self] articleViewModels in
         self?.articleViewModels = articleViewModels
       }, onError: { _ in
