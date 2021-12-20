@@ -26,6 +26,7 @@
 		B4F54739277045CD0083A379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F5474127704C280083A379 /* ViewController+PhotosUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+PhotosUI.swift"; sourceTree = "<group>"; };
 		B4F547432770515B0083A379 /* ViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		B4F547452770B0BD0083A379 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		B4F5471F277045CC0083A379 = {
 			isa = PBXGroup;
 			children = (
+				B4F547452770B0BD0083A379 /* README.md */,
 				B4F5472A277045CC0083A379 /* QuickPlay */,
 				B4F54729277045CC0083A379 /* Products */,
 			);
