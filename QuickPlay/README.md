@@ -63,6 +63,41 @@ picker view controller를 어떻게 설정할지에 대한 정보가 포함된 �
 ```
 
 ## PHPickerViewControllerDelegate
+user 의 selection들에 대해 picker와 커뮤니케이션을 하기 위한 protocol이다.
+```swift
+protocol PHPickerViewControllerDelegate : AnyObject
+```
+### Handling User Selection
+```swift
+func picker(PHPickerViewController, didFinishPicking: [PHPickerResult])
+```
+delegate에게 유저가 선택을 마쳤거나, cancel 버튼을 통해 picker를 dismiss하려고 할 때 알려준다.
+
 
 ## PHPickerResult
+유저의 photo library에서 선택된 asset을 나타내는 타입.
+```swift
+struct PHPickerResult
+```
 
+```swift
+/* func picker(
+    _ picker: PHPickerViewController,
+    didFinishPicking results: [PHPickerResult]) {
+*/
+for result in results {
+  let itemProvider = result.itemProvider
+  guard let typeIdentifier = itemProvider
+          .registeredTypeIdentifiers.first,
+        let uType = UTType(typeIdentifier) else {
+          return
+        }
+```
+result들을 하나씩 itemProvider를 활용하여 UTType을 가져온다.
+
+```swift
+if uType.conforms(to: .movie) {
+  //Load Movies...
+}
+```
+uType이 movie이면 Movie를 가져온다.

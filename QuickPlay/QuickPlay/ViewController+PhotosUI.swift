@@ -44,7 +44,6 @@ extension ViewController: PHPickerViewControllerDelegate {
   func picker(
     _ picker: PHPickerViewController,
     didFinishPicking results: [PHPickerResult]) {
-      print(results)
       for result in results {
         let itemProvider = result.itemProvider
         guard let typeIdentifier = itemProvider
