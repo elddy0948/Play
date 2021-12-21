@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVKit
 
 class ViewController: UITableViewController {
   private lazy var addVideoButton: UIButton = {
@@ -20,7 +21,19 @@ class ViewController: UITableViewController {
     return button
   }()
   
-  let reuseId = "CellId"
+  private lazy var playAllButton: UIButton = {
+    let button = UIButton()
+    button.tintColor = .link
+    button.setImage(
+      UIImage(
+        systemName: "list.and.film"
+      ),
+      for: .normal
+    )
+    return button
+  }()
+  
+  var avPlayer: AVPlayer?
   var isPresented: Bool = false
   var videos: [URL] = [] {
     didSet {
@@ -32,10 +45,13 @@ class ViewController: UITableViewController {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
     tableView.register(
-      UITableViewCell.self,
-      forCellReuseIdentifier: reuseId
+      VideoTableViewCell.self,
+      forCellReuseIdentifier: VideoTableViewCell.reuseIdentifier
     )
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 100.0
     setupButton()
+    setupPlayAllButton()
     layout()
   }
 }
@@ -44,6 +60,22 @@ class ViewController: UITableViewController {
 extension ViewController {
   @objc func didTappedAddVideoButton(_ sender: UIButton) {
     setupPHPickerViewController()
+  }
+  
+  @objc func didTappedPlayAllButton(_ sender: UIButton) {
+    let playerItems = videos.map({ url in
+      AVPlayerItem(url: url)
+    })
+    let player = AVQueuePlayer(items: playerItems)
+    let vc = AVPlayerViewController()
+    vc.player = player
+    vc.requiresLinearPlayback = true
+    vc.showsPlaybackControls = true
+    present(
+      vc,
+      animated: true,
+      completion: nil
+    )
   }
 }
 
@@ -55,6 +87,16 @@ extension ViewController {
     addVideoButton.addTarget(
       self,
       action: #selector(didTappedAddVideoButton(_:)),
+      for: .touchUpInside
+    )
+  }
+  
+  private func setupPlayAllButton() {
+    view.addSubview(playAllButton)
+    playAllButton.translatesAutoresizingMaskIntoConstraints = false
+    playAllButton.addTarget(
+      self,
+      action: #selector(didTappedPlayAllButton(_:)),
       for: .touchUpInside
     )
   }
@@ -75,6 +117,14 @@ extension ViewController {
       ),
       addVideoButton.widthAnchor.constraint(
         equalToConstant: 50
+      ),
+      playAllButton.trailingAnchor.constraint(
+        equalTo: safeAreaLayoutGuide.trailingAnchor,
+        constant: -16
+      ),
+      playAllButton.bottomAnchor.constraint(
+        equalTo: safeAreaLayoutGuide.bottomAnchor,
+        constant: -16
       ),
     ])
   }

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44F37AB277184DE00153706 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37AA277184DE00153706 /* Thumbnail.swift */; };
+		B44F37AD27718CF000153706 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37AC27718CF000153706 /* VideoTableViewCell.swift */; };
+		B44F37B127719E6400153706 /* ViewController+UItableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */; };
 		B4F5472C277045CC0083A379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5472B277045CC0083A379 /* AppDelegate.swift */; };
 		B4F5472E277045CC0083A379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5472D277045CC0083A379 /* SceneDelegate.swift */; };
 		B4F54730277045CC0083A379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F5472F277045CC0083A379 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B44F37AA277184DE00153706 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		B44F37AC27718CF000153706 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UItableViewDelegate.swift"; sourceTree = "<group>"; };
 		B4F54728277045CC0083A379 /* QuickPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F5472B277045CC0083A379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F5472D277045CC0083A379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B44F37AE27718CF200153706 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4F5472F277045CC0083A379 /* ViewController.swift */,
+				B4F547432770515B0083A379 /* ViewController+UITableViewDataSource.swift */,
+				B4F5474127704C280083A379 /* ViewController+PhotosUI.swift */,
+				B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B44F37AF27718CFF00153706 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B44F37AA277184DE00153706 /* Thumbnail.swift */,
+				B44F37AC27718CF000153706 /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B4F5471F277045CC0083A379 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +86,10 @@
 		B4F5472A277045CC0083A379 /* QuickPlay */ = {
 			isa = PBXGroup;
 			children = (
+				B44F37AF27718CFF00153706 /* Views */,
+				B44F37AE27718CF200153706 /* Controllers */,
 				B4F5472B277045CC0083A379 /* AppDelegate.swift */,
 				B4F5472D277045CC0083A379 /* SceneDelegate.swift */,
-				B4F5472F277045CC0083A379 /* ViewController.swift */,
-				B4F547432770515B0083A379 /* ViewController+UITableViewDataSource.swift */,
-				B4F5474127704C280083A379 /* ViewController+PhotosUI.swift */,
 				B4F54734277045CD0083A379 /* Assets.xcassets */,
 				B4F54736277045CD0083A379 /* LaunchScreen.storyboard */,
 				B4F54739277045CD0083A379 /* Info.plist */,
@@ -143,7 +168,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F54730277045CC0083A379 /* ViewController.swift in Sources */,
+				B44F37B127719E6400153706 /* ViewController+UItableViewDelegate.swift in Sources */,
 				B4F5474227704C280083A379 /* ViewController+PhotosUI.swift in Sources */,
+				B44F37AD27718CF000153706 /* VideoTableViewCell.swift in Sources */,
+				B44F37AB277184DE00153706 /* Thumbnail.swift in Sources */,
 				B4F547442770515B0083A379 /* ViewController+UITableViewDataSource.swift in Sources */,
 				B4F5472C277045CC0083A379 /* AppDelegate.swift in Sources */,
 				B4F5472E277045CC0083A379 /* SceneDelegate.swift in Sources */,

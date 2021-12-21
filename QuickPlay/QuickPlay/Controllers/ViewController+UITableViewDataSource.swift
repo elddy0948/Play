@@ -17,15 +17,16 @@ extension ViewController {
   override func tableView(
     _ tableView: UITableView,
     cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-      let cell = tableView.dequeueReusableCell(
-        withIdentifier: reuseId,
+      guard let cell = tableView.dequeueReusableCell(
+        withIdentifier: VideoTableViewCell.reuseIdentifier,
         for: indexPath
-      )
+      ) as? VideoTableViewCell else {
+        return UITableViewCell()
+      }
       
-      var contentConfiguration = cell.defaultContentConfiguration()
-      contentConfiguration.text = "Video \(indexPath.row)"
+      let videoURL = videos[indexPath.row]
+      cell.setupCellData(title: "Video \(indexPath.row)", url: videoURL)
       
-      cell.contentConfiguration = contentConfiguration
       return cell
   }
 }
