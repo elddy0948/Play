@@ -101,3 +101,12 @@ if uType.conforms(to: .movie) {
 }
 ```
 uType이 movie이면 Movie를 가져온다.
+
+## AVFoundation
+## AVAsset
+## AVAssetImageGenerator
+## AVKit
+## AVPlayer
+## AVPlayerViewController
+## AVPlayerItem
+## AVQueuePlayer
