@@ -110,3 +110,4 @@ uType이 movie이면 Movie를 가져온다.
 ## AVPlayerViewController
 ## AVPlayerItem
 ## AVQueuePlayer
+## Picture in Picture Feature

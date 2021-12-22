@@ -10,6 +10,7 @@ extension ViewController {
       let vc = AVPlayerViewController()
       vc.showsPlaybackControls = true
       vc.requiresLinearPlayback = true
+//      vc.allowsPictureInPicturePlayback = false
       vc.player = avPlayer
       
       present(
