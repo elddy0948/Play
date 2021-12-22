@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4120B322772F93F00CBAF37 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4120B312772F93F00CBAF37 /* CameraViewController.swift */; };
 		B44F37AB277184DE00153706 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37AA277184DE00153706 /* Thumbnail.swift */; };
 		B44F37AD27718CF000153706 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37AC27718CF000153706 /* VideoTableViewCell.swift */; };
 		B44F37B127719E6400153706 /* ViewController+UItableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4120B312772F93F00CBAF37 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		B44F37AA277184DE00153706 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		B44F37AC27718CF000153706 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UItableViewDelegate.swift"; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				B4F547432770515B0083A379 /* ViewController+UITableViewDataSource.swift */,
 				B4F5474127704C280083A379 /* ViewController+PhotosUI.swift */,
 				B44F37B027719E6400153706 /* ViewController+UItableViewDelegate.swift */,
+				B4120B312772F93F00CBAF37 /* CameraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				B4F547442770515B0083A379 /* ViewController+UITableViewDataSource.swift in Sources */,
 				B4F5472C277045CC0083A379 /* AppDelegate.swift in Sources */,
 				B4F5472E277045CC0083A379 /* SceneDelegate.swift in Sources */,
+				B4120B322772F93F00CBAF37 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

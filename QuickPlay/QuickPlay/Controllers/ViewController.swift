@@ -9,6 +9,13 @@ import UIKit
 import AVKit
 
 class ViewController: UITableViewController {
+  private lazy var stackView: UIStackView = {
+    let stackView = UIStackView()
+    stackView.distribution = .equalSpacing
+    stackView.axis = .horizontal
+    return stackView
+  }()
+  
   private lazy var addVideoButton: UIButton = {
     let button = UIButton()
     button.tintColor = .link
@@ -33,6 +40,18 @@ class ViewController: UITableViewController {
     return button
   }()
   
+  private lazy var cameraButton: UIButton = {
+    let button = UIButton()
+    button.tintColor = .link
+    button.setImage(
+      UIImage(
+        systemName: "camera"
+      ),
+      for: .normal
+    )
+    return button
+  }()
+  
   var avPlayer: AVPlayer?
   var isPresented: Bool = false
   var videos: [URL] = [] {
@@ -50,8 +69,7 @@ class ViewController: UITableViewController {
     )
     tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 100.0
-    setupButton()
-    setupPlayAllButton()
+    setupStackView()
     layout()
   }
 }
@@ -77,13 +95,27 @@ extension ViewController {
       completion: nil
     )
   }
+  
+  @objc func didTappedCameraButton(_ sender: UIButton) {
+    let vc = CameraViewController()
+    vc.modalPresentationStyle = .fullScreen
+    present(vc, animated: true, completion: nil)
+  }
 }
 
 //MARK: - UI
 extension ViewController {
+  func setupStackView() {
+    view.addSubview(stackView)
+    stackView.translatesAutoresizingMaskIntoConstraints = false
+    
+    setupButton()
+    setupPlayAllButton()
+    setupCameraButton()
+  }
+  
   private func setupButton() {
-    view.addSubview(addVideoButton)
-    addVideoButton.translatesAutoresizingMaskIntoConstraints = false
+    stackView.addArrangedSubview(addVideoButton)
     addVideoButton.addTarget(
       self,
       action: #selector(didTappedAddVideoButton(_:)),
@@ -92,8 +124,7 @@ extension ViewController {
   }
   
   private func setupPlayAllButton() {
-    view.addSubview(playAllButton)
-    playAllButton.translatesAutoresizingMaskIntoConstraints = false
+    stackView.addArrangedSubview(playAllButton)
     playAllButton.addTarget(
       self,
       action: #selector(didTappedPlayAllButton(_:)),
@@ -101,29 +132,28 @@ extension ViewController {
     )
   }
   
+  private func setupCameraButton() {
+    stackView.addArrangedSubview(cameraButton)
+    cameraButton.addTarget(
+      self,
+      action: #selector(didTappedCameraButton(_:)),
+      for: .touchUpInside
+    )
+  }
+  
   private func layout() {
     let safeAreaLayoutGuide = view.safeAreaLayoutGuide
     NSLayoutConstraint.activate([
-      addVideoButton.bottomAnchor.constraint(
+      stackView.bottomAnchor.constraint(
         equalTo: safeAreaLayoutGuide.bottomAnchor,
         constant: -16
       ),
-      addVideoButton.leadingAnchor.constraint(
+      stackView.leadingAnchor.constraint(
         equalTo: safeAreaLayoutGuide.leadingAnchor,
         constant: 16
       ),
-      addVideoButton.heightAnchor.constraint(
-        equalToConstant: 50
-      ),
-      addVideoButton.widthAnchor.constraint(
-        equalToConstant: 50
-      ),
-      playAllButton.trailingAnchor.constraint(
+      stackView.trailingAnchor.constraint(
         equalTo: safeAreaLayoutGuide.trailingAnchor,
-        constant: -16
-      ),
-      playAllButton.bottomAnchor.constraint(
-        equalTo: safeAreaLayoutGuide.bottomAnchor,
         constant: -16
       ),
     ])
