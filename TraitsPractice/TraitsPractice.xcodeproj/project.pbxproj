@@ -59,6 +59,7 @@
 		B418E699277DFFEE0028798F /* TraitsPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraitsPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B418E69D277DFFEE0028798F /* TraitsPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsPracticeUITests.swift; sourceTree = "<group>"; };
 		B418E69F277DFFEE0028798F /* TraitsPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B41C4522277E09E6002968DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE6175FAD8D2BA8489712C4A /* Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-TraitsPractice-TraitsPracticeUITests/Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CFE69C9E5B4C656CFA34552B /* Pods_TraitsPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraitsPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,13 +112,13 @@
 				6119746B56D361CE7B3ADFDE /* Pods-TraitsPracticeTests.debug.xcconfig */,
 				A71B852C2D0303ABBDBB57C4 /* Pods-TraitsPracticeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		B418E670277DFFEE0028798F = {
 			isa = PBXGroup;
 			children = (
+				B41C4522277E09E6002968DE /* README.md */,
 				B418E67B277DFFEE0028798F /* TraitsPractice */,
 				B418E692277DFFEE0028798F /* TraitsPracticeTests */,
 				B418E69C277DFFEE0028798F /* TraitsPracticeUITests */,
