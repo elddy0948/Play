@@ -1,13 +1,13 @@
 //
-//  SignInWithPhonePracticeUITestsLaunchTests.swift
-//  SignInWithPhonePracticeUITests
+//  TraitsPracticeUITestsLaunchTests.swift
+//  TraitsPracticeUITests
 //
-//  Created by 김호준 on 2021/12/27.
+//  Created by 김호준 on 2021/12/30.
 //
 
 import XCTest
 
-class SignInWithPhonePracticeUITestsLaunchTests: XCTestCase {
+class TraitsPracticeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

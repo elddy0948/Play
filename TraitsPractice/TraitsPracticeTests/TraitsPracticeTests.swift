@@ -1,14 +1,14 @@
 //
-//  SignInWithPhonePracticeTests.swift
-//  SignInWithPhonePracticeTests
+//  TraitsPracticeTests.swift
+//  TraitsPracticeTests
 //
-//  Created by 김호준 on 2021/12/27.
+//  Created by 김호준 on 2021/12/30.
 //
 
 import XCTest
-@testable import SignInWithPhonePractice
+@testable import TraitsPractice
 
-class SignInWithPhonePracticeTests: XCTestCase {
+class TraitsPracticeTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

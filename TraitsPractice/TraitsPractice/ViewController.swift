@@ -1,3 +1,10 @@
+//
+//  ViewController.swift
+//  TraitsPractice
+//
+//  Created by 김호준 on 2021/12/30.
+//
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -6,5 +13,7 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
+
+
 }
 

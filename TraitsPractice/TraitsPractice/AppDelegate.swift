@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SignInWithPhonePractice
+//  TraitsPractice
 //
-//  Created by 김호준 on 2021/12/27.
+//  Created by 김호준 on 2021/12/30.
 //
 
 import UIKit
