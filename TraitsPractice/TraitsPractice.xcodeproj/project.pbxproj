@@ -23,6 +23,7 @@
 		B4850031277EE1E0007021B6 /* URLSessionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4850030277EE1E0007021B6 /* URLSessionResponse.swift */; };
 		B4850034277EE2D5007021B6 /* RxURLSessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4850033277EE2D5007021B6 /* RxURLSessionError.swift */; };
 		B4850037277EE87B007021B6 /* UserNetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4850036277EE87B007021B6 /* UserNetworkingAPI.swift */; };
+		B4B7F2742781F4BB000B6B36 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7F2732781F4BB000B6B36 /* SearchUserView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B4850030277EE1E0007021B6 /* URLSessionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionResponse.swift; sourceTree = "<group>"; };
 		B4850033277EE2D5007021B6 /* RxURLSessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxURLSessionError.swift; sourceTree = "<group>"; };
 		B4850036277EE87B007021B6 /* UserNetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNetworkingAPI.swift; sourceTree = "<group>"; };
+		B4B7F2732781F4BB000B6B36 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
 		CE6175FAD8D2BA8489712C4A /* Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-TraitsPractice-TraitsPracticeUITests/Pods-TraitsPractice-TraitsPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CFE69C9E5B4C656CFA34552B /* Pods_TraitsPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraitsPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 		B418E67B277DFFEE0028798F /* TraitsPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B4B7F2722781F4B1000B6B36 /* Views */,
 				B4850035277EE733007021B6 /* Networking */,
 				B4850032277EE2C4007021B6 /* Errors */,
 				B485002B277EE122007021B6 /* Rx+Extensions */,
@@ -219,6 +222,14 @@
 				B4850036277EE87B007021B6 /* UserNetworkingAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B4B7F2722781F4B1000B6B36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4B7F2732781F4BB000B6B36 /* SearchUserView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -459,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B7F2742781F4BB000B6B36 /* SearchUserView.swift in Sources */,
 				B4850029277EDEA1007021B6 /* User.swift in Sources */,
 				B418E681277DFFEE0028798F /* ViewController.swift in Sources */,
 				B4850034277EE2D5007021B6 /* RxURLSessionError.swift in Sources */,
