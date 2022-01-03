@@ -10,6 +10,9 @@
 		2E901FE544D09206DD110602 /* Pods_TraitsPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFAD0CB013FFD1B27C402DA /* Pods_TraitsPracticeTests.framework */; };
 		49C4D70F2CC95D2E8DA0B0ED /* Pods_TraitsPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE69C9E5B4C656CFA34552B /* Pods_TraitsPractice.framework */; };
 		757FA6B09BD6B2A569E0E43D /* Pods_TraitsPractice_TraitsPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5562E14A9D2046EE63D394EF /* Pods_TraitsPractice_TraitsPracticeUITests.framework */; };
+		B40DB0F72782AAFE00BF2625 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DB0F62782AAFE00BF2625 /* UserDetailViewController.swift */; };
+		B40DB0F92782BAB600BF2625 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DB0F82782BAB600BF2625 /* UserDetailView.swift */; };
+		B40DB0FB2782BB9F00BF2625 /* ProfileLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DB0FA2782BB9F00BF2625 /* ProfileLabel.swift */; };
 		B418E67D277DFFEE0028798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418E67C277DFFEE0028798F /* AppDelegate.swift */; };
 		B418E67F277DFFEE0028798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418E67E277DFFEE0028798F /* SceneDelegate.swift */; };
 		B418E681277DFFEE0028798F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B418E680277DFFEE0028798F /* ViewController.swift */; };
@@ -51,6 +54,9 @@
 		7814BAFBEBC537A63F2257A2 /* Pods-TraitsPractice-TraitsPracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraitsPractice-TraitsPracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-TraitsPractice-TraitsPracticeUITests/Pods-TraitsPractice-TraitsPracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EFAD0CB013FFD1B27C402DA /* Pods_TraitsPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraitsPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71B852C2D0303ABBDBB57C4 /* Pods-TraitsPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraitsPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-TraitsPracticeTests/Pods-TraitsPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B40DB0F62782AAFE00BF2625 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		B40DB0F82782BAB600BF2625 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		B40DB0FA2782BB9F00BF2625 /* ProfileLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLabel.swift; sourceTree = "<group>"; };
 		B418E679277DFFEE0028798F /* TraitsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraitsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B418E67C277DFFEE0028798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B418E67E277DFFEE0028798F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +131,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B40DB0F52782AADE00BF2625 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B418E680277DFFEE0028798F /* ViewController.swift */,
+				B40DB0F62782AAFE00BF2625 /* UserDetailViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		B418E670277DFFEE0028798F = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +166,7 @@
 		B418E67B277DFFEE0028798F /* TraitsPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B40DB0F52782AADE00BF2625 /* Screens */,
 				B4B7F2722781F4B1000B6B36 /* Views */,
 				B4850035277EE733007021B6 /* Networking */,
 				B4850032277EE2C4007021B6 /* Errors */,
@@ -159,7 +175,6 @@
 				B4850027277EDE82007021B6 /* Models */,
 				B418E67C277DFFEE0028798F /* AppDelegate.swift */,
 				B418E67E277DFFEE0028798F /* SceneDelegate.swift */,
-				B418E680277DFFEE0028798F /* ViewController.swift */,
 				B418E685277DFFEE0028798F /* Assets.xcassets */,
 				B418E687277DFFEE0028798F /* LaunchScreen.storyboard */,
 				B418E68A277DFFEE0028798F /* Info.plist */,
@@ -228,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				B4B7F2732781F4BB000B6B36 /* SearchUserView.swift */,
+				B40DB0F82782BAB600BF2625 /* UserDetailView.swift */,
+				B40DB0FA2782BB9F00BF2625 /* ProfileLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -476,9 +493,12 @@
 				B4850034277EE2D5007021B6 /* RxURLSessionError.swift in Sources */,
 				B4850037277EE87B007021B6 /* UserNetworkingAPI.swift in Sources */,
 				B418E67D277DFFEE0028798F /* AppDelegate.swift in Sources */,
+				B40DB0FB2782BB9F00BF2625 /* ProfileLabel.swift in Sources */,
+				B40DB0F72782AAFE00BF2625 /* UserDetailViewController.swift in Sources */,
 				B418E67F277DFFEE0028798F /* SceneDelegate.swift in Sources */,
 				B485002D277EE12B007021B6 /* URLSession+Rx.swift in Sources */,
 				B4850031277EE1E0007021B6 /* URLSessionResponse.swift in Sources */,
+				B40DB0F92782BAB600BF2625 /* UserDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

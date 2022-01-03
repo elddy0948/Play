@@ -8,8 +8,8 @@
 import Foundation
 
 struct User: Codable {
-  let login: String
-  let name: String
+  let login: String?
+  let name: String?
   let bio: String?
   let followers: Int
   let following: Int

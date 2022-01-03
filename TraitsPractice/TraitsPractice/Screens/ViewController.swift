@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
   lazy var searchUserView: SearchUserView = SearchUserView()
+  private let bag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +26,7 @@ extension ViewController {
   private func setupSearchUserView() {
     view.addSubview(searchUserView)
     searchUserView.translatesAutoresizingMaskIntoConstraints = false
+    searchUserView.delegate = self
   }
   
   private func layout() {
@@ -37,3 +40,27 @@ extension ViewController {
   }
 }
 
+extension ViewController: SearchUserViewDelegate {
+  func searchUserView(_ view: SearchUserView, search username: String) {
+    UserNetworkingAPI.shared.fetchUserInfo(with: username)
+      .observe(on: MainScheduler.instance)
+      .subscribe(
+        onSuccess: { [weak self] user in
+          self?.showUserDetailScreen(with: user)
+        },
+        onFailure: { error in
+          print(error)
+        },
+        onDisposed: { }
+      )
+      .disposed(by: bag)
+  }
+  
+  private func showUserDetailScreen(with user: User) {
+    let viewController = UserDetailViewController(user: user)
+    navigationController?.pushViewController(
+      viewController,
+      animated: true
+    )
+  }
+}

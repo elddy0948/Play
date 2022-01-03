@@ -20,7 +20,12 @@ enum UserNetworkingAPIError: Error {
 }
 
 final class UserNetworkingAPI {
+  static let shared: UserNetworkingAPI = UserNetworkingAPI()
+  
   private let baseURL = "https://api.github.com/users/"
+  
+  private init() { }
+  
   func fetchUserInfo(with username: String) -> Single<User> {
     guard let request = createURLRequest(with: username) else {
       return Single.error(UserNetworkingAPIError.invalidURL)
