@@ -1,11 +1,16 @@
 import UIKit
 
+protocol UserDetailViewDelegate: AnyObject {
+  func didTappedLikeButton(_ view: UserDetailView)
+}
+
 class UserDetailView: UIView {
   //MARK: - Views
   lazy var userDetailStackView: UIStackView = {
     let stackView = UIStackView()
-    stackView.distribution = .fill
+    stackView.distribution = .equalSpacing
     stackView.axis = .vertical
+    stackView.spacing = 8
     return stackView
   }()
   
@@ -44,18 +49,34 @@ class UserDetailView: UIView {
     tintColor: .label
   )
   
+  lazy var likeButton: UIButton = {
+    let button = UIButton()
+    button.setTitle("Like!", for: .normal)
+    button.setTitleColor(.white, for: .normal)
+    button.backgroundColor = .systemPurple
+    button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+    return button
+  }()
+  
   private var user: User?
+  
+  weak var delegate: UserDetailViewDelegate?
   
   init(user: User?) {
     super.init(frame: .zero)
     self.user = user
     
     setupUserDetailStackView()
+    layout()
   }
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
     user = nil
+  }
+  
+  @objc func likeButtonTapped(_ sender: UIButton) {
+    delegate?.didTappedLikeButton(self)
   }
 }
 
@@ -64,12 +85,14 @@ extension UserDetailView {
     addSubview(userDetailStackView)
     userDetailStackView
       .translatesAutoresizingMaskIntoConstraints = false
+    userDetailStackView.backgroundColor = .systemGray
     
     setupNameLabel()
     setupBioLabel()
     setupFollowStackView()
     setupFollowersLabel()
     setupFollowingLabel()
+    setupLikeButton()
   }
   
   private func setupNameLabel() {
@@ -90,12 +113,45 @@ extension UserDetailView {
   private func setupFollowersLabel() {
     followHorizontalStackView
       .addArrangedSubview(followersLabel)
-    followersLabel.text = "\(user?.followers ?? 0)"
+    followersLabel.numberOfLines = 0
+    followersLabel.text = "Followers\n\(user?.followers ?? 0)"
   }
   
   private func setupFollowingLabel() {
     followHorizontalStackView
       .addArrangedSubview(followingLabel)
-    followingLabel.text = "\(user?.following ?? 0)"
+    followingLabel.numberOfLines = 0
+    followingLabel.text = "Following\n\(user?.following ?? 0)"
+  }
+  
+  private func setupLikeButton() {
+    userDetailStackView.addArrangedSubview(likeButton)
+    
+    likeButton.layer.cornerRadius = 8
+    likeButton.layer.masksToBounds = false
+    likeButton.addTarget(
+      self,
+      action: #selector(likeButtonTapped(_:)),
+      for: .primaryActionTriggered
+    )
+  }
+}
+
+extension UserDetailView {
+  private func layout() {
+    NSLayoutConstraint.activate([
+      userDetailStackView.topAnchor.constraint(
+        equalTo: topAnchor
+      ),
+      userDetailStackView.leadingAnchor.constraint(
+        equalTo: leadingAnchor
+      ),
+      userDetailStackView.trailingAnchor.constraint(
+        equalTo: trailingAnchor
+      ),
+      userDetailStackView.bottomAnchor.constraint(
+        equalTo: bottomAnchor
+      ),
+    ])
   }
 }

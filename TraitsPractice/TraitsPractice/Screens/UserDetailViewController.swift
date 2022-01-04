@@ -1,5 +1,5 @@
 import UIKit
-
+import RxSwift
 
 class UserDetailViewController: UIViewController {
   
@@ -8,6 +8,8 @@ class UserDetailViewController: UIViewController {
     return userDetailView
   }()
   var user: User?
+  
+  private let bag = DisposeBag()
   
   init(user: User) {
     super.init(nibName: nil, bundle: nil)
@@ -21,6 +23,7 @@ class UserDetailViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = .systemBackground
     setupUserDetailView()
     layout()
   }
@@ -29,23 +32,43 @@ class UserDetailViewController: UIViewController {
     view.addSubview(userDetailView)
     userDetailView
       .translatesAutoresizingMaskIntoConstraints = false
+    userDetailView.delegate = self
   }
   
   private func layout() {
-    let readableContent = view.readableContentGuide
+    let safeAreaLayoutGuide = view.safeAreaLayoutGuide
     NSLayoutConstraint.activate([
-      userDetailView.topAnchor.constraint(
-        equalTo: readableContent.topAnchor,
-        constant: 16
+      userDetailView.centerYAnchor.constraint(
+        equalTo: safeAreaLayoutGuide.centerYAnchor
       ),
       userDetailView.leadingAnchor.constraint(
-        equalTo: readableContent.leadingAnchor,
+        equalTo: safeAreaLayoutGuide.leadingAnchor,
         constant: 8
       ),
       userDetailView.trailingAnchor.constraint(
-        equalTo: readableContent.trailingAnchor,
+        equalTo: safeAreaLayoutGuide.trailingAnchor,
         constant: -8
-      )
+      ),
     ])
+  }
+}
+
+extension UserDetailViewController: UserDetailViewDelegate {
+  func didTappedLikeButton(_ view: UserDetailView) {
+    guard let user = user,
+          let username = user.name else {
+            return
+          }
+    UserNetworkingAPI.shared.likeUser(with: username)
+      .subscribe(
+        onCompleted: {
+          print("You liked him/her !")
+        },
+        onError: { error in
+          print("Oh no! error occured!")
+        },
+        onDisposed: {}
+      )
+      .disposed(by: bag)
   }
 }

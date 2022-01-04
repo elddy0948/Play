@@ -10,11 +10,14 @@ import RxSwift
 
 enum UserNetworkingAPIError: Error {
   case invalidURL
+  case unknown
   
   var message: String {
     switch self {
     case .invalidURL:
       return "올바르지 않은 URL입니다."
+    case .unknown:
+      return "다시 시도해주세요!"
     }
   }
 }
@@ -37,6 +40,24 @@ final class UserNetworkingAPI {
         request: request,
         type: User.self
       )
+  }
+  
+  func likeUser(with username: String) -> Completable {
+    return Completable.create(subscribe: { completable in
+      // Do networking ...
+      // ...
+      // ...
+      
+      let success = true
+      
+      if success {
+        completable(.completed)
+      } else {
+        completable(.error(UserNetworkingAPIError.unknown))
+      }
+      
+      return Disposables.create { }
+    })
   }
   
   private func createURLRequest(with username: String) -> URLRequest? {
