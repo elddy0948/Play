@@ -22,6 +22,16 @@ final class StatusView: UIStackView {
   }()
   
   weak var delegate: StatusViewDelegate?
+  private var connectionStatus: Bool = false {
+    didSet {
+      DispatchQueue.main.async { [weak self] in
+        guard let self = self else { return }
+        self.connectionStatus ?
+        (self.connectionStatusLabel.text = "Status: Connected") :
+        (self.connectionStatusLabel.text = "Status : Disconnected")
+      }
+    }
+  }
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -33,6 +43,10 @@ final class StatusView: UIStackView {
     super.init(coder: coder)
     setupStackView()
     setupSubViews()
+  }
+  
+  func changeStatus() {
+    connectionStatus.toggle()
   }
   
   @objc func didTappedConnectButton(_ sender: UIButton) {

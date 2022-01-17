@@ -14,6 +14,7 @@
 		B405368F27953ABC0020D475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B405368D27953ABC0020D475 /* LaunchScreen.storyboard */; };
 		B405369727953C540020D475 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405369627953C540020D475 /* InfoView.swift */; };
 		B4053699279540D10020D475 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4053698279540D10020D475 /* StatusView.swift */; };
+		B405369B279545B40020D475 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405369A279545B40020D475 /* NetworkingAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B405369027953ABC0020D475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B405369627953C540020D475 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		B4053698279540D10020D475 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		B405369A279545B40020D475 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B405369027953ABC0020D475 /* Info.plist */,
 				B405369627953C540020D475 /* InfoView.swift */,
 				B4053698279540D10020D475 /* StatusView.swift */,
+				B405369A279545B40020D475 /* NetworkingAPI.swift */,
 			);
 			path = URLSessionWebSocketTask_Practice;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				B405368727953ABB0020D475 /* ViewController.swift in Sources */,
 				B405368327953ABB0020D475 /* AppDelegate.swift in Sources */,
 				B405368527953ABB0020D475 /* SceneDelegate.swift in Sources */,
+				B405369B279545B40020D475 /* NetworkingAPI.swift in Sources */,
 				B4053699279540D10020D475 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

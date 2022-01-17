@@ -4,6 +4,8 @@ class ViewController: UIViewController {
 
   lazy var infoView: InfoView = InfoView()
   lazy var statusView: StatusView = StatusView()
+  let networkingAPI = NetworkingAPI.shared
+  var webSocketTask: URLSessionWebSocketTask?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -12,12 +14,44 @@ class ViewController: UIViewController {
     setupInfoView()
     layout()
   }
+  
+  
+  func createReceiveCompletionHandler() {
+    guard let webSocketTask = webSocketTask else {
+      return
+    }
+    
+    webSocketTask.receive(completionHandler: { [weak self] result in
+      guard let self = self else { return }
+      switch result {
+      case .success(let message):
+        self.statusView.changeStatus()
+        switch message {
+        case .string(let string):
+          print(string)
+        case .data(let data):
+          print(data)
+        @unknown default:
+          fatalError("Error!")
+        }
+      case .failure(let error):
+        print(error.localizedDescription)
+      }
+    })
+  }
 }
 
 extension ViewController: StatusViewDelegate {
   func connectButtonTapped(_ view: StatusView, connectButton: UIButton) {
-    
+    guard let url = URL(string: "wss://pubwss.bithumb.com/pub/ws") else {
+      return
+    }
+    webSocketTask = networkingAPI.createSession(url: url)
+    createReceiveCompletionHandler()
+    guard let webSocketTask = webSocketTask else { return }
+    webSocketTask.resume()
   }
+  
 }
 
 extension ViewController {
