@@ -2,6 +2,7 @@ import UIKit
 
 protocol StatusViewDelegate: AnyObject {
   func connectButtonTapped(_ view: StatusView, connectButton: UIButton)
+  func sendButtonTapped(_ view: StatusView)
 }
 
 final class StatusView: UIStackView {
@@ -19,6 +20,13 @@ final class StatusView: UIStackView {
     label.textColor = .label
     label.text = "Status: Disconnected"
     return label
+  }()
+  
+  lazy var sendButton: UIButton = {
+    let button = UIButton()
+    button.setTitle("Send", for: .normal)
+    button.setTitleColor(.systemBrown, for: .normal)
+    return button
   }()
   
   weak var delegate: StatusViewDelegate?
@@ -52,6 +60,10 @@ final class StatusView: UIStackView {
   @objc func didTappedConnectButton(_ sender: UIButton) {
     delegate?.connectButtonTapped(self, connectButton: sender)
   }
+  
+  @objc func didTappedSendButton(_ sender: UIButton) {
+    delegate?.sendButtonTapped(self)
+  }
 }
 
 extension StatusView {
@@ -66,6 +78,7 @@ extension StatusView {
   private func setupSubViews() {
     addArrangedSubview(connectButton)
     addArrangedSubview(connectionStatusLabel)
+    addArrangedSubview(sendButton)
     
     connectButton.addTarget(
       self,
@@ -73,7 +86,18 @@ extension StatusView {
       for: .touchUpInside
     )
     
+    sendButton.addTarget(
+      self,
+      action: #selector(didTappedSendButton(_:)),
+      for: .touchUpInside
+    )
+    
     connectButton.setContentHuggingPriority(
+      UILayoutPriority(251),
+      for: .horizontal
+    )
+    
+    sendButton.setContentHuggingPriority(
       UILayoutPriority(251),
       for: .horizontal
     )

@@ -15,6 +15,9 @@
 		B405369727953C540020D475 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405369627953C540020D475 /* InfoView.swift */; };
 		B4053699279540D10020D475 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4053698279540D10020D475 /* StatusView.swift */; };
 		B405369B279545B40020D475 /* NetworkingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405369A279545B40020D475 /* NetworkingAPI.swift */; };
+		B40536A127959E400020D475 /* TickerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40536A027959E400020D475 /* TickerResponse.swift */; };
+		B40536A327959E6A0020D475 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40536A227959E6A0020D475 /* Crypto.swift */; };
+		B40536A527959F610020D475 /* SubscriptionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40536A427959F610020D475 /* SubscriptionType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		B405369627953C540020D475 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		B4053698279540D10020D475 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		B405369A279545B40020D475 /* NetworkingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingAPI.swift; sourceTree = "<group>"; };
+		B40536A027959E400020D475 /* TickerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerResponse.swift; sourceTree = "<group>"; };
+		B40536A227959E6A0020D475 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B40536A427959F610020D475 /* SubscriptionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,52 @@
 		B405368127953ABB0020D475 /* URLSessionWebSocketTask_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				B405369F27959D340020D475 /* Networking */,
+				B405369E27959D2C0020D475 /* Views */,
+				B405369D27959D240020D475 /* View Controllers */,
+				B405369C27959D210020D475 /* Models */,
 				B405368227953ABB0020D475 /* AppDelegate.swift */,
 				B405368427953ABB0020D475 /* SceneDelegate.swift */,
-				B405368627953ABB0020D475 /* ViewController.swift */,
 				B405368B27953ABC0020D475 /* Assets.xcassets */,
 				B405368D27953ABC0020D475 /* LaunchScreen.storyboard */,
 				B405369027953ABC0020D475 /* Info.plist */,
-				B405369627953C540020D475 /* InfoView.swift */,
-				B4053698279540D10020D475 /* StatusView.swift */,
-				B405369A279545B40020D475 /* NetworkingAPI.swift */,
 			);
 			path = URLSessionWebSocketTask_Practice;
+			sourceTree = "<group>";
+		};
+		B405369C27959D210020D475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B40536A027959E400020D475 /* TickerResponse.swift */,
+				B40536A227959E6A0020D475 /* Crypto.swift */,
+				B40536A427959F610020D475 /* SubscriptionType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B405369D27959D240020D475 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B405368627953ABB0020D475 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B405369E27959D2C0020D475 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B405369627953C540020D475 /* InfoView.swift */,
+				B4053698279540D10020D475 /* StatusView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B405369F27959D340020D475 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B405369A279545B40020D475 /* NetworkingAPI.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40536A327959E6A0020D475 /* Crypto.swift in Sources */,
 				B405369727953C540020D475 /* InfoView.swift in Sources */,
 				B405368727953ABB0020D475 /* ViewController.swift in Sources */,
+				B40536A127959E400020D475 /* TickerResponse.swift in Sources */,
 				B405368327953ABB0020D475 /* AppDelegate.swift in Sources */,
 				B405368527953ABB0020D475 /* SceneDelegate.swift in Sources */,
 				B405369B279545B40020D475 /* NetworkingAPI.swift in Sources */,
+				B40536A527959F610020D475 /* SubscriptionType.swift in Sources */,
 				B4053699279540D10020D475 /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

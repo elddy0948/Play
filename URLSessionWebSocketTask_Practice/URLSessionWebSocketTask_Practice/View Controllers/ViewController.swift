@@ -15,6 +15,41 @@ class ViewController: UIViewController {
     layout()
   }
   
+  func sendMessage() {
+    guard let webSocketTask = webSocketTask else {
+      return
+    }
+    
+    let message = SubscriptionType(
+      type: "ticker",
+      symbols: ["BTC_KRW"],
+      tickTypes: ["30M", "MID"]
+    )
+    
+    let encoder = JSONEncoder()
+    
+    do {
+      let data = try encoder.encode(message)
+      guard let string = String(data: data, encoding: .utf8) else {
+        print("String Error!")
+        return
+      }
+      print(string)
+      webSocketTask.send(
+        URLSessionWebSocketTask.Message.string(string),
+        completionHandler: { error in
+          if let error = error {
+            print(error.localizedDescription)
+          }
+          print("Send Completed!")
+        }
+      )
+    } catch {
+      print("Encode Error!")
+      return
+    }
+  }
+  
   
   func createReceiveCompletionHandler() {
     guard let webSocketTask = webSocketTask else {
@@ -30,10 +65,18 @@ class ViewController: UIViewController {
         case .string(let string):
           print(string)
         case .data(let data):
-          print(data)
+          let decoder = JSONDecoder()
+          do {
+            let response = try decoder.decode(TickerResponse.self, from: data)
+            print(response.type)
+          } catch {
+            print("Decode Error!")
+          }
         @unknown default:
           fatalError("Error!")
         }
+        
+        self.createReceiveCompletionHandler()
       case .failure(let error):
         print(error.localizedDescription)
       }
@@ -52,6 +95,9 @@ extension ViewController: StatusViewDelegate {
     webSocketTask.resume()
   }
   
+  func sendButtonTapped(_ view: StatusView) {
+    sendMessage()
+  }
 }
 
 extension ViewController {
