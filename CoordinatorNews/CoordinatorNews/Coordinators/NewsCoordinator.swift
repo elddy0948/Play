@@ -1,6 +1,6 @@
 import UIKit
 
-class NewsHomeCoordinator: Coordinator {
+class NewsCoordinator: Coordinator {
   var children: [Coordinator] = []
   var router: Router
   
@@ -19,7 +19,7 @@ class NewsHomeCoordinator: Coordinator {
   }
 }
 
-extension NewsHomeCoordinator: NewsHomeViewControllerDelegate {
+extension NewsCoordinator: NewsHomeViewControllerDelegate {
   func didSelectNews(_ viewController: UIViewController, news: News) {
     let viewController = NewsDetailViewController(news: news)
     

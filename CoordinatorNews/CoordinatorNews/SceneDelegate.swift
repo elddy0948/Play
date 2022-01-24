@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }()
   
   private lazy var coordinator: Coordinator = {
-    let coordinator = NewsHomeCoordinator(router: router)
+    let coordinator = NewsCoordinator(router: router)
     return coordinator
   }()
 

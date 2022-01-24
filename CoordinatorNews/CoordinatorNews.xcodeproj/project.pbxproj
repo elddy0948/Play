@@ -27,7 +27,7 @@
 		B4EE7EB1279DA64D0032E666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EE7EAF279DA64D0032E666 /* LaunchScreen.storyboard */; };
 		B4EE7EBB279DA6F50032E666 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7EBA279DA6F50032E666 /* Router.swift */; };
 		B4EE7EBD279DA9BE0032E666 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7EBC279DA9BE0032E666 /* Coordinator.swift */; };
-		B4EE7EC1279DADD70032E666 /* NewsHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7EC0279DADD70032E666 /* NewsHomeCoordinator.swift */; };
+		B4EE7EC1279DADD70032E666 /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7EC0279DADD70032E666 /* NewsCoordinator.swift */; };
 		B4EE7EC4279DAECA0032E666 /* NewsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EE7EC3279DAECA0032E666 /* NewsHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +55,7 @@
 		B4EE7EB2279DA64D0032E666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4EE7EBA279DA6F50032E666 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B4EE7EBC279DA9BE0032E666 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		B4EE7EC0279DADD70032E666 /* NewsHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeCoordinator.swift; sourceTree = "<group>"; };
+		B4EE7EC0279DADD70032E666 /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		B4EE7EC3279DAECA0032E666 /* NewsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeViewController.swift; sourceTree = "<group>"; };
 		FA377978E201EB18A447CEB2 /* Pods-CoordinatorNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoordinatorNews.release.xcconfig"; path = "Target Support Files/Pods-CoordinatorNews/Pods-CoordinatorNews.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B4EE7EBC279DA9BE0032E666 /* Coordinator.swift */,
-				B4EE7EC0279DADD70032E666 /* NewsHomeCoordinator.swift */,
+				B4EE7EC0279DADD70032E666 /* NewsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			files = (
 				B4272BFA279E7487009072EC /* NetworkError.swift in Sources */,
 				B4EE7EBB279DA6F50032E666 /* Router.swift in Sources */,
-				B4EE7EC1279DADD70032E666 /* NewsHomeCoordinator.swift in Sources */,
+				B4EE7EC1279DADD70032E666 /* NewsCoordinator.swift in Sources */,
 				B4272BED279E724E009072EC /* Privacy.swift in Sources */,
 				B4EE7EA9279DA64C0032E666 /* ViewController.swift in Sources */,
 				B4272C02279ED3BE009072EC /* SceneDelegateRouter.swift in Sources */,
