@@ -8,6 +8,7 @@ class NewsView: UIStackView {
     )
     label.text = "Title"
     label.textColor = .label
+    label.numberOfLines = 0
     return label
   }()
   
@@ -16,6 +17,7 @@ class NewsView: UIStackView {
     label.font = UIFont.preferredFont(forTextStyle: .body)
     label.text = "Description"
     label.textColor = .label
+    label.numberOfLines = 0
     return label
   }()
   
@@ -24,6 +26,7 @@ class NewsView: UIStackView {
     label.font = UIFont.preferredFont(forTextStyle: .caption1)
     label.text = "Author"
     label.textColor = .label
+    label.numberOfLines = 0
     return label
   }()
   
@@ -37,6 +40,12 @@ class NewsView: UIStackView {
     super.init(coder: coder)
     setupStackView()
     setupSubViews()
+  }
+  
+  func configureNewsView(_ news: News) {
+    titleLabel.text = news.title
+    descriptionLabel.text = news.description
+    authorLabel.text = news.author
   }
 }
 

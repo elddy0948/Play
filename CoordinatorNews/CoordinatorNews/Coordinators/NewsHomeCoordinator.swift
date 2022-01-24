@@ -10,11 +10,23 @@ class NewsHomeCoordinator: Coordinator {
   
   func present(animated: Bool, onDismissed: (() -> Void)?) {
     let viewController = NewsHomeViewController()
-    
+    viewController.delegate = self
     router.present(
       viewController,
       animated: animated,
       onDismissed: onDismissed
+    )
+  }
+}
+
+extension NewsHomeCoordinator: NewsHomeViewControllerDelegate {
+  func didSelectNews(_ viewController: UIViewController, news: News) {
+    let viewController = NewsDetailViewController()
+    
+    router.present(
+      viewController,
+      animated: true,
+      onDismissed: nil
     )
   }
 }

@@ -27,6 +27,10 @@ class NewsTableViewCell: UITableViewCell {
     setupNewsView()
     layout()
   }
+  
+  func configureNews(_ news: News) {
+    newsView.configureNewsView(news)
+  }
 }
 
 //MARK: - UI Setup / Layout

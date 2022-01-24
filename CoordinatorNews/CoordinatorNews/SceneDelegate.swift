@@ -10,18 +10,24 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
+  private lazy var router: Router = {
+    let window = window!
+    let viewController = NewsHomeViewController()
+    let router = SceneDelegateRouter(
+      window: window
+    )
+    return router
+  }()
+  
+  private lazy var coordinator: Coordinator = {
+    let coordinator = NewsHomeCoordinator(router: router)
+    return coordinator
+  }()
 
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(windowScene: windowScene)
-    guard let window = window else {
-      return
-    }
-    
-    let router = SceneDelegateRouter(window: window)
-    let coordinator = NewsHomeCoordinator(router: router)
-    
     coordinator.present(animated: true, onDismissed: nil)    
   }
 

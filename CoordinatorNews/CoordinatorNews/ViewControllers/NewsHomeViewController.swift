@@ -1,4 +1,10 @@
 import UIKit
+import RxSwift
+
+protocol NewsHomeViewControllerDelegate: AnyObject {
+  func didSelectNews(_ viewController: UIViewController,
+                     news: News)
+}
 
 class NewsHomeViewController: UIViewController {
   
@@ -15,12 +21,42 @@ class NewsHomeViewController: UIViewController {
     return tableView
   }()
   
+  private let bag = DisposeBag()
+  private var newsResponse: NewsResponse? {
+    didSet {
+      tableView.reloadData()
+    }
+  }
+  weak var delegate: NewsHomeViewControllerDelegate?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
     
     setupTableView()
     layout()
+    
+    fetchHeadLines()
+  }
+  
+  private func fetchHeadLines() {
+    NetworkAPI.shared.fetchHeadLines()
+      .observe(on: MainScheduler.instance)
+      .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .utility))
+      .subscribe(
+        onNext: { [weak self] response in
+          guard let self = self else { return }
+          DispatchQueue.main.async {
+            self.newsResponse = response
+          }
+        },
+        onError: { error in
+          print(error)
+        },
+        onCompleted: {},
+        onDisposed: {}
+      )
+      .disposed(by: bag)
   }
 }
 
@@ -30,7 +66,8 @@ extension NewsHomeViewController: UITableViewDataSource {
     _ tableView: UITableView,
     numberOfRowsInSection section: Int
   ) -> Int {
-    return 5
+    guard let news = newsResponse?.articles else { return 0 }
+    return news.count
   }
   
   func tableView(
@@ -44,13 +81,25 @@ extension NewsHomeViewController: UITableViewDataSource {
       return UITableViewCell()
     }
     
+    if let news = newsResponse?.articles {
+      let oneNews = news[indexPath.row]
+      cell.configureNews(oneNews)
+    }
+    
     return cell
   }
 }
 
 //MARK: - UITableViewDelegate
 extension NewsHomeViewController: UITableViewDelegate {
-  
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
+    guard let newses = newsResponse?.articles else { return }
+    let news = newses[indexPath.row]
+    delegate?.didSelectNews(self, news: news)
+  }
 }
 
 //MARK: - UI Setup / Layout
