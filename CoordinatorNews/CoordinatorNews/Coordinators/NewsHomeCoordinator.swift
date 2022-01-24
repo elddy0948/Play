@@ -21,7 +21,7 @@ class NewsHomeCoordinator: Coordinator {
 
 extension NewsHomeCoordinator: NewsHomeViewControllerDelegate {
   func didSelectNews(_ viewController: UIViewController, news: News) {
-    let viewController = NewsDetailViewController()
+    let viewController = NewsDetailViewController(news: news)
     
     router.present(
       viewController,

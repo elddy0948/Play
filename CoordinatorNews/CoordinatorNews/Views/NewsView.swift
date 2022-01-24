@@ -54,7 +54,7 @@ extension NewsView {
   private func setupStackView() {
     axis = .vertical
     spacing = 8
-    distribution = .fill
+    distribution = .equalSpacing
   }
   
   private func setupSubViews() {

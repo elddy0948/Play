@@ -18,6 +18,7 @@ class NewsTableViewCell: UITableViewCell {
       style: style,
       reuseIdentifier: reuseIdentifier
     )
+    selectionStyle = .none
     setupNewsView()
     layout()
   }
