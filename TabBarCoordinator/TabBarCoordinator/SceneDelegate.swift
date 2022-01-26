@@ -3,8 +3,8 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
-  private lazy var router: SceneDelegateRouter = {
-    let router = SceneDelegateRouter(window: window!)
+  private lazy var router: SceneRouter = {
+    let router = SceneRouter(window: window!)
     return router
   }()
   

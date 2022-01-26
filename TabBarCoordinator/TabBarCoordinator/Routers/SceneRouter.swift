@@ -1,6 +1,6 @@
 import UIKit
 
-class SceneDelegateRouter: Router {
+class SceneRouter: Router {
   
   private var window: UIWindow
   

@@ -15,7 +15,7 @@
 		B4390CF627A105030018CCA4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CF527A105030018CCA4 /* Router.swift */; };
 		B4390CF827A1061F0018CCA4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CF727A1061F0018CCA4 /* Coordinator.swift */; };
 		B4390CFA27A108030018CCA4 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CF927A108030018CCA4 /* TabBarRouter.swift */; };
-		B4390CFC27A1097C0018CCA4 /* SceneDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CFB27A1097C0018CCA4 /* SceneDelegateRouter.swift */; };
+		B4390CFC27A1097C0018CCA4 /* SceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CFB27A1097C0018CCA4 /* SceneRouter.swift */; };
 		B4390CFE27A10A400018CCA4 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390CFD27A10A400018CCA4 /* TabBarCoordinator.swift */; };
 		B4390D0127A10D1F0018CCA4 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D0027A10D1F0018CCA4 /* FirstViewController.swift */; };
 		B4390D0327A10D260018CCA4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D0227A10D260018CCA4 /* SecondViewController.swift */; };
@@ -39,7 +39,7 @@
 		B4390CF527A105030018CCA4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B4390CF727A1061F0018CCA4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B4390CF927A108030018CCA4 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
-		B4390CFB27A1097C0018CCA4 /* SceneDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateRouter.swift; sourceTree = "<group>"; };
+		B4390CFB27A1097C0018CCA4 /* SceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRouter.swift; sourceTree = "<group>"; };
 		B4390CFD27A10A400018CCA4 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		B4390D0027A10D1F0018CCA4 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B4390D0227A10D260018CCA4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			children = (
 				B4390CF527A105030018CCA4 /* Router.swift */,
 				B4390CF927A108030018CCA4 /* TabBarRouter.swift */,
-				B4390CFB27A1097C0018CCA4 /* SceneDelegateRouter.swift */,
+				B4390CFB27A1097C0018CCA4 /* SceneRouter.swift */,
 				B4390D0827A118130018CCA4 /* NavigationRouter.swift */,
 			);
 			path = Routers;
@@ -205,7 +205,7 @@
 				B4390D0727A1172C0018CCA4 /* FirstCoordinator.swift in Sources */,
 				B4390CFA27A108030018CCA4 /* TabBarRouter.swift in Sources */,
 				B4390CF627A105030018CCA4 /* Router.swift in Sources */,
-				B4390CFC27A1097C0018CCA4 /* SceneDelegateRouter.swift in Sources */,
+				B4390CFC27A1097C0018CCA4 /* SceneRouter.swift in Sources */,
 				B4390D0B27A11C030018CCA4 /* SceneCoordinator.swift in Sources */,
 				B4390CFE27A10A400018CCA4 /* TabBarCoordinator.swift in Sources */,
 				B4390CE427A1023D0018CCA4 /* ViewController.swift in Sources */,
