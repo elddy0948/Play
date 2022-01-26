@@ -13,21 +13,15 @@ class TabBarCoordinator: Coordinator {
     let secondNav = UINavigationController()
     let thirdNav = UINavigationController()
     
-    router.present(
-      firstNav,
-      animated: true
-    )
+    guard let router = router as? TabBarRouter else {
+      return
+    }
     
     router.present(
-      secondNav,
-      animated: true
+      [firstNav, secondNav, thirdNav],
+      animated: true,
+      onDismissed: nil
     )
-    
-    router.present(
-      thirdNav,
-      animated: true
-    )
-    
     
     let firstRouter = NavigationRouter(
       navigationController: firstNav
@@ -53,22 +47,24 @@ class TabBarCoordinator: Coordinator {
       router: thirdRouter
     )
     
-    presentChild(
-      firstCoordinator,
+    presentChildren(
+      [firstCoordinator, secondCoordinator, thirdCoordinator],
       animated: true,
       onDismissed: nil
     )
-    
-    presentChild(
-      secondCoordinator,
-      animated: true,
-      onDismissed: nil
-    )
-    
-    presentChild(
-      thirdCoordinator,
-      animated: true,
-      onDismissed: nil
-    )
+  }
+  
+  private func presentChildren(
+    _ children: [Coordinator],
+    animated: Bool,
+    onDismissed: (() -> Void)?
+  ) {
+    children.forEach({ child in
+      presentChild(
+        child,
+        animated: true,
+        onDismissed: nil
+      )
+    })
   }
 }

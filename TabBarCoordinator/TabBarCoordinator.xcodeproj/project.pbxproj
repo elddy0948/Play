@@ -25,6 +25,7 @@
 		B4390D0B27A11C030018CCA4 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D0A27A11C030018CCA4 /* SceneCoordinator.swift */; };
 		B4390D0D27A125670018CCA4 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D0C27A125670018CCA4 /* SecondCoordinator.swift */; };
 		B4390D0F27A1256C0018CCA4 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D0E27A1256C0018CCA4 /* ThirdCoordinator.swift */; };
+		B4390D1127A193D60018CCA4 /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4390D1027A193D60018CCA4 /* PurpleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		B4390D0A27A11C030018CCA4 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		B4390D0C27A125670018CCA4 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
 		B4390D0E27A1256C0018CCA4 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		B4390D1027A193D60018CCA4 /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				B4390D0027A10D1F0018CCA4 /* FirstViewController.swift */,
 				B4390D0227A10D260018CCA4 /* SecondViewController.swift */,
 				B4390D0427A10D2F0018CCA4 /* ThirdViewController.swift */,
+				B4390D1027A193D60018CCA4 /* PurpleViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				B4390D0D27A125670018CCA4 /* SecondCoordinator.swift in Sources */,
 				B4390CF827A1061F0018CCA4 /* Coordinator.swift in Sources */,
 				B4390CE027A1023D0018CCA4 /* AppDelegate.swift in Sources */,
+				B4390D1127A193D60018CCA4 /* PurpleViewController.swift in Sources */,
 				B4390D0527A10D2F0018CCA4 /* ThirdViewController.swift in Sources */,
 				B4390D0927A118130018CCA4 /* NavigationRouter.swift in Sources */,
 				B4390D0327A10D260018CCA4 /* SecondViewController.swift in Sources */,

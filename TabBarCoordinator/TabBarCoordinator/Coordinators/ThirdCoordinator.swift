@@ -12,6 +12,7 @@ class ThirdCoordinator: Coordinator {
     animated: Bool,
     onDismissed: (() -> Void)?) {
       let thirdVC = ThirdViewController()
+      thirdVC.title = "Third"
       router.present(
         thirdVC,
         animated: true

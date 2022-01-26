@@ -12,6 +12,7 @@ class SecondCoordinator: Coordinator {
     animated: Bool,
     onDismissed: (() -> Void)?) {
       let secondVC = SecondViewController()
+      secondVC.title = "Second"
       router.present(
         secondVC,
         animated: true
