@@ -1,5 +1,9 @@
 import UIKit
 
+protocol AddTodoViewControllerDelegate: AnyObject {
+  func save(_ viewController: UIViewController, item: Item)
+}
+
 class AddTodoViewController: UIViewController {
   //MARK: - Views
   lazy var segmentedControl: UISegmentedControl = {
@@ -18,6 +22,10 @@ class AddTodoViewController: UIViewController {
     return textField
   }()
   
+  //MARK: - Properties
+  weak var delegate: AddTodoViewControllerDelegate?
+  
+  //MARK: - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .systemBackground
@@ -28,7 +36,14 @@ class AddTodoViewController: UIViewController {
   }
   
   @objc func didTappedSaveButton() {
+    let item = Item(
+      content: textField.text ?? "No Content",
+      priority: Priority(
+        rawValue: segmentedControl.selectedSegmentIndex
+      ) ?? .high
+    )
     
+    delegate?.save(self, item: item)
   }
 }
 
