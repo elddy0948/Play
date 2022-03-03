@@ -11,9 +11,13 @@
 		B4F53C4127D11724005FA43F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C4027D11724005FA43F /* ViewController.swift */; };
 		B4F53C4627D11725005FA43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4527D11725005FA43F /* Assets.xcassets */; };
 		B4F53C4927D11725005FA43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4727D11725005FA43F /* LaunchScreen.storyboard */; };
+		E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11DD8E8999B991168DB8B36A /* Pods-RepoMVVMRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoMVVMRx.debug.xcconfig"; path = "Target Support Files/Pods-RepoMVVMRx/Pods-RepoMVVMRx.debug.xcconfig"; sourceTree = "<group>"; };
+		670FC69A41AE0CB849DFA1F4 /* Pods-RepoMVVMRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoMVVMRx.release.xcconfig"; path = "Target Support Files/Pods-RepoMVVMRx/Pods-RepoMVVMRx.release.xcconfig"; sourceTree = "<group>"; };
+		97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoMVVMRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F53C3927D11724005FA43F /* RepoMVVMRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoMVVMRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F53C3C27D11724005FA43F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4F53C4027D11724005FA43F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				B4F53C3B27D11724005FA43F /* RepoMVVMRx */,
 				B4F53C3A27D11724005FA43F /* Products */,
+				FD01313663915A952773D4E1 /* Pods */,
+				BF63F8AEFB9171EFD4B0ED3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,24 @@
 			path = RepoMVVMRx;
 			sourceTree = "<group>";
 		};
+		BF63F8AEFB9171EFD4B0ED3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD01313663915A952773D4E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11DD8E8999B991168DB8B36A /* Pods-RepoMVVMRx.debug.xcconfig */,
+				670FC69A41AE0CB849DFA1F4 /* Pods-RepoMVVMRx.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4F53C4D27D11725005FA43F /* Build configuration list for PBXNativeTarget "RepoMVVMRx" */;
 			buildPhases = (
+				6D0DA78C5083F1A4DA333A9E /* [CP] Check Pods Manifest.lock */,
 				B4F53C3527D11724005FA43F /* Sources */,
 				B4F53C3627D11724005FA43F /* Frameworks */,
 				B4F53C3727D11724005FA43F /* Resources */,
+				24C4AA17E8B38D8785E0FDEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24C4AA17E8B38D8785E0FDEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoMVVMRx/Pods-RepoMVVMRx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RepoMVVMRx/Pods-RepoMVVMRx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RepoMVVMRx/Pods-RepoMVVMRx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0DA78C5083F1A4DA333A9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RepoMVVMRx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4F53C3527D11724005FA43F /* Sources */ = {
@@ -268,6 +337,7 @@
 		};
 		B4F53C4E27D11725005FA43F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11DD8E8999B991168DB8B36A /* Pods-RepoMVVMRx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 		};
 		B4F53C4F27D11725005FA43F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670FC69A41AE0CB849DFA1F4 /* Pods-RepoMVVMRx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
