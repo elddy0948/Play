@@ -11,6 +11,8 @@
 		B4F53C4127D11724005FA43F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C4027D11724005FA43F /* ViewController.swift */; };
 		B4F53C4627D11725005FA43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4527D11725005FA43F /* Assets.xcassets */; };
 		B4F53C4927D11725005FA43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4727D11725005FA43F /* LaunchScreen.storyboard */; };
+		B4F53C5327D11830005FA43F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5227D11830005FA43F /* Repo.swift */; };
+		B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5427D1183A005FA43F /* SearchResponse.swift */; };
 		E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		B4F53C4527D11725005FA43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4F53C4827D11725005FA43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4F53C4A27D11725005FA43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F53C5227D11830005FA43F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		B4F53C5427D1183A005FA43F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		B4F53C3B27D11724005FA43F /* RepoMVVMRx */ = {
 			isa = PBXGroup;
 			children = (
+				B4F53C5127D11827005FA43F /* Networking */,
+				B4F53C5027D11821005FA43F /* Models */,
 				B4F53C3C27D11724005FA43F /* AppDelegate.swift */,
 				B4F53C4027D11724005FA43F /* ViewController.swift */,
 				B4F53C4527D11725005FA43F /* Assets.xcassets */,
@@ -66,6 +72,22 @@
 				B4F53C4A27D11725005FA43F /* Info.plist */,
 			);
 			path = RepoMVVMRx;
+			sourceTree = "<group>";
+		};
+		B4F53C5027D11821005FA43F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4F53C5227D11830005FA43F /* Repo.swift */,
+				B4F53C5427D1183A005FA43F /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4F53C5127D11827005FA43F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		BF63F8AEFB9171EFD4B0ED3F /* Frameworks */ = {
@@ -82,7 +104,6 @@
 				11DD8E8999B991168DB8B36A /* Pods-RepoMVVMRx.debug.xcconfig */,
 				670FC69A41AE0CB849DFA1F4 /* Pods-RepoMVVMRx.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -200,6 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */,
+				B4F53C5327D11830005FA43F /* Repo.swift in Sources */,
 				B4F53C4127D11724005FA43F /* ViewController.swift in Sources */,
 				B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */,
 			);
