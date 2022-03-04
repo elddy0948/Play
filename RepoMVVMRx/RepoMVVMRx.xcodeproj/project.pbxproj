@@ -13,6 +13,8 @@
 		B4F53C4927D11725005FA43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4727D11725005FA43F /* LaunchScreen.storyboard */; };
 		B4F53C5327D11830005FA43F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5227D11830005FA43F /* Repo.swift */; };
 		B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5427D1183A005FA43F /* SearchResponse.swift */; };
+		B4F53C5727D1CDB3005FA43F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5627D1CDB3005FA43F /* NetworkingService.swift */; };
+		B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5827D1D630005FA43F /* NetworkingApi.swift */; };
 		E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		B4F53C4A27D11725005FA43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F53C5227D11830005FA43F /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		B4F53C5427D1183A005FA43F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		B4F53C5627D1CDB3005FA43F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		B4F53C5827D1D630005FA43F /* NetworkingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 		B4F53C5127D11827005FA43F /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				B4F53C5627D1CDB3005FA43F /* NetworkingService.swift */,
+				B4F53C5827D1D630005FA43F /* NetworkingApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -221,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F53C5727D1CDB3005FA43F /* NetworkingService.swift in Sources */,
 				B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */,
+				B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */,
 				B4F53C5327D11830005FA43F /* Repo.swift in Sources */,
 				B4F53C4127D11724005FA43F /* ViewController.swift in Sources */,
 				B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */,
