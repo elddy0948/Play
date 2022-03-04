@@ -15,6 +15,8 @@
 		B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5427D1183A005FA43F /* SearchResponse.swift */; };
 		B4F53C5727D1CDB3005FA43F /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5627D1CDB3005FA43F /* NetworkingService.swift */; };
 		B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5827D1D630005FA43F /* NetworkingApi.swift */; };
+		B4F53C5C27D1DB39005FA43F /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */; };
+		B4F53C5F27D1DC03005FA43F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */; };
 		E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		B4F53C5427D1183A005FA43F /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		B4F53C5627D1CDB3005FA43F /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B4F53C5827D1D630005FA43F /* NetworkingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApi.swift; sourceTree = "<group>"; };
+		B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 		B4F53C3B27D11724005FA43F /* RepoMVVMRx */ = {
 			isa = PBXGroup;
 			children = (
+				B4F53C5D27D1DBFC005FA43F /* ViewModels */,
+				B4F53C5A27D1D9B4005FA43F /* Utils */,
 				B4F53C5127D11827005FA43F /* Networking */,
 				B4F53C5027D11821005FA43F /* Models */,
 				B4F53C3C27D11724005FA43F /* AppDelegate.swift */,
@@ -94,6 +100,22 @@
 				B4F53C5827D1D630005FA43F /* NetworkingApi.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B4F53C5A27D1D9B4005FA43F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B4F53C5D27D1DBFC005FA43F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		BF63F8AEFB9171EFD4B0ED3F /* Frameworks */ = {
@@ -231,8 +253,10 @@
 				B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */,
 				B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */,
 				B4F53C5327D11830005FA43F /* Repo.swift in Sources */,
+				B4F53C5F27D1DC03005FA43F /* ViewModelType.swift in Sources */,
 				B4F53C4127D11724005FA43F /* ViewController.swift in Sources */,
 				B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */,
+				B4F53C5C27D1DB39005FA43F /* UIViewController+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
