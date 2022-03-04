@@ -1,8 +1,9 @@
-//
-//  ViewModelType.swift
-//  RepoMVVMRx
-//
-//  Created by 김호준 on 2022/03/04.
-//
-
+import RxSwift
 import Foundation
+
+protocol ViewModelType {
+  associatedtype Input
+  associatedtype Output
+  
+  func transform(input: Input) -> Output
+}
