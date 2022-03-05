@@ -34,6 +34,7 @@ extension GreetingViewController {
         if cellModels.count < 5 {
           self?.isLastPage = true
         }
+        self?.isPaging = false
         self?.cellModels += cellModels
       })
     }
@@ -52,9 +53,11 @@ extension GreetingViewController: UITableViewDataSource {
       for: indexPath) as? MyCell else {
         return UITableViewCell()
       }
+    
     let cellModel = cellModels[indexPath.row]
     cell.configureCellData(with: cellModel)
     return cell
+    
   }
 }
 
@@ -62,6 +65,35 @@ extension GreetingViewController: UITableViewDataSource {
 extension GreetingViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 150
+  }
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let yOffset = scrollView.contentOffset.y
+    let contentHeight = scrollView.contentSize.height
+    let height = scrollView.frame.height
+    
+    if yOffset > (contentHeight - height) {
+      if !isPaging && !isLastPage {
+        //Paging!
+        print("Paging!")
+        beginPaging()
+      }
+    }
+  }
+}
+
+//MARK: - Paging Logic
+extension GreetingViewController {
+  private func beginPaging() {
+    isPaging = true
+    
+    DispatchQueue.main.async {
+      self.paging()
+    }
+  }
+  
+  private func paging() {
+    fetchGreetings()
   }
 }
 

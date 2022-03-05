@@ -5,7 +5,11 @@ import FirebaseFirestoreSwift
 final class FirestoreApi {
   
   private let fireStore = Firestore.firestore()
-  private var query: Query? = nil
+  private var query: Query? = nil {
+    didSet {
+      print(self.query)
+    }
+  }
   
   func fetchGreetings(completion: @escaping ([CellModel]) -> Void) {
     let collection = fireStore.collection("cells")
@@ -34,8 +38,6 @@ final class FirestoreApi {
         .order(by: "number")
         .limit(to: 5)
         .start(afterDocument: lastSnapshot)
-      
-      print(next)
       
       //Set next query
       self.query = next
