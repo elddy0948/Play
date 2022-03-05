@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C3C27D11724005FA43F /* AppDelegate.swift */; };
-		B4F53C4127D11724005FA43F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C4027D11724005FA43F /* ViewController.swift */; };
 		B4F53C4627D11725005FA43F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4527D11725005FA43F /* Assets.xcassets */; };
 		B4F53C4927D11725005FA43F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F53C4727D11725005FA43F /* LaunchScreen.storyboard */; };
 		B4F53C5327D11830005FA43F /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5227D11830005FA43F /* Repo.swift */; };
@@ -30,7 +29,6 @@
 		97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepoMVVMRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F53C3927D11724005FA43F /* RepoMVVMRx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoMVVMRx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4F53C3C27D11724005FA43F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4F53C4027D11724005FA43F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4F53C4527D11725005FA43F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4F53C4827D11725005FA43F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4F53C4A27D11725005FA43F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 				B4F53C5127D11827005FA43F /* Networking */,
 				B4F53C5027D11821005FA43F /* Models */,
 				B4F53C3C27D11724005FA43F /* AppDelegate.swift */,
-				B4F53C4027D11724005FA43F /* ViewController.swift */,
 				B4F53C4527D11725005FA43F /* Assets.xcassets */,
 				B4F53C4727D11725005FA43F /* LaunchScreen.storyboard */,
 				B4F53C4A27D11725005FA43F /* Info.plist */,
@@ -276,7 +273,6 @@
 				B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */,
 				B4F53C5327D11830005FA43F /* Repo.swift in Sources */,
 				B4F53C5F27D1DC03005FA43F /* ViewModelType.swift in Sources */,
-				B4F53C4127D11724005FA43F /* ViewController.swift in Sources */,
 				B4F53C6327D27B37005FA43F /* ReposViewModel.swift in Sources */,
 				B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */,
 				B4F53C6127D1E04F005FA43F /* ActivityIndicator.swift in Sources */,
