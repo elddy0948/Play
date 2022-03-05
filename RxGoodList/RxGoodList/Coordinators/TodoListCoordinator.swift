@@ -27,6 +27,15 @@ extension TodoListCoordinator: TodoListViewControllerDelegate {
     let navigationController = UINavigationController( // Just for navigation bar
       rootViewController: addTodoViewController
     )
+    
+    addTodoViewController.delegate = self
+    
     router.presentModally(navigationController, animated: true, onDismissed: nil)
+  }
+}
+
+extension TodoListCoordinator: AddTodoViewControllerDelegate {
+  func save(_ viewController: UIViewController, item: Item) {
+    
   }
 }
