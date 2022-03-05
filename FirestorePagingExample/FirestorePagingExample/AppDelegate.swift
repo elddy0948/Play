@@ -1,11 +1,5 @@
-//
-//  AppDelegate.swift
-//  FirestorePagingExample
-//
-//  Created by 김호준 on 2022/03/05.
-//
-
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +9,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil
   ) -> Bool {
+    
+    FirebaseApp.configure()
     
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
