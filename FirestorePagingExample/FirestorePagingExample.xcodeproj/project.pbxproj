@@ -15,6 +15,9 @@
 		B414F6FF27D32BF5002A3783 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B414F6FE27D32BF5002A3783 /* FirebaseFirestore */; };
 		B414F70127D32BF5002A3783 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B414F70027D32BF5002A3783 /* FirebaseFirestoreSwift-Beta */; };
 		B414F70527D32E29002A3783 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414F70427D32E28002A3783 /* CellModel.swift */; };
+		B414F70727D32EBD002A3783 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414F70627D32EBD002A3783 /* GreetingViewController.swift */; };
+		B414F70A27D32F17002A3783 /* FirestoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414F70927D32F17002A3783 /* FirestoreApi.swift */; };
+		B414F70D27D3389F002A3783 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414F70C27D3389F002A3783 /* MyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		B414F6F527D326EC002A3783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B414F6FB27D32A40002A3783 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B414F70427D32E28002A3783 /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		B414F70627D32EBD002A3783 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		B414F70927D32F17002A3783 /* FirestoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreApi.swift; sourceTree = "<group>"; };
+		B414F70C27D3389F002A3783 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		B414F6E627D326EB002A3783 /* FirestorePagingExample */ = {
 			isa = PBXGroup;
 			children = (
+				B414F70B27D3388D002A3783 /* Views */,
+				B414F70827D32F11002A3783 /* Networking */,
 				B414F70327D32D62002A3783 /* Controllers */,
 				B414F70227D32D5D002A3783 /* Models */,
 				B414F6FB27D32A40002A3783 /* GoogleService-Info.plist */,
@@ -83,8 +91,25 @@
 		B414F70327D32D62002A3783 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B414F70627D32EBD002A3783 /* GreetingViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B414F70827D32F11002A3783 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B414F70927D32F17002A3783 /* FirestoreApi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B414F70B27D3388D002A3783 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B414F70C27D3389F002A3783 /* MyCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +193,9 @@
 				B414F6EC27D326EB002A3783 /* ViewController.swift in Sources */,
 				B414F6E827D326EB002A3783 /* AppDelegate.swift in Sources */,
 				B414F70527D32E29002A3783 /* CellModel.swift in Sources */,
+				B414F70D27D3389F002A3783 /* MyCell.swift in Sources */,
+				B414F70727D32EBD002A3783 /* GreetingViewController.swift in Sources */,
+				B414F70A27D32F17002A3783 /* FirestoreApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
