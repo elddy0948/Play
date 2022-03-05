@@ -6,7 +6,13 @@ final class GreetingViewController: UIViewController {
   
   //MARK: - Properties
   private let firestoreApi = FirestoreApi()
-  private var cellModels = [CellModel]()
+  private var cellModels = [CellModel]() {
+    didSet {
+      tableView.reloadData()
+    }
+  }
+  private var isPaging = false
+  private var isLastPage = false
   
   //MARK: - ViewController Lifecycle
   override func viewDidLoad() {
@@ -15,6 +21,22 @@ final class GreetingViewController: UIViewController {
     setupViewController()
     setupTableView()
     layout()
+    
+    fetchGreetings()
+  }
+}
+
+//MARK: - Firestore
+extension GreetingViewController {
+  func fetchGreetings() {
+    DispatchQueue.global(qos: .utility).async { [weak self] in
+      self?.firestoreApi.fetchGreetings(completion: { cellModels in
+        if cellModels.count < 5 {
+          self?.isLastPage = true
+        }
+        self?.cellModels += cellModels
+      })
+    }
   }
 }
 
@@ -38,7 +60,9 @@ extension GreetingViewController: UITableViewDataSource {
 
 //MARK: - UITableViewDelegate
 extension GreetingViewController: UITableViewDelegate {
-  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 150
+  }
 }
 
 
