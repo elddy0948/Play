@@ -17,6 +17,9 @@
 		B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5827D1D630005FA43F /* NetworkingApi.swift */; };
 		B4F53C5C27D1DB39005FA43F /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */; };
 		B4F53C5F27D1DC03005FA43F /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */; };
+		B4F53C6127D1E04F005FA43F /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C6027D1E04F005FA43F /* ActivityIndicator.swift */; };
+		B4F53C6327D27B37005FA43F /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C6227D27B37005FA43F /* ReposViewModel.swift */; };
+		B4F53C6527D2F865005FA43F /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F53C6427D2F865005FA43F /* RepoViewModel.swift */; };
 		E0D963D4309936F2D94C33D3 /* Pods_RepoMVVMRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D058B4CF7B2786D8CE109A /* Pods_RepoMVVMRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,9 @@
 		B4F53C5827D1D630005FA43F /* NetworkingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingApi.swift; sourceTree = "<group>"; };
 		B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		B4F53C6027D1E04F005FA43F /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		B4F53C6227D27B37005FA43F /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		B4F53C6427D2F865005FA43F /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B4F53C5B27D1DB39005FA43F /* UIViewController+Rx.swift */,
+				B4F53C6027D1E04F005FA43F /* ActivityIndicator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				B4F53C5E27D1DC03005FA43F /* ViewModelType.swift */,
+				B4F53C6227D27B37005FA43F /* ReposViewModel.swift */,
+				B4F53C6427D2F865005FA43F /* RepoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -251,11 +260,14 @@
 			files = (
 				B4F53C5727D1CDB3005FA43F /* NetworkingService.swift in Sources */,
 				B4F53C5527D1183A005FA43F /* SearchResponse.swift in Sources */,
+				B4F53C6527D2F865005FA43F /* RepoViewModel.swift in Sources */,
 				B4F53C5927D1D630005FA43F /* NetworkingApi.swift in Sources */,
 				B4F53C5327D11830005FA43F /* Repo.swift in Sources */,
 				B4F53C5F27D1DC03005FA43F /* ViewModelType.swift in Sources */,
 				B4F53C4127D11724005FA43F /* ViewController.swift in Sources */,
+				B4F53C6327D27B37005FA43F /* ReposViewModel.swift in Sources */,
 				B4F53C3D27D11724005FA43F /* AppDelegate.swift in Sources */,
+				B4F53C6127D1E04F005FA43F /* ActivityIndicator.swift in Sources */,
 				B4F53C5C27D1DB39005FA43F /* UIViewController+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
