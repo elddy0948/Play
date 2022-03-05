@@ -5,11 +5,7 @@ import FirebaseFirestoreSwift
 final class FirestoreApi {
   
   private let fireStore = Firestore.firestore()
-  private var query: Query? = nil {
-    didSet {
-      print(self.query)
-    }
-  }
+  private var query: Query? = nil
   
   func fetchGreetings(completion: @escaping ([CellModel]) -> Void) {
     let collection = fireStore.collection("cells")
