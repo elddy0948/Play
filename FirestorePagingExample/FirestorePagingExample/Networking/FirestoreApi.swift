@@ -18,7 +18,7 @@ final class FirestoreApi {
       //It's First query request
       requestQuery = collection
         .order(by: "number")
-        .limit(to: 25)
+        .limit(to: 5)
     }
     
     requestQuery.addSnapshotListener({ [weak self] (snapshot, error) in
@@ -32,8 +32,10 @@ final class FirestoreApi {
       
       let next = collection
         .order(by: "number")
-        .limit(to: 25)
+        .limit(to: 5)
         .start(afterDocument: lastSnapshot)
+      
+      print(next)
       
       //Set next query
       self.query = next
@@ -47,7 +49,9 @@ final class FirestoreApi {
         }
       })
       
-      completion(cellModels)
+      DispatchQueue.main.async {
+        completion(cellModels)
+      }
     })
   }
 }
