@@ -47,9 +47,14 @@ final class FirestoreApi {
         }
       })
       
-      DispatchQueue.main.async {
+      //Paging 을 더 잘보이게 하기 위해 asyncAfter를 사용
+      DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
         completion(cellModels)
-      }
+      })
+      
+//      DispatchQueue.main.async {
+//        completion(cellModels)
+//      }
     })
   }
 }

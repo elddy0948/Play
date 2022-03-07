@@ -3,6 +3,7 @@ import UIKit
 final class GreetingViewController: UIViewController {
   //MARK: - Views
   private let tableView = UITableView()
+  private let activityIndicator = UIActivityIndicatorView(style: .large)
   
   //MARK: - Properties
   private let firestoreApi = FirestoreApi()
@@ -20,6 +21,8 @@ final class GreetingViewController: UIViewController {
     
     setupViewController()
     setupTableView()
+    setupActivityIndicatorView()
+    
     layout()
     
     fetchGreetings()
@@ -31,6 +34,7 @@ extension GreetingViewController {
   func fetchGreetings() {
     DispatchQueue.global(qos: .utility).async { [weak self] in
       self?.firestoreApi.fetchGreetings(completion: { cellModels in
+        self?.activityIndicator.stopAnimating()
         if cellModels.count < 5 {
           self?.isLastPage = true
         }
@@ -76,6 +80,7 @@ extension GreetingViewController: UITableViewDelegate {
       if !isPaging && !isLastPage {
         //Paging!
         print("Paging!")
+        activityIndicator.startAnimating()
         beginPaging()
       }
     }
@@ -112,8 +117,14 @@ extension GreetingViewController {
     tableView.delegate = self
   }
   
+  private func setupActivityIndicatorView() {
+    activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+    activityIndicator.hidesWhenStopped = true
+  }
+  
   private func layout() {
     view.addSubview(tableView)
+    view.addSubview(activityIndicator)
     
     let safeAreaLayoutGuide = view.safeAreaLayoutGuide
     
@@ -130,6 +141,11 @@ extension GreetingViewController {
       tableView.bottomAnchor.constraint(
         equalTo: safeAreaLayoutGuide.bottomAnchor
       ),
+    ])
+    
+    NSLayoutConstraint.activate([
+      activityIndicator.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
+      activityIndicator.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor),
     ])
   }
 }
