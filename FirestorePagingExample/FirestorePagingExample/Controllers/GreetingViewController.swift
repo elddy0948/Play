@@ -93,12 +93,8 @@ extension GreetingViewController {
     isPaging = true
     
     DispatchQueue.main.async {
-      self.paging()
+      self.fetchGreetings()
     }
-  }
-  
-  private func paging() {
-    fetchGreetings()
   }
 }
 

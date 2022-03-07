@@ -25,7 +25,7 @@ final class FirestoreApi {
       guard let self = self else { return }
       
       guard let snapshot = snapshot,
-            let lastSnapshot = snapshot.documents.last else {
+            let lastDocument = snapshot.documents.last else {
               completion([])
               return
             }
@@ -33,7 +33,7 @@ final class FirestoreApi {
       let next = collection
         .order(by: "number")
         .limit(to: 5)
-        .start(afterDocument: lastSnapshot)
+        .start(afterDocument: lastDocument)
       
       //Set next query
       self.query = next
