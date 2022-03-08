@@ -17,6 +17,7 @@
 		B46D958D27D73664004262DF /* SearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D958C27D73664004262DF /* SearchFollowersUseCase.swift */; };
 		B46D958F27D73698004262DF /* FollowerQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D958E27D73698004262DF /* FollowerQuery.swift */; };
 		B46D959127D73894004262DF /* FollowersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959027D73894004262DF /* FollowersRepository.swift */; };
+		B46D959427D7396A004262DF /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959327D7396A004262DF /* Cancelable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B46D958C27D73664004262DF /* SearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCase.swift; sourceTree = "<group>"; };
 		B46D958E27D73698004262DF /* FollowerQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerQuery.swift; sourceTree = "<group>"; };
 		B46D959027D73894004262DF /* FollowersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRepository.swift; sourceTree = "<group>"; };
+		B46D959327D7396A004262DF /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		B46D956E27D730DE004262DF /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				B46D959227D73962004262DF /* Common */,
 				B46D958427D731DE004262DF /* Domain */,
 				B46D956F27D730DE004262DF /* AppDelegate.swift */,
 				B46D957327D730DE004262DF /* ViewController.swift */,
@@ -109,6 +112,14 @@
 				B46D959027D73894004262DF /* FollowersRepository.swift */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		B46D959227D73962004262DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B46D959327D7396A004262DF /* Cancelable.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				B46D959127D73894004262DF /* FollowersRepository.swift in Sources */,
 				B46D958F27D73698004262DF /* FollowerQuery.swift in Sources */,
 				B46D958927D73509004262DF /* Follower.swift in Sources */,
+				B46D959427D7396A004262DF /* Cancelable.swift in Sources */,
 				B46D957027D730DE004262DF /* AppDelegate.swift in Sources */,
 				B46D958D27D73664004262DF /* SearchFollowersUseCase.swift in Sources */,
 			);
