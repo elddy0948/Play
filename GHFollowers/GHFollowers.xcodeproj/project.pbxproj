@@ -18,6 +18,18 @@
 		B46D958F27D73698004262DF /* FollowerQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D958E27D73698004262DF /* FollowerQuery.swift */; };
 		B46D959127D73894004262DF /* FollowersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959027D73894004262DF /* FollowersRepository.swift */; };
 		B46D959427D7396A004262DF /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959327D7396A004262DF /* Cancelable.swift */; };
+		B46D959627D9CD15004262DF /* FollowersQueriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959527D9CD15004262DF /* FollowersQueriesRepository.swift */; };
+		B46D959A27DA5686004262DF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959927DA5686004262DF /* Observable.swift */; };
+		B46D959F27DA5904004262DF /* FollowersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D959E27DA5904004262DF /* FollowersListViewModel.swift */; };
+		B46D95A127DA5E98004262DF /* FollowersListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95A027DA5E98004262DF /* FollowersListItemViewModel.swift */; };
+		B46D95A427DB1FDA004262DF /* FollowersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95A327DB1FDA004262DF /* FollowersListViewController.swift */; };
+		B46D95A827DB256F004262DF /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95A727DB256F004262DF /* DataTransferService.swift */; };
+		B46D95AC27DB2902004262DF /* DefaultFollowersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95AB27DB2902004262DF /* DefaultFollowersRepository.swift */; };
+		B46D95AF27DB30E6004262DF /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95AE27DB30E6004262DF /* APIEndpoints.swift */; };
+		B46D95B127DBBB56004262DF /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B027DBBB56004262DF /* Endpoint.swift */; };
+		B46D95B327DBBB81004262DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B227DBBB81004262DF /* NetworkService.swift */; };
+		B46D95B527DBBB95004262DF /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B427DBBB95004262DF /* NetworkConfig.swift */; };
+		B46D95B827DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +46,18 @@
 		B46D958E27D73698004262DF /* FollowerQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerQuery.swift; sourceTree = "<group>"; };
 		B46D959027D73894004262DF /* FollowersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRepository.swift; sourceTree = "<group>"; };
 		B46D959327D7396A004262DF /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		B46D959527D9CD15004262DF /* FollowersQueriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersQueriesRepository.swift; sourceTree = "<group>"; };
+		B46D959927DA5686004262DF /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B46D959E27DA5904004262DF /* FollowersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewModel.swift; sourceTree = "<group>"; };
+		B46D95A027DA5E98004262DF /* FollowersListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListItemViewModel.swift; sourceTree = "<group>"; };
+		B46D95A327DB1FDA004262DF /* FollowersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListViewController.swift; sourceTree = "<group>"; };
+		B46D95A727DB256F004262DF /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		B46D95AB27DB2902004262DF /* DefaultFollowersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultFollowersRepository.swift; sourceTree = "<group>"; };
+		B46D95AE27DB30E6004262DF /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		B46D95B027DBBB56004262DF /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		B46D95B227DBBB81004262DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B46D95B427DBBB95004262DF /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FollowersRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,9 @@
 		B46D956E27D730DE004262DF /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				B46D95A927DB28E0004262DF /* Data */,
+				B46D95A527DB2563004262DF /* Infrastructure */,
+				B46D959727DA5676004262DF /* Presentation */,
 				B46D959227D73962004262DF /* Common */,
 				B46D958427D731DE004262DF /* Domain */,
 				B46D956F27D730DE004262DF /* AppDelegate.swift */,
@@ -110,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				B46D959027D73894004262DF /* FollowersRepository.swift */,
+				B46D959527D9CD15004262DF /* FollowersQueriesRepository.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -120,6 +148,110 @@
 				B46D959327D7396A004262DF /* Cancelable.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B46D959727DA5676004262DF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B46D959B27DA57C1004262DF /* FollowersScene */,
+				B46D959827DA567D004262DF /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B46D959827DA567D004262DF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B46D959927DA5686004262DF /* Observable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B46D959B27DA57C1004262DF /* FollowersScene */ = {
+			isa = PBXGroup;
+			children = (
+				B46D959D27DA58EC004262DF /* FollowersList */,
+			);
+			path = FollowersScene;
+			sourceTree = "<group>";
+		};
+		B46D959C27DA58E2004262DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B46D959E27DA5904004262DF /* FollowersListViewModel.swift */,
+				B46D95A027DA5E98004262DF /* FollowersListItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B46D959D27DA58EC004262DF /* FollowersList */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95A227DB1FD0004262DF /* Views */,
+				B46D959C27DA58E2004262DF /* ViewModel */,
+			);
+			path = FollowersList;
+			sourceTree = "<group>";
+		};
+		B46D95A227DB1FD0004262DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95A327DB1FDA004262DF /* FollowersListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B46D95A527DB2563004262DF /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95A627DB2567004262DF /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B46D95A627DB2567004262DF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95A727DB256F004262DF /* DataTransferService.swift */,
+				B46D95B027DBBB56004262DF /* Endpoint.swift */,
+				B46D95B227DBBB81004262DF /* NetworkService.swift */,
+				B46D95B427DBBB95004262DF /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B46D95A927DB28E0004262DF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95AD27DB3040004262DF /* Network */,
+				B46D95AA27DB28ED004262DF /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B46D95AA27DB28ED004262DF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95AB27DB2902004262DF /* DefaultFollowersRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B46D95AD27DB3040004262DF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95B627DBBC9A004262DF /* DataMapping */,
+				B46D95AE27DB30E6004262DF /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B46D95B627DBBC9A004262DF /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */,
+			);
+			path = DataMapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +325,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46D959F27DA5904004262DF /* FollowersListViewModel.swift in Sources */,
+				B46D959627D9CD15004262DF /* FollowersQueriesRepository.swift in Sources */,
 				B46D958B27D73513004262DF /* FollowersPage.swift in Sources */,
 				B46D957427D730DE004262DF /* ViewController.swift in Sources */,
+				B46D95B327DBBB81004262DF /* NetworkService.swift in Sources */,
 				B46D959127D73894004262DF /* FollowersRepository.swift in Sources */,
 				B46D958F27D73698004262DF /* FollowerQuery.swift in Sources */,
+				B46D95A127DA5E98004262DF /* FollowersListItemViewModel.swift in Sources */,
+				B46D95AC27DB2902004262DF /* DefaultFollowersRepository.swift in Sources */,
 				B46D958927D73509004262DF /* Follower.swift in Sources */,
+				B46D95A827DB256F004262DF /* DataTransferService.swift in Sources */,
+				B46D959A27DA5686004262DF /* Observable.swift in Sources */,
+				B46D95AF27DB30E6004262DF /* APIEndpoints.swift in Sources */,
+				B46D95B527DBBB95004262DF /* NetworkConfig.swift in Sources */,
 				B46D959427D7396A004262DF /* Cancelable.swift in Sources */,
 				B46D957027D730DE004262DF /* AppDelegate.swift in Sources */,
+				B46D95B827DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift in Sources */,
+				B46D95A427DB1FDA004262DF /* FollowersListViewController.swift in Sources */,
+				B46D95B127DBBB56004262DF /* Endpoint.swift in Sources */,
 				B46D958D27D73664004262DF /* SearchFollowersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
