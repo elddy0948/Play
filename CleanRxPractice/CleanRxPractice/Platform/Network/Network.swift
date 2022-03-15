@@ -1,5 +1,6 @@
 import Foundation
 import RxSwift
+import RxAlamofire
 
 final class Network<T: Decodable> {
   private let endPoint: String
@@ -10,7 +11,14 @@ final class Network<T: Decodable> {
     self.scheduler = ConcurrentDispatchQueueScheduler(qos: .background)
   }
   
-//  func getFollowers(_ username: String) -> Observable<T> {
-//    let absolutePath = endPoint + "\(username)/followers"
-//  }
+  func getFollowers(_ username: String) -> Observable<[T]> {
+    let absolutePath = endPoint + "/\(username)/followers"
+    return RxAlamofire
+      .data(.get, absolutePath)
+      .debug()
+      .observe(on: scheduler)
+      .map({ data -> [T] in
+        return try JSONDecoder().decode([T].self, from: data)
+      })
+  }
 }

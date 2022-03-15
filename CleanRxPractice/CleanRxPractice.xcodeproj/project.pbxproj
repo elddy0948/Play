@@ -16,6 +16,10 @@
 		B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */; };
 		B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */; };
 		B46796A627E0692F00A5C7E8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796A527E0692F00A5C7E8 /* Network.swift */; };
+		B46796A927E06E0300A5C7E8 /* FollowersNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796A827E06E0300A5C7E8 /* FollowersNetwork.swift */; };
+		B46796AB27E06EEF00A5C7E8 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796AA27E06EEF00A5C7E8 /* NetworkProvider.swift */; };
+		B46796AE27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */; };
+		B46796B027E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCase.swift; sourceTree = "<group>"; };
 		B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCaseProvider.swift; sourceTree = "<group>"; };
 		B46796A527E0692F00A5C7E8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B46796A827E06E0300A5C7E8 /* FollowersNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersNetwork.swift; sourceTree = "<group>"; };
+		B46796AA27E06EEF00A5C7E8 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSearchFollowersUseCase.swift; sourceTree = "<group>"; };
+		B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSearchFollowersUseCaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +156,29 @@
 		B46796A427E068CC00A5C7E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B46796AC27E06FF500A5C7E8 /* UseCases */,
+				B46796A727E06D5E00A5C7E8 /* API */,
 				B46796A527E0692F00A5C7E8 /* Network.swift */,
+				B46796AA27E06EEF00A5C7E8 /* NetworkProvider.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		B46796A727E06D5E00A5C7E8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B46796A827E06E0300A5C7E8 /* FollowersNetwork.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B46796AC27E06FF500A5C7E8 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */,
+				B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +298,11 @@
 				B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */,
 				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
 				B46796A627E0692F00A5C7E8 /* Network.swift in Sources */,
+				B46796B027E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift in Sources */,
+				B46796A927E06E0300A5C7E8 /* FollowersNetwork.swift in Sources */,
 				B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */,
+				B46796AE27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift in Sources */,
+				B46796AB27E06EEF00A5C7E8 /* NetworkProvider.swift in Sources */,
 				B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */,
 				B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */,
 			);
