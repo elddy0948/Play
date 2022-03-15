@@ -21,6 +21,7 @@
 		B46796AE27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */; };
 		B46796B027E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */; };
 		B46796B527E075F300A5C7E8 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B427E075F300A5C7E8 /* ViewModelType.swift */; };
+		B46796B727E0772800A5C7E8 /* SearchFollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSearchFollowersUseCase.swift; sourceTree = "<group>"; };
 		B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSearchFollowersUseCaseProvider.swift; sourceTree = "<group>"; };
 		B46796B427E075F300A5C7E8 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		B46796B127E075D600A5C7E8 /* SearchFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */,
 			);
 			path = SearchFollowers;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46796B727E0772800A5C7E8 /* SearchFollowersViewModel.swift in Sources */,
 				B46796B527E075F300A5C7E8 /* ViewModelType.swift in Sources */,
 				B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */,
 				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
