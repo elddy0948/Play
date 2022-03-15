@@ -8,4 +8,5 @@ target 'CleanRxPractice' do
   # Pods for CleanRxPractice
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxAlamofire'
 end
