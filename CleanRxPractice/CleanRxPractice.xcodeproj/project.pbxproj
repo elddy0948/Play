@@ -14,6 +14,7 @@
 		B467968E27E0648C00A5C7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */; };
 		B467969B27E065B000A5C7E8 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969A27E065B000A5C7E8 /* Follower.swift */; };
 		B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */; };
+		B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B467968F27E0648C00A5C7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B467969A27E065B000A5C7E8 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCase.swift; sourceTree = "<group>"; };
+		B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		B467969C27E0660C00A5C7E8 /* Providers */ = {
 			isa = PBXGroup;
 			children = (
+				B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */,
 				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
 				B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */,
+				B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */,
 				B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
