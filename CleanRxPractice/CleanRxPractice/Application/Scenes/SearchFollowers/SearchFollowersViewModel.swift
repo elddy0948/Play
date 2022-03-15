@@ -4,7 +4,7 @@ import RxCocoa
 
 final class SearchFollowersViewModel: ViewModelType {
   struct Input {
-    let viewDidLoad: Observable<Void>
+    let viewWillAppear: Observable<Bool>
   }
   
   struct Output {
@@ -18,7 +18,7 @@ final class SearchFollowersViewModel: ViewModelType {
   }
   
   func transform(_ input: Input) -> Output {
-    let followers = input.viewDidLoad.flatMapLatest({ _ in
+    let followers = input.viewWillAppear.flatMapLatest({ _ in
       return self.useCase.search(username: "elddy0948")
     }).asDriver(onErrorJustReturn: [])
     

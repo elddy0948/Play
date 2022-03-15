@@ -18,7 +18,14 @@ final class Network<T: Decodable> {
       .debug()
       .observe(on: scheduler)
       .map({ data -> [T] in
-        return try JSONDecoder().decode([T].self, from: data)
+        do {
+          let followers = try JSONDecoder().decode([T].self,
+                                                   from: data)
+          return followers
+        } catch {
+          print("Decode error")
+          return []
+        }
       })
   }
 }
