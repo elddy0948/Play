@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6D7A7F0E354FE3D64DB3C6 /* Pods_CleanRxPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8023A59F757C10345E25E8 /* Pods_CleanRxPractice.framework */; };
 		B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467968127E0648B00A5C7E8 /* AppDelegate.swift */; };
-		B467968427E0648B00A5C7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467968327E0648B00A5C7E8 /* SceneDelegate.swift */; };
 		B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467968527E0648B00A5C7E8 /* ViewController.swift */; };
-		B467968927E0648B00A5C7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B467968727E0648B00A5C7E8 /* Main.storyboard */; };
 		B467968B27E0648C00A5C7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B467968A27E0648C00A5C7E8 /* Assets.xcassets */; };
 		B467968E27E0648C00A5C7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */; };
+		B467969B27E065B000A5C7E8 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969A27E065B000A5C7E8 /* Follower.swift */; };
+		B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49AE251BA1714CABFA3857C5 /* Pods-CleanRxPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxPractice.release.xcconfig"; path = "Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice.release.xcconfig"; sourceTree = "<group>"; };
+		9A8023A59F757C10345E25E8 /* Pods_CleanRxPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanRxPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B288BC01858E460D91E414F2 /* Pods-CleanRxPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxPractice.debug.xcconfig"; path = "Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		B467967E27E0648B00A5C7E8 /* CleanRxPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRxPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B467968127E0648B00A5C7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B467968327E0648B00A5C7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B467968527E0648B00A5C7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B467968827E0648B00A5C7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B467968A27E0648C00A5C7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B467968D27E0648C00A5C7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B467968F27E0648C00A5C7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B467969A27E065B000A5C7E8 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6D7A7F0E354FE3D64DB3C6 /* Pods_CleanRxPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7A04A917B77AA499DCD6CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A8023A59F757C10345E25E8 /* Pods_CleanRxPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70A09E6DDC536ECBF38A13D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B288BC01858E460D91E414F2 /* Pods-CleanRxPractice.debug.xcconfig */,
+				49AE251BA1714CABFA3857C5 /* Pods-CleanRxPractice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B467967527E0648B00A5C7E8 = {
 			isa = PBXGroup;
 			children = (
 				B467968027E0648B00A5C7E8 /* CleanRxPractice */,
 				B467967F27E0648B00A5C7E8 /* Products */,
+				70A09E6DDC536ECBF38A13D6 /* Pods */,
+				0C7A04A917B77AA499DCD6CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,63 @@
 		B467968027E0648B00A5C7E8 /* CleanRxPractice */ = {
 			isa = PBXGroup;
 			children = (
+				B467969727E0655200A5C7E8 /* Application */,
+				B467969627E0654E00A5C7E8 /* Platform */,
+				B467969527E0654B00A5C7E8 /* Domain */,
 				B467968127E0648B00A5C7E8 /* AppDelegate.swift */,
-				B467968327E0648B00A5C7E8 /* SceneDelegate.swift */,
 				B467968527E0648B00A5C7E8 /* ViewController.swift */,
-				B467968727E0648B00A5C7E8 /* Main.storyboard */,
 				B467968A27E0648C00A5C7E8 /* Assets.xcassets */,
 				B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */,
 				B467968F27E0648C00A5C7E8 /* Info.plist */,
 			);
 			path = CleanRxPractice;
+			sourceTree = "<group>";
+		};
+		B467969527E0654B00A5C7E8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B467969C27E0660C00A5C7E8 /* Providers */,
+				B467969927E0658200A5C7E8 /* UseCases */,
+				B467969827E0657F00A5C7E8 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B467969627E0654E00A5C7E8 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		B467969727E0655200A5C7E8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B467969827E0657F00A5C7E8 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B467969A27E065B000A5C7E8 /* Follower.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B467969927E0658200A5C7E8 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B467969C27E0660C00A5C7E8 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B467969227E0648C00A5C7E8 /* Build configuration list for PBXNativeTarget "CleanRxPractice" */;
 			buildPhases = (
+				9EB2F9ED70B9FD3CAB671DEC /* [CP] Check Pods Manifest.lock */,
 				B467967A27E0648B00A5C7E8 /* Sources */,
 				B467967B27E0648B00A5C7E8 /* Frameworks */,
 				B467967C27E0648B00A5C7E8 /* Resources */,
+				347DA4C4A759EE9DD2610071 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +201,52 @@
 			files = (
 				B467968E27E0648C00A5C7E8 /* LaunchScreen.storyboard in Resources */,
 				B467968B27E0648C00A5C7E8 /* Assets.xcassets in Resources */,
-				B467968927E0648B00A5C7E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		347DA4C4A759EE9DD2610071 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB2F9ED70B9FD3CAB671DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanRxPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B467967A27E0648B00A5C7E8 /* Sources */ = {
@@ -139,22 +254,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */,
+				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
 				B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */,
-				B467968427E0648B00A5C7E8 /* SceneDelegate.swift in Sources */,
+				B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B467968727E0648B00A5C7E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B467968827E0648B00A5C7E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +392,7 @@
 		};
 		B467969327E0648C00A5C7E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B288BC01858E460D91E414F2 /* Pods-CleanRxPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,9 +403,9 @@
 				INFOPLIST_FILE = CleanRxPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +415,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B467969427E0648C00A5C7E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AE251BA1714CABFA3857C5 /* Pods-CleanRxPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,9 +432,9 @@
 				INFOPLIST_FILE = CleanRxPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
