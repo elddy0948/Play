@@ -9,7 +9,7 @@ public final class NetworkSearchFollowersUseCase: SearchFollowersUseCase {
   }
   
   public func search(username: String) -> Observable<[Follower]> {
-    let stored = network.fetchFollowers()
+    let stored = network.fetchFollowers(username: username)
     return stored
   }
 }

@@ -8,7 +8,9 @@ public final class FollowersNetwork {
     self.network = network
   }
   
-  public func fetchFollowers() -> Observable<[Follower]> {
-    return network.getFollowers("elddy0948")
+  public func fetchFollowers(
+    username: String
+  ) -> Observable<[Follower]> {
+    return network.getItems("\(username)/followers")
   }
 }
