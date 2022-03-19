@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F6D7A7F0E354FE3D64DB3C6 /* Pods_CleanRxPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8023A59F757C10345E25E8 /* Pods_CleanRxPractice.framework */; };
 		B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467968127E0648B00A5C7E8 /* AppDelegate.swift */; };
-		B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467968527E0648B00A5C7E8 /* ViewController.swift */; };
 		B467968B27E0648C00A5C7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B467968A27E0648C00A5C7E8 /* Assets.xcassets */; };
 		B467968E27E0648C00A5C7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */; };
 		B467969B27E065B000A5C7E8 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467969A27E065B000A5C7E8 /* Follower.swift */; };
@@ -24,6 +23,7 @@
 		B46796B727E0772800A5C7E8 /* SearchFollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */; };
 		B46796B927E0CEDF00A5C7E8 /* SearchFollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B827E0CEDF00A5C7E8 /* SearchFollowersViewController.swift */; };
 		B46796BD27E0D19D00A5C7E8 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796BC27E0D19D00A5C7E8 /* UIViewController+Rx.swift */; };
+		B4F7B4DB27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7B4DA27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		B288BC01858E460D91E414F2 /* Pods-CleanRxPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxPractice.debug.xcconfig"; path = "Target Support Files/Pods-CleanRxPractice/Pods-CleanRxPractice.debug.xcconfig"; sourceTree = "<group>"; };
 		B467967E27E0648B00A5C7E8 /* CleanRxPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRxPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B467968127E0648B00A5C7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B467968527E0648B00A5C7E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B467968A27E0648C00A5C7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B467968D27E0648C00A5C7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B467968F27E0648C00A5C7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersViewModel.swift; sourceTree = "<group>"; };
 		B46796B827E0CEDF00A5C7E8 /* SearchFollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersViewController.swift; sourceTree = "<group>"; };
 		B46796BC27E0D19D00A5C7E8 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		B4F7B4DA27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,6 @@
 				B467969627E0654E00A5C7E8 /* Platform */,
 				B467969527E0654B00A5C7E8 /* Domain */,
 				B467968127E0648B00A5C7E8 /* AppDelegate.swift */,
-				B467968527E0648B00A5C7E8 /* ViewController.swift */,
 				B467968A27E0648C00A5C7E8 /* Assets.xcassets */,
 				B467968C27E0648C00A5C7E8 /* LaunchScreen.storyboard */,
 				B467968F27E0648C00A5C7E8 /* Info.plist */,
@@ -197,6 +196,7 @@
 			children = (
 				B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */,
 				B46796B827E0CEDF00A5C7E8 /* SearchFollowersViewController.swift */,
+				B4F7B4DA27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift */,
 			);
 			path = SearchFollowers;
 			sourceTree = "<group>";
@@ -350,7 +350,6 @@
 				B46796B927E0CEDF00A5C7E8 /* SearchFollowersViewController.swift in Sources */,
 				B46796B727E0772800A5C7E8 /* SearchFollowersViewModel.swift in Sources */,
 				B46796B527E075F300A5C7E8 /* ViewModelType.swift in Sources */,
-				B467968627E0648B00A5C7E8 /* ViewController.swift in Sources */,
 				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
 				B46796A627E0692F00A5C7E8 /* Network.swift in Sources */,
 				B46796BD27E0D19D00A5C7E8 /* UIViewController+Rx.swift in Sources */,
@@ -360,6 +359,7 @@
 				B46796AE27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift in Sources */,
 				B46796AB27E06EEF00A5C7E8 /* NetworkProvider.swift in Sources */,
 				B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */,
+				B4F7B4DB27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift in Sources */,
 				B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

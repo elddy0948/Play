@@ -8,7 +8,7 @@ final class SearchFollowersViewModel: ViewModelType {
   }
   
   struct Output {
-    let followers: Driver<[Follower]>
+    let followers: Driver<[SearchFollowersItemViewModel]>
   }
   
   private let useCase: SearchFollowersUseCase
@@ -20,8 +20,22 @@ final class SearchFollowersViewModel: ViewModelType {
   func transform(_ input: Input) -> Output {
     let followers = input.viewWillAppear.flatMapLatest({ _ in
       return self.useCase.search(username: "elddy0948")
+    }).map({ followers in
+      followers.map({ return SearchFollowersItemViewModel($0) })
     }).asDriver(onErrorJustReturn: [])
     
     return Output(followers: followers)
+  }
+}
+
+struct SearchFollowersItemViewModel {
+  let login: String
+  let avatarURL: String?
+}
+
+extension SearchFollowersItemViewModel {
+  init(_ follower: Follower) {
+    self.login = follower.login
+    self.avatarURL = follower.avatarURL
   }
 }
