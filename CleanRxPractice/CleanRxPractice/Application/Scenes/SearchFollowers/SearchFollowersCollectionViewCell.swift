@@ -7,6 +7,8 @@ final class SearchFollowersCollectionViewCell: UICollectionViewCell {
     let label = UILabel()
     label.textColor = .label
     label.font = UIFont.preferredFont(forTextStyle: .body)
+    label.textAlignment = .center
+    label.numberOfLines = 0
     return label
   }()
   
