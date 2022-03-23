@@ -23,6 +23,11 @@
 		B46796B727E0772800A5C7E8 /* SearchFollowersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */; };
 		B46796B927E0CEDF00A5C7E8 /* SearchFollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796B827E0CEDF00A5C7E8 /* SearchFollowersViewController.swift */; };
 		B46796BD27E0D19D00A5C7E8 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46796BC27E0D19D00A5C7E8 /* UIViewController+Rx.swift */; };
+		B46F651627EAF5AF002AF286 /* AvatarNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F651527EAF5AF002AF286 /* AvatarNetwork.swift */; };
+		B46F651827EAF672002AF286 /* DownloadAvatarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F651727EAF672002AF286 /* DownloadAvatarUseCase.swift */; };
+		B46F651A27EAF6AE002AF286 /* DownloadAvatarUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F651927EAF6AE002AF286 /* DownloadAvatarUseCaseProvider.swift */; };
+		B46F651C27EAF6E8002AF286 /* NetworkDownloadAvatarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F651B27EAF6E8002AF286 /* NetworkDownloadAvatarUseCase.swift */; };
+		B46F651E27EAF73B002AF286 /* NetworkDownloadAvatarUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46F651D27EAF73B002AF286 /* NetworkDownloadAvatarUseCaseProvider.swift */; };
 		B4F7B4DB27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7B4DA27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,11 @@
 		B46796B627E0772800A5C7E8 /* SearchFollowersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersViewModel.swift; sourceTree = "<group>"; };
 		B46796B827E0CEDF00A5C7E8 /* SearchFollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersViewController.swift; sourceTree = "<group>"; };
 		B46796BC27E0D19D00A5C7E8 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		B46F651527EAF5AF002AF286 /* AvatarNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarNetwork.swift; sourceTree = "<group>"; };
+		B46F651727EAF672002AF286 /* DownloadAvatarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAvatarUseCase.swift; sourceTree = "<group>"; };
+		B46F651927EAF6AE002AF286 /* DownloadAvatarUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAvatarUseCaseProvider.swift; sourceTree = "<group>"; };
+		B46F651B27EAF6E8002AF286 /* NetworkDownloadAvatarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDownloadAvatarUseCase.swift; sourceTree = "<group>"; };
+		B46F651D27EAF73B002AF286 /* NetworkDownloadAvatarUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDownloadAvatarUseCaseProvider.swift; sourceTree = "<group>"; };
 		B4F7B4DA27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFollowersCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				B467969D27E0662900A5C7E8 /* SearchFollowersUseCase.swift */,
+				B46F651727EAF672002AF286 /* DownloadAvatarUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -159,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				B467969F27E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift */,
+				B46F651927EAF6AE002AF286 /* DownloadAvatarUseCaseProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -178,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				B46796A827E06E0300A5C7E8 /* FollowersNetwork.swift */,
+				B46F651527EAF5AF002AF286 /* AvatarNetwork.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -187,6 +200,8 @@
 			children = (
 				B46796AD27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift */,
 				B46796AF27E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift */,
+				B46F651B27EAF6E8002AF286 /* NetworkDownloadAvatarUseCase.swift */,
+				B46F651D27EAF73B002AF286 /* NetworkDownloadAvatarUseCaseProvider.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -353,11 +368,16 @@
 				B467969B27E065B000A5C7E8 /* Follower.swift in Sources */,
 				B46796A627E0692F00A5C7E8 /* Network.swift in Sources */,
 				B46796BD27E0D19D00A5C7E8 /* UIViewController+Rx.swift in Sources */,
+				B46F651827EAF672002AF286 /* DownloadAvatarUseCase.swift in Sources */,
+				B46F651E27EAF73B002AF286 /* NetworkDownloadAvatarUseCaseProvider.swift in Sources */,
 				B46796B027E0721C00A5C7E8 /* NetworkSearchFollowersUseCaseProvider.swift in Sources */,
 				B46796A927E06E0300A5C7E8 /* FollowersNetwork.swift in Sources */,
+				B46F651C27EAF6E8002AF286 /* NetworkDownloadAvatarUseCase.swift in Sources */,
 				B467968227E0648B00A5C7E8 /* AppDelegate.swift in Sources */,
+				B46F651A27EAF6AE002AF286 /* DownloadAvatarUseCaseProvider.swift in Sources */,
 				B46796AE27E06FFE00A5C7E8 /* NetworkSearchFollowersUseCase.swift in Sources */,
 				B46796AB27E06EEF00A5C7E8 /* NetworkProvider.swift in Sources */,
+				B46F651627EAF5AF002AF286 /* AvatarNetwork.swift in Sources */,
 				B46796A027E066DE00A5C7E8 /* SearchFollowersUseCaseProvider.swift in Sources */,
 				B4F7B4DB27E5BAA30056A4CC /* SearchFollowersCollectionViewCell.swift in Sources */,
 				B467969E27E0662900A5C7E8 /* SearchFollowersUseCase.swift in Sources */,
