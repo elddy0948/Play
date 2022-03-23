@@ -25,6 +25,7 @@ final class SearchFollowersViewController: UIViewController {
       }
     }
   }
+  var downloadAvatarUseCase: DownloadAvatarUseCase?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -89,8 +90,15 @@ extension SearchFollowersViewController: UICollectionViewDataSource {
         return UICollectionViewCell()
       }
     
+    let follower = followers[indexPath.item]
+    
+    if let avatarURL = follower.avatarURL {
+      let provider = NetworkDownloadAvatarUseCaseProvider()
+      downloadAvatarUseCase = provider.makeDownloadAvatarUseCase(avatarURL)
+    }
+    
     cell.backgroundColor = .systemBackground
-    cell.configureData(followers[indexPath.item])
+    cell.configureData(follower, downloadAvatarUseCase: downloadAvatarUseCase)
     
     return cell
   }

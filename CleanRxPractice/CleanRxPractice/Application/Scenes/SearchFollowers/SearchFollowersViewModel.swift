@@ -21,7 +21,10 @@ final class SearchFollowersViewModel: ViewModelType {
     let followers = input.viewWillAppear.flatMapLatest({ _ in
       return self.useCase.search(username: "elddy0948")
     }).map({ followers in
-      followers.map({ return SearchFollowersItemViewModel($0) })
+      followers.map({ follower -> SearchFollowersItemViewModel in
+        print(follower.avatarURL)
+        return SearchFollowersItemViewModel(follower)
+      })
     }).asDriver(onErrorJustReturn: [])
     
     return Output(followers: followers)
