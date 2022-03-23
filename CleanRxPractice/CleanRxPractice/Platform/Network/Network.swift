@@ -32,4 +32,11 @@ final class Network<T: Decodable> {
         return try JSONDecoder().decode([T].self, from: data)
       })
   }
+  
+  func downloadItem(_ path: String) -> Observable<Data> {
+    return RxAlamofire
+      .data(.get, path)
+      .debug()
+      .observe(on: scheduler)
+  }
 }

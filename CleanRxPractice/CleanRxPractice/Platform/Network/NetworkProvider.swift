@@ -11,4 +11,9 @@ final class NetworkProvider {
     let network = Network<Follower>(endPoint)
     return FollowersNetwork(network: network)
   }
+  
+  public func makeAvatarNetwork(_ path: String) -> AvatarNetwork {
+    let network = Network<Data>(path)
+    return AvatarNetwork(network)
+  }
 }
