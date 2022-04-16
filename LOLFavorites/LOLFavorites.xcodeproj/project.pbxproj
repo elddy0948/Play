@@ -15,6 +15,8 @@
 		B42B2959280A6A11003527A8 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B2958280A6A11003527A8 /* CoreDataStack.swift */; };
 		B42B295B280A6B9D003527A8 /* AllChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B295A280A6B9D003527A8 /* AllChampionViewController.swift */; };
 		B42B295D280A6BA6003527A8 /* FavoriteChampionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B295C280A6BA6003527A8 /* FavoriteChampionViewController.swift */; };
+		B42B295F280A7121003527A8 /* AllChampCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B295E280A7121003527A8 /* AllChampCell.swift */; };
+		B42B2961280A7127003527A8 /* FavoriteChampCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42B2960280A7127003527A8 /* FavoriteChampCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B42B2958280A6A11003527A8 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B42B295A280A6B9D003527A8 /* AllChampionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChampionViewController.swift; sourceTree = "<group>"; };
 		B42B295C280A6BA6003527A8 /* FavoriteChampionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteChampionViewController.swift; sourceTree = "<group>"; };
+		B42B295E280A7121003527A8 /* AllChampCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChampCell.swift; sourceTree = "<group>"; };
+		B42B2960280A7127003527A8 /* FavoriteChampCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteChampCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				B42B2958280A6A11003527A8 /* CoreDataStack.swift */,
 				B42B295A280A6B9D003527A8 /* AllChampionViewController.swift */,
 				B42B295C280A6BA6003527A8 /* FavoriteChampionViewController.swift */,
+				B42B295E280A7121003527A8 /* AllChampCell.swift */,
+				B42B2960280A7127003527A8 /* FavoriteChampCell.swift */,
 			);
 			path = LOLFavorites;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 				B42B295D280A6BA6003527A8 /* FavoriteChampionViewController.swift in Sources */,
 				B42B2945280A69E6003527A8 /* AppDelegate.swift in Sources */,
 				B42B295B280A6B9D003527A8 /* AllChampionViewController.swift in Sources */,
+				B42B295F280A7121003527A8 /* AllChampCell.swift in Sources */,
 				B42B2947280A69E6003527A8 /* SceneDelegate.swift in Sources */,
 				B42B2959280A6A11003527A8 /* CoreDataStack.swift in Sources */,
+				B42B2961280A7127003527A8 /* FavoriteChampCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
