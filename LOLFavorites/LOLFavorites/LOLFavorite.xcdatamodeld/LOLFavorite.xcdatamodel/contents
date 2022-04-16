@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="Champion" representedClassName="Champion" syncable="YES">
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="lane" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="favoriteChamps" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="favoriteChamps" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Champion" inverseName="user" inverseEntity="Champion"/>
+    </entity>
+    <elements>
+        <element name="Champion" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="User" positionX="-36" positionY="9" width="128" height="59"/>
+    </elements>
 </model>
