@@ -39,9 +39,6 @@ class ViewController: NSViewController {
       fatalError("Failed to make command queue")
     }
     
-//    guard let metalFileURL = Bundle.main.url(forResource: "ShaderFunc", withExtension: "metal") else {
-//      fatalError("There is no ShaderFunc.metal file!")
-//    }
     let shader = """
     #include <metal_stdlib>
     using namespace metal;
@@ -55,7 +52,7 @@ class ViewController: NSViewController {
     }
 
     fragment float4 fragment_main() {
-      return float4(1, 0, 0, 1);
+      return float4(1, 0.4, 0.8, 1);
     }
     """
     
