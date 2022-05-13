@@ -11,6 +11,8 @@
 		B4A3D15F282E0FF600D336F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A3D15E282E0FF600D336F9 /* ViewController.swift */; };
 		B4A3D161282E0FF700D336F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A3D160282E0FF700D336F9 /* Assets.xcassets */; };
 		B4A3D164282E0FF700D336F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A3D162282E0FF700D336F9 /* Main.storyboard */; };
+		B4A3D16D282E117100D336F9 /* monkey.obj in Resources */ = {isa = PBXBuildFile; fileRef = B4A3D16B282E117100D336F9 /* monkey.obj */; };
+		B4A3D16E282E117100D336F9 /* monkey.mtl in Resources */ = {isa = PBXBuildFile; fileRef = B4A3D16C282E117100D336F9 /* monkey.mtl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B4A3D160282E0FF700D336F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A3D163282E0FF700D336F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4A3D165282E0FF700D336F9 /* MetalPractice01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalPractice01.entitlements; sourceTree = "<group>"; };
+		B4A3D16B282E117100D336F9 /* monkey.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monkey.obj; sourceTree = "<group>"; };
+		B4A3D16C282E117100D336F9 /* monkey.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = monkey.mtl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				B4A3D160282E0FF700D336F9 /* Assets.xcassets */,
 				B4A3D162282E0FF700D336F9 /* Main.storyboard */,
 				B4A3D165282E0FF700D336F9 /* MetalPractice01.entitlements */,
+				B4A3D16C282E117100D336F9 /* monkey.mtl */,
+				B4A3D16B282E117100D336F9 /* monkey.obj */,
 			);
 			path = MetalPractice01;
 			sourceTree = "<group>";
@@ -119,7 +125,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A3D16E282E117100D336F9 /* monkey.mtl in Resources */,
 				B4A3D161282E0FF700D336F9 /* Assets.xcassets in Resources */,
+				B4A3D16D282E117100D336F9 /* monkey.obj in Resources */,
 				B4A3D164282E0FF700D336F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
