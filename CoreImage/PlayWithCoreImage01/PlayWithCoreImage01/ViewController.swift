@@ -20,15 +20,25 @@ class ViewController: UIViewController {
     }
     ciimage = CIImage(contentsOf: url, options: ciImageOptions)
     
-    guard let image = ciimage?.transformed(by: CGAffineTransform(scaleX: 0.125, y: 0.125)) else { return }
-    imageView.image = UIImage(ciImage: image)
-  }
-  
-  @IBAction func filterButtonAction(_ sender: UIButton) {
+    guard let image = ciimage else { return }
+    
     let filter = CIFilter.vibrance()
     filter.amount = 0.9
-    filter.inputImage = ciimage?.transformed(by: CGAffineTransform(scaleX: 0.125, y: 0.125))
-    guard let output = filter.outputImage else { return }
+    filter.inputImage = image
+    
+    let filter2 = CIFilter.gloom()
+    filter2.radius = 10
+    filter2.intensity = 0.7
+    filter2.inputImage = filter.outputImage
+    
+    let filter3 = CIFilter.vignette()
+    filter3.intensity = 0.9
+    filter3.radius = 2
+    filter3.inputImage = filter2.outputImage
+    
+    let finishedImage = filter3.outputImage?.cropped(to: image.extent)
+    
+    guard let output = finishedImage else { return }
     imageView.image = UIImage(ciImage: output)
   }
 }
