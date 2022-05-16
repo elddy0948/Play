@@ -7,4 +7,5 @@ target 'CoreDataMVVM' do
 
   # Pods for CoreDataMVVM
   pod 'RxSwift'
+  pod 'QueryKit'
 end

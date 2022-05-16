@@ -8,26 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		3F1E8A6FC738EA38C88295B2 /* Pods_CoreDataMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CF53BF82544A624AB8B8B2 /* Pods_CoreDataMVVM.framework */; };
+		B419CC1C2832258600603868 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC1B2832258600603868 /* Post.swift */; };
+		B419CC1E283225BB00603868 /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC1D283225BB00603868 /* PostsUseCase.swift */; };
+		B419CC20283225F700603868 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC1F283225F700603868 /* UseCaseProvider.swift */; };
+		B419CC23283226D000603868 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B419CC21283226D000603868 /* Model.xcdatamodeld */; };
+		B419CC262832273D00603868 /* CDPost+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC242832273D00603868 /* CDPost+CoreDataClass.swift */; };
+		B419CC272832273D00603868 /* CDPost+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC252832273D00603868 /* CDPost+CoreDataProperties.swift */; };
+		B419CC2A2832277700603868 /* CDPost+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC292832277700603868 /* CDPost+Ext.swift */; };
+		B419CC2D2832284C00603868 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC2C2832284C00603868 /* Persistable.swift */; };
+		B419CC2F283228AD00603868 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC2E283228AD00603868 /* DomainConvertibleType.swift */; };
+		B419CC32283229FF00603868 /* ContextScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC31283229FF00603868 /* ContextScheduler.swift */; };
+		B419CC3428322B8A00603868 /* FetchedResultsControllerEntityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3328322B8A00603868 /* FetchedResultsControllerEntityObserver.swift */; };
+		B419CC3628322E1200603868 /* NSManagedObjectContext+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3528322E1200603868 /* NSManagedObjectContext+Rx.swift */; };
+		B419CC392832990300603868 /* NSManagedObjectContext+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC382832990300603868 /* NSManagedObjectContext+Ext.swift */; };
+		B419CC3B28329B9300603868 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3A28329B9300603868 /* Observable+Ext.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2727EC14B1001AA368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2627EC14B1001AA368 /* ViewController.swift */; };
-		B4DEDD2D27EC14B1001AA368 /* CoreDataMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2B27EC14B1001AA368 /* CoreDataMVVM.xcdatamodeld */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
 		B4DEDD3227EC14B2001AA368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD3027EC14B2001AA368 /* LaunchScreen.storyboard */; };
-		B4DEDD3E27EC161F001AA368 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD3D27EC161F001AA368 /* User.swift */; };
-		B4DEDD4027EC164C001AA368 /* UsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD3F27EC164C001AA368 /* UsersUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39CF53BF82544A624AB8B8B2 /* Pods_CoreDataMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B419CC1B2832258600603868 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B419CC1D283225BB00603868 /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		B419CC1F283225F700603868 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		B419CC22283226D000603868 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B419CC242832273D00603868 /* CDPost+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPost+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B419CC252832273D00603868 /* CDPost+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPost+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B419CC292832277700603868 /* CDPost+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDPost+Ext.swift"; sourceTree = "<group>"; };
+		B419CC2C2832284C00603868 /* Persistable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		B419CC2E283228AD00603868 /* DomainConvertibleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainConvertibleType.swift; sourceTree = "<group>"; };
+		B419CC31283229FF00603868 /* ContextScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextScheduler.swift; sourceTree = "<group>"; };
+		B419CC3328322B8A00603868 /* FetchedResultsControllerEntityObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerEntityObserver.swift; sourceTree = "<group>"; };
+		B419CC3528322E1200603868 /* NSManagedObjectContext+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Rx.swift"; sourceTree = "<group>"; };
+		B419CC382832990300603868 /* NSManagedObjectContext+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Ext.swift"; sourceTree = "<group>"; };
+		B419CC3A28329B9300603868 /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2627EC14B1001AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4DEDD2C27EC14B1001AA368 /* CoreDataMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataMVVM.xcdatamodel; sourceTree = "<group>"; };
 		B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4DEDD3127EC14B2001AA368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4DEDD3327EC14B2001AA368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B4DEDD3D27EC161F001AA368 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B4DEDD3F27EC164C001AA368 /* UsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCase.swift; sourceTree = "<group>"; };
 		D65B7D6C556BD4C18D0A930B /* Pods-CoreDataMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataMVVM.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataMVVM/Pods-CoreDataMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		F646F086875470A910CB0560 /* Pods-CoreDataMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataMVVM.release.xcconfig"; path = "Target Support Files/Pods-CoreDataMVVM/Pods-CoreDataMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,8 +72,46 @@
 				D65B7D6C556BD4C18D0A930B /* Pods-CoreDataMVVM.debug.xcconfig */,
 				F646F086875470A910CB0560 /* Pods-CoreDataMVVM.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B419CC282832274C00603868 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B419CC2B2832284400603868 /* Convertion */,
+				B419CC242832273D00603868 /* CDPost+CoreDataClass.swift */,
+				B419CC252832273D00603868 /* CDPost+CoreDataProperties.swift */,
+				B419CC292832277700603868 /* CDPost+Ext.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B419CC2B2832284400603868 /* Convertion */ = {
+			isa = PBXGroup;
+			children = (
+				B419CC2C2832284C00603868 /* Persistable.swift */,
+				B419CC2E283228AD00603868 /* DomainConvertibleType.swift */,
+			);
+			path = Convertion;
+			sourceTree = "<group>";
+		};
+		B419CC302832293B00603868 /* CoreData+Rx */ = {
+			isa = PBXGroup;
+			children = (
+				B419CC31283229FF00603868 /* ContextScheduler.swift */,
+				B419CC3328322B8A00603868 /* FetchedResultsControllerEntityObserver.swift */,
+				B419CC3528322E1200603868 /* NSManagedObjectContext+Rx.swift */,
+			);
+			path = "CoreData+Rx";
+			sourceTree = "<group>";
+		};
+		B419CC37283298F900603868 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B419CC382832990300603868 /* NSManagedObjectContext+Ext.swift */,
+				B419CC3A28329B9300603868 /* Observable+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B4DEDD1627EC14B1001AA368 = {
@@ -82,7 +142,6 @@
 				B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */,
 				B4DEDD3027EC14B2001AA368 /* LaunchScreen.storyboard */,
 				B4DEDD3327EC14B2001AA368 /* Info.plist */,
-				B4DEDD2B27EC14B1001AA368 /* CoreDataMVVM.xcdatamodeld */,
 			);
 			path = CoreDataMVVM;
 			sourceTree = "<group>";
@@ -99,6 +158,10 @@
 		B4DEDD3A27EC1606001AA368 /* CoreDataPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				B419CC37283298F900603868 /* Extensions */,
+				B419CC302832293B00603868 /* CoreData+Rx */,
+				B419CC282832274C00603868 /* Entities */,
+				B419CC21283226D000603868 /* Model.xcdatamodeld */,
 			);
 			path = CoreDataPlatform;
 			sourceTree = "<group>";
@@ -106,7 +169,7 @@
 		B4DEDD3B27EC160E001AA368 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				B4DEDD3D27EC161F001AA368 /* User.swift */,
+				B419CC1B2832258600603868 /* Post.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -114,7 +177,8 @@
 		B4DEDD3C27EC1611001AA368 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				B4DEDD3F27EC164C001AA368 /* UsersUseCase.swift */,
+				B419CC1D283225BB00603868 /* PostsUseCase.swift */,
+				B419CC1F283225F700603868 /* UseCaseProvider.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -241,11 +305,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4DEDD4027EC164C001AA368 /* UsersUseCase.swift in Sources */,
-				B4DEDD3E27EC161F001AA368 /* User.swift in Sources */,
+				B419CC3B28329B9300603868 /* Observable+Ext.swift in Sources */,
 				B4DEDD2727EC14B1001AA368 /* ViewController.swift in Sources */,
 				B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */,
-				B4DEDD2D27EC14B1001AA368 /* CoreDataMVVM.xcdatamodeld in Sources */,
+				B419CC272832273D00603868 /* CDPost+CoreDataProperties.swift in Sources */,
+				B419CC1E283225BB00603868 /* PostsUseCase.swift in Sources */,
+				B419CC2F283228AD00603868 /* DomainConvertibleType.swift in Sources */,
+				B419CC3628322E1200603868 /* NSManagedObjectContext+Rx.swift in Sources */,
+				B419CC32283229FF00603868 /* ContextScheduler.swift in Sources */,
+				B419CC2D2832284C00603868 /* Persistable.swift in Sources */,
+				B419CC2A2832277700603868 /* CDPost+Ext.swift in Sources */,
+				B419CC23283226D000603868 /* Model.xcdatamodeld in Sources */,
+				B419CC20283225F700603868 /* UseCaseProvider.swift in Sources */,
+				B419CC3428322B8A00603868 /* FetchedResultsControllerEntityObserver.swift in Sources */,
+				B419CC1C2832258600603868 /* Post.swift in Sources */,
+				B419CC262832273D00603868 /* CDPost+CoreDataClass.swift in Sources */,
+				B419CC392832990300603868 /* NSManagedObjectContext+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,13 +532,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B4DEDD2B27EC14B1001AA368 /* CoreDataMVVM.xcdatamodeld */ = {
+		B419CC21283226D000603868 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B4DEDD2C27EC14B1001AA368 /* CoreDataMVVM.xcdatamodel */,
+				B419CC22283226D000603868 /* Model.xcdatamodel */,
 			);
-			currentVersion = B4DEDD2C27EC14B1001AA368 /* CoreDataMVVM.xcdatamodel */;
-			path = CoreDataMVVM.xcdatamodeld;
+			currentVersion = B419CC22283226D000603868 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
