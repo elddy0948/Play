@@ -25,6 +25,7 @@
 		B419CC3E2832BB7300603868 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3D2832BB7300603868 /* Repository.swift */; };
 		B467ED322834AC590002269D /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED312834AC590002269D /* PostsUseCase.swift */; };
 		B467ED352834B8A70002269D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED342834B8A70002269D /* CoreDataStack.swift */; };
+		B467ED372834C0E90002269D /* CDUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED362834C0E90002269D /* CDUseCaseProvider.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2727EC14B1001AA368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2627EC14B1001AA368 /* ViewController.swift */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		B419CC3D2832BB7300603868 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		B467ED312834AC590002269D /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
 		B467ED342834B8A70002269D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B467ED362834C0E90002269D /* CDUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUseCaseProvider.swift; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2627EC14B1001AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B467ED312834AC590002269D /* PostsUseCase.swift */,
+				B467ED362834C0E90002269D /* CDUseCaseProvider.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				B419CC2A2832277700603868 /* CDPost+Ext.swift in Sources */,
 				B419CC23283226D000603868 /* Model.xcdatamodeld in Sources */,
 				B419CC20283225F700603868 /* UseCaseProvider.swift in Sources */,
+				B467ED372834C0E90002269D /* CDUseCaseProvider.swift in Sources */,
 				B419CC3E2832BB7300603868 /* Repository.swift in Sources */,
 				B419CC3428322B8A00603868 /* FetchedResultsControllerEntityObserver.swift in Sources */,
 				B419CC1C2832258600603868 /* Post.swift in Sources */,
