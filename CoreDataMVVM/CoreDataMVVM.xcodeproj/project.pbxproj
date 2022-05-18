@@ -31,6 +31,7 @@
 		B467ED432834C64A0002269D /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED422834C64A0002269D /* PostsViewModel.swift */; };
 		B467ED462834C9FD0002269D /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED452834C9FD0002269D /* CreatePostViewController.swift */; };
 		B467ED482834CA030002269D /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED472834CA030002269D /* CreatePostViewModel.swift */; };
+		B467ED4A2834D2DE0002269D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED492834D2DE0002269D /* PostTableViewCell.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
 		B4DEDD3227EC14B2001AA368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD3027EC14B2001AA368 /* LaunchScreen.storyboard */; };
@@ -61,6 +62,7 @@
 		B467ED422834C64A0002269D /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
 		B467ED452834C9FD0002269D /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		B467ED472834CA030002269D /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
+		B467ED492834D2DE0002269D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				B467ED402834C5350002269D /* PostsViewController.swift */,
 				B467ED422834C64A0002269D /* PostsViewModel.swift */,
+				B467ED492834D2DE0002269D /* PostTableViewCell.swift */,
 			);
 			path = AllPosts;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				B419CC3E2832BB7300603868 /* Repository.swift in Sources */,
 				B419CC3428322B8A00603868 /* FetchedResultsControllerEntityObserver.swift in Sources */,
 				B467ED412834C5350002269D /* PostsViewController.swift in Sources */,
+				B467ED4A2834D2DE0002269D /* PostTableViewCell.swift in Sources */,
 				B467ED432834C64A0002269D /* PostsViewModel.swift in Sources */,
 				B419CC1C2832258600603868 /* Post.swift in Sources */,
 				B467ED322834AC590002269D /* CDPostsUseCase.swift in Sources */,
