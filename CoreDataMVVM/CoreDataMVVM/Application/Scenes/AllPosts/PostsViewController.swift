@@ -22,7 +22,7 @@ final class PostsViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     bindViewModel()
-    
+    configureViewController()
     triggerSubject.onNext(())
   }
   
@@ -35,5 +35,22 @@ final class PostsViewController: UIViewController {
         print(posts)
       })
       .disposed(by: bag)
+  }
+  
+  @objc func addButtonAction(_ sender: UIBarButtonItem) {
+    let vc = UINavigationController(rootViewController: CreatePostViewController())
+    self.present(vc, animated: true)
+  }
+}
+
+//MARK: - UI Setup / Layout
+extension PostsViewController {
+  private func configureViewController() {
+    title = "All Posts"
+    view.backgroundColor = .systemBackground
+    let rightBarButton = UIBarButtonItem(
+      barButtonSystemItem: .add, target: self, action: #selector(addButtonAction(_:))
+    )
+    navigationItem.rightBarButtonItem = rightBarButton
   }
 }

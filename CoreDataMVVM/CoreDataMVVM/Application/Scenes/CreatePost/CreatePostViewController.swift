@@ -25,6 +25,7 @@ final class CreatePostViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     bindViewModel()
+    configureViewController()
   }
   
   private func bindViewModel() {
@@ -42,6 +43,19 @@ final class CreatePostViewController: UIViewController {
       })
       .disposed(by: bag)
   }
+  
+  @objc func saveAction(_ sender: UIBarButtonItem) {
+    saveTrigger.onNext(())
+  }
 }
 
-
+//MARK: - UI Setup / Layout
+extension CreatePostViewController {
+  private func configureViewController() {
+    view.backgroundColor = .systemBackground
+    let rightBarButton = UIBarButtonItem(
+      barButtonSystemItem: .save, target: self, action: #selector(saveAction(_:))
+    )
+    navigationItem.rightBarButtonItem = rightBarButton
+  }
+}
