@@ -23,6 +23,8 @@
 		B419CC392832990300603868 /* NSManagedObjectContext+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC382832990300603868 /* NSManagedObjectContext+Ext.swift */; };
 		B419CC3B28329B9300603868 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3A28329B9300603868 /* Observable+Ext.swift */; };
 		B419CC3E2832BB7300603868 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419CC3D2832BB7300603868 /* Repository.swift */; };
+		B467ED322834AC590002269D /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED312834AC590002269D /* PostsUseCase.swift */; };
+		B467ED352834B8A70002269D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED342834B8A70002269D /* CoreDataStack.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2727EC14B1001AA368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2627EC14B1001AA368 /* ViewController.swift */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		B419CC382832990300603868 /* NSManagedObjectContext+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Ext.swift"; sourceTree = "<group>"; };
 		B419CC3A28329B9300603868 /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
 		B419CC3D2832BB7300603868 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B467ED312834AC590002269D /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		B467ED342834B8A70002269D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2627EC14B1001AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,22 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		B467ED302834AC4E0002269D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B467ED312834AC590002269D /* PostsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		B467ED332834B8A00002269D /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				B467ED342834B8A70002269D /* CoreDataStack.swift */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
 		B4DEDD1627EC14B1001AA368 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +188,8 @@
 		B4DEDD3A27EC1606001AA368 /* CoreDataPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				B467ED332834B8A00002269D /* CoreDataStack */,
+				B467ED302834AC4E0002269D /* UseCases */,
 				B419CC3C2832BB6200603868 /* Repository */,
 				B419CC37283298F900603868 /* Extensions */,
 				B419CC302832293B00603868 /* CoreData+Rx */,
@@ -324,6 +346,7 @@
 				B419CC2F283228AD00603868 /* DomainConvertibleType.swift in Sources */,
 				B419CC3628322E1200603868 /* NSManagedObjectContext+Rx.swift in Sources */,
 				B419CC32283229FF00603868 /* ContextScheduler.swift in Sources */,
+				B467ED352834B8A70002269D /* CoreDataStack.swift in Sources */,
 				B419CC2D2832284C00603868 /* Persistable.swift in Sources */,
 				B419CC2A2832277700603868 /* CDPost+Ext.swift in Sources */,
 				B419CC23283226D000603868 /* Model.xcdatamodeld in Sources */,
@@ -331,6 +354,7 @@
 				B419CC3E2832BB7300603868 /* Repository.swift in Sources */,
 				B419CC3428322B8A00603868 /* FetchedResultsControllerEntityObserver.swift in Sources */,
 				B419CC1C2832258600603868 /* Post.swift in Sources */,
+				B467ED322834AC590002269D /* PostsUseCase.swift in Sources */,
 				B419CC262832273D00603868 /* CDPost+CoreDataClass.swift in Sources */,
 				B419CC392832990300603868 /* NSManagedObjectContext+Ext.swift in Sources */,
 			);
