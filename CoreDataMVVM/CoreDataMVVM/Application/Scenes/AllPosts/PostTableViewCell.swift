@@ -30,8 +30,8 @@ final class PostTableViewCell: UITableViewCell {
   }
   
   func configure(post: Post) {
-    self.titleLabel.text = "Here is Title!"
-    self.descriptionLabel.text = "Here is Body!Here is Body!Here is Body!Here is Body!Here is Body!Here is Body!"
+    self.titleLabel.text = post.title
+    self.descriptionLabel.text = post.body
   }
 }
 
