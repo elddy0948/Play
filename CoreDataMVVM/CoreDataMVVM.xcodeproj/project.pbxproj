@@ -173,6 +173,7 @@
 		B467ED3C2834C51A0002269D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B467ED442834C9D50002269D /* CreatePost */,
 				B467ED3F2834C5210002269D /* AllPosts */,
 			);
 			path = Scenes;
@@ -185,6 +186,13 @@
 				B467ED422834C64A0002269D /* PostsViewModel.swift */,
 			);
 			path = AllPosts;
+			sourceTree = "<group>";
+		};
+		B467ED442834C9D50002269D /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreatePost;
 			sourceTree = "<group>";
 		};
 		B4DEDD1627EC14B1001AA368 = {
