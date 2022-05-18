@@ -29,6 +29,8 @@
 		B467ED3B2834C41F0002269D /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED3A2834C41F0002269D /* ViewModelType.swift */; };
 		B467ED412834C5350002269D /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED402834C5350002269D /* PostsViewController.swift */; };
 		B467ED432834C64A0002269D /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED422834C64A0002269D /* PostsViewModel.swift */; };
+		B467ED462834C9FD0002269D /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED452834C9FD0002269D /* CreatePostViewController.swift */; };
+		B467ED482834CA030002269D /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED472834CA030002269D /* CreatePostViewModel.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2727EC14B1001AA368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2627EC14B1001AA368 /* ViewController.swift */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		B467ED3A2834C41F0002269D /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		B467ED402834C5350002269D /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		B467ED422834C64A0002269D /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		B467ED452834C9FD0002269D /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		B467ED472834CA030002269D /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2627EC14B1001AA368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 		B467ED442834C9D50002269D /* CreatePost */ = {
 			isa = PBXGroup;
 			children = (
+				B467ED452834C9FD0002269D /* CreatePostViewController.swift */,
+				B467ED472834CA030002269D /* CreatePostViewModel.swift */,
 			);
 			path = CreatePost;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				B419CC32283229FF00603868 /* ContextScheduler.swift in Sources */,
 				B467ED352834B8A70002269D /* CoreDataStack.swift in Sources */,
 				B419CC2D2832284C00603868 /* Persistable.swift in Sources */,
+				B467ED462834C9FD0002269D /* CreatePostViewController.swift in Sources */,
 				B419CC2A2832277700603868 /* CDPost+Ext.swift in Sources */,
 				B419CC23283226D000603868 /* Model.xcdatamodeld in Sources */,
 				B419CC20283225F700603868 /* UseCaseProvider.swift in Sources */,
@@ -411,6 +418,7 @@
 				B419CC1C2832258600603868 /* Post.swift in Sources */,
 				B467ED322834AC590002269D /* CDPostsUseCase.swift in Sources */,
 				B419CC262832273D00603868 /* CDPost+CoreDataClass.swift in Sources */,
+				B467ED482834CA030002269D /* CreatePostViewModel.swift in Sources */,
 				B419CC392832990300603868 /* NSManagedObjectContext+Ext.swift in Sources */,
 				B467ED3B2834C41F0002269D /* ViewModelType.swift in Sources */,
 			);
