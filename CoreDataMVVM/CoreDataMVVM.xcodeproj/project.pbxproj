@@ -32,6 +32,7 @@
 		B467ED462834C9FD0002269D /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED452834C9FD0002269D /* CreatePostViewController.swift */; };
 		B467ED482834CA030002269D /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED472834CA030002269D /* CreatePostViewModel.swift */; };
 		B467ED4A2834D2DE0002269D /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B467ED492834D2DE0002269D /* PostTableViewCell.swift */; };
+		B4A10D8D2835FCC100B6EFF8 /* EditPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A10D8C2835FCC100B6EFF8 /* EditPostViewModel.swift */; };
 		B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */; };
 		B4DEDD2F27EC14B2001AA368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */; };
 		B4DEDD3227EC14B2001AA368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4DEDD3027EC14B2001AA368 /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		B467ED452834C9FD0002269D /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		B467ED472834CA030002269D /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
 		B467ED492834D2DE0002269D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		B4A10D8C2835FCC100B6EFF8 /* EditPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewModel.swift; sourceTree = "<group>"; };
 		B4DEDD1F27EC14B1001AA368 /* CoreDataMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4DEDD2227EC14B1001AA368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4DEDD2E27EC14B2001AA368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		B467ED3C2834C51A0002269D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B4A10D8B2835FB4E00B6EFF8 /* EditPost */,
 				B467ED442834C9D50002269D /* CreatePost */,
 				B467ED3F2834C5210002269D /* AllPosts */,
 			);
@@ -200,6 +203,14 @@
 				B467ED472834CA030002269D /* CreatePostViewModel.swift */,
 			);
 			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		B4A10D8B2835FB4E00B6EFF8 /* EditPost */ = {
+			isa = PBXGroup;
+			children = (
+				B4A10D8C2835FCC100B6EFF8 /* EditPostViewModel.swift */,
+			);
+			path = EditPost;
 			sourceTree = "<group>";
 		};
 		B4DEDD1627EC14B1001AA368 = {
@@ -398,6 +409,7 @@
 			files = (
 				B419CC3B28329B9300603868 /* Observable+Ext.swift in Sources */,
 				B4DEDD2327EC14B1001AA368 /* AppDelegate.swift in Sources */,
+				B4A10D8D2835FCC100B6EFF8 /* EditPostViewModel.swift in Sources */,
 				B419CC272832273D00603868 /* CDPost+CoreDataProperties.swift in Sources */,
 				B419CC1E283225BB00603868 /* PostsUseCase.swift in Sources */,
 				B419CC2F283228AD00603868 /* DomainConvertibleType.swift in Sources */,
