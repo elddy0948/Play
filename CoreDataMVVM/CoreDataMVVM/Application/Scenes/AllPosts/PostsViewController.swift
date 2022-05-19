@@ -43,6 +43,10 @@ final class PostsViewController: UIViewController {
     configureViewController()
     layout()
     bindViewModel()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     triggerSubject.onNext(())
   }
   
@@ -82,7 +86,11 @@ extension PostsViewController: UITableViewDataSource {
 }
 
 extension PostsViewController: UITableViewDelegate {
-  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let post = posts[indexPath.row]
+    let vc = EditPostViewController(post: post, useCase: coreDataUseCaseProvider.makePostsUseCase())
+    navigationController?.pushViewController(vc, animated: true)
+  }
 }
 
 //MARK: - UI Setup / Layout

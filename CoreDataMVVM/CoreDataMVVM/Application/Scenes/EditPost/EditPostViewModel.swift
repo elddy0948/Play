@@ -26,14 +26,6 @@ final class EditPostViewModel: ViewModelType {
 
 extension EditPostViewModel {
   func transform(_ input: Input) -> Output {
-    let editing = input.editTrigger.scan(false, accumulator: { (editing, _) in
-      return !editing
-    }).startWith(false)
-    
-    let saveTrigger = editing.skip(1)
-      .filter({ $0 == false })
-      .mapToVoid()
-    
     let titleAndDescriptions = Observable.combineLatest(input.title, input.descriptions)
     let post = Observable.combineLatest(
       Observable.just(self.post), titleAndDescriptions
@@ -45,7 +37,7 @@ extension EditPostViewModel {
       )
     }.startWith(self.post)
     
-    let savePost = saveTrigger.withLatestFrom(post)
+    let savePost = input.editTrigger.withLatestFrom(post)
       .flatMapLatest({ post in
         return self.useCase.save(post: post)
       })
