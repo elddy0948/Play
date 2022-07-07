@@ -19,6 +19,8 @@
 		B46A6DF828773C4A001DE890 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DF728773C4A001DE890 /* Event.swift */; };
 		B46A6DFA28773D2F001DE890 /* AnonimousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DF928773D2F001DE890 /* AnonimousDisposable.swift */; };
 		B46A6DFC28773DE4001DE890 /* CompositeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DFB28773DE4001DE890 /* CompositeDisposable.swift */; };
+		B46A6E0028773FD2001DE890 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DFF28773FD2001DE890 /* Observer.swift */; };
+		B46A6E03287740AA001DE890 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E02287740AA001DE890 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B46A6DF728773C4A001DE890 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		B46A6DF928773D2F001DE890 /* AnonimousDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonimousDisposable.swift; sourceTree = "<group>"; };
 		B46A6DFB28773DE4001DE890 /* CompositeDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposable.swift; sourceTree = "<group>"; };
+		B46A6DFF28773FD2001DE890 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		B46A6E02287740AA001DE890 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +87,9 @@
 		B46A6DF028773BBC001DE890 /* RxCore */ = {
 			isa = PBXGroup;
 			children = (
+				B46A6E012877408C001DE890 /* Observables */,
+				B46A6DFE28773FC8001DE890 /* Observers */,
 				B46A6DFD28773F6F001DE890 /* Disposables */,
-				B46A6DF128773BC7001DE890 /* ObservableType.swift */,
-				B46A6DF328773BF4001DE890 /* ObserverType.swift */,
 				B46A6DF728773C4A001DE890 /* Event.swift */,
 			);
 			path = RxCore;
@@ -99,6 +103,24 @@
 				B46A6DFB28773DE4001DE890 /* CompositeDisposable.swift */,
 			);
 			path = Disposables;
+			sourceTree = "<group>";
+		};
+		B46A6DFE28773FC8001DE890 /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				B46A6DF328773BF4001DE890 /* ObserverType.swift */,
+				B46A6DFF28773FD2001DE890 /* Observer.swift */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		B46A6E012877408C001DE890 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				B46A6DF128773BC7001DE890 /* ObservableType.swift */,
+				B46A6E02287740AA001DE890 /* Observable.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B46A6E03287740AA001DE890 /* Observable.swift in Sources */,
 				B46A6DFC28773DE4001DE890 /* CompositeDisposable.swift in Sources */,
+				B46A6E0028773FD2001DE890 /* Observer.swift in Sources */,
 				B46A6DE128773B80001DE890 /* ViewController.swift in Sources */,
 				B46A6DF628773C0A001DE890 /* Disposable.swift in Sources */,
 				B46A6DF428773BF4001DE890 /* ObserverType.swift in Sources */,
