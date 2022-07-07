@@ -21,6 +21,7 @@
 		B46A6DFC28773DE4001DE890 /* CompositeDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DFB28773DE4001DE890 /* CompositeDisposable.swift */; };
 		B46A6E0028773FD2001DE890 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DFF28773FD2001DE890 /* Observer.swift */; };
 		B46A6E03287740AA001DE890 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E02287740AA001DE890 /* Observable.swift */; };
+		B46A6E0528774311001DE890 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E0428774311001DE890 /* Sink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B46A6DFB28773DE4001DE890 /* CompositeDisposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposable.swift; sourceTree = "<group>"; };
 		B46A6DFF28773FD2001DE890 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		B46A6E02287740AA001DE890 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B46A6E0428774311001DE890 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B46A6DFE28773FC8001DE890 /* Observers */,
 				B46A6DFD28773F6F001DE890 /* Disposables */,
 				B46A6DF728773C4A001DE890 /* Event.swift */,
+				B46A6E0428774311001DE890 /* Sink.swift */,
 			);
 			path = RxCore;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				B46A6E03287740AA001DE890 /* Observable.swift in Sources */,
 				B46A6DFC28773DE4001DE890 /* CompositeDisposable.swift in Sources */,
+				B46A6E0528774311001DE890 /* Sink.swift in Sources */,
 				B46A6E0028773FD2001DE890 /* Observer.swift in Sources */,
 				B46A6DE128773B80001DE890 /* ViewController.swift in Sources */,
 				B46A6DF628773C0A001DE890 /* Disposable.swift in Sources */,

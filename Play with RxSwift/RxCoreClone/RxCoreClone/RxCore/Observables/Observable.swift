@@ -21,17 +21,8 @@ public class Observable<Element>: ObservableType {
   public func subscribe<O: ObserverType>(
     observer: O
   ) -> Disposable where E == O.E {
-    let composite = CompositeDisposable()
-    let subscription = _subscribeHandler(Observer(handler: { event in
-      observer.on(event: event)
-      switch event {
-      case .error, .completed:
-        composite.dispose()
-      default:
-        break
-      }
-    }))
-    composite.add(disposable: subscription)
-    return composite
+    let sink = Sink(forward: observer, subscriptionHandler: _subscribeHandler)
+    sink.run()
+    return sink
   }
 }
