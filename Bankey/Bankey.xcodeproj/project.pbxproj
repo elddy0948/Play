@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B49259742876A71D00F14739 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49259732876A71D00F14739 /* LoginView.swift */; };
 		B4E36958287418D700D23143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E36957287418D700D23143 /* AppDelegate.swift */; };
-		B4E3695C287418D700D23143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3695B287418D700D23143 /* ViewController.swift */; };
+		B4E3695C287418D700D23143 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E3695B287418D700D23143 /* LoginViewController.swift */; };
 		B4E36961287418D800D23143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E36960287418D800D23143 /* Assets.xcassets */; };
 		B4E36964287418D800D23143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E36962287418D800D23143 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B49259732876A71D00F14739 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B4E36954287418D700D23143 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E36957287418D700D23143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B4E3695B287418D700D23143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4E3695B287418D700D23143 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4E36960287418D800D23143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E36963287418D800D23143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E36965287418D800D23143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +35,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43A10482876A65100077824 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4E3695B287418D700D23143 /* LoginViewController.swift */,
+				B49259732876A71D00F14739 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B43A104A2876A67900077824 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4E36960287418D800D23143 /* Assets.xcassets */,
+				B4E36962287418D800D23143 /* LaunchScreen.storyboard */,
+				B4E36965287418D800D23143 /* Info.plist */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
 		B4E3694B287418D700D23143 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +73,9 @@
 		B4E36956287418D700D23143 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				B43A104A2876A67900077824 /* Files */,
+				B43A10482876A65100077824 /* Login */,
 				B4E36957287418D700D23143 /* AppDelegate.swift */,
-				B4E3695B287418D700D23143 /* ViewController.swift */,
-				B4E36960287418D800D23143 /* Assets.xcassets */,
-				B4E36962287418D800D23143 /* LaunchScreen.storyboard */,
-				B4E36965287418D800D23143 /* Info.plist */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -131,7 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4E3695C287418D700D23143 /* ViewController.swift in Sources */,
+				B49259742876A71D00F14739 /* LoginView.swift in Sources */,
+				B4E3695C287418D700D23143 /* LoginViewController.swift in Sources */,
 				B4E36958287418D700D23143 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
