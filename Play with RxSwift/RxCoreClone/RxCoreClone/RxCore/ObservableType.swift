@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+public protocol ObservableType {
+  associatedtype E
+  
+  func subscribe<O: ObserverType>(observer: O) -> Disposable where O.E == E
+}
+

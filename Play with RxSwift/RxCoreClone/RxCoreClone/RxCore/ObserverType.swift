@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+public protocol ObserverType {
+  associatedtype E
+  
+  func on(event: Event<E>)
+}
