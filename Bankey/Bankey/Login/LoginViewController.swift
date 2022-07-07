@@ -9,23 +9,29 @@ import UIKit
 
 class LoginViewController: UIViewController {
   
+  let appTitleView = AppTitleView()
   let loginView = LoginView()
   let signInButton = UIButton(type: .system)
   let errorMessageLabel = UILabel()
+  
+  var username: String? {
+    return loginView.usernameTextField.text
+  }
+  
+  var password: String? {
+    return loginView.passwordTextField.text
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     style()
     layout()
   }
-  
-  @objc func signInTapped() {
-    
-  }
 }
 
 extension LoginViewController {
   private func style() {
+    appTitleView.translatesAutoresizingMaskIntoConstraints = false
     loginView.translatesAutoresizingMaskIntoConstraints = false
     
     signInButton.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +52,7 @@ extension LoginViewController {
   }
   
   private func layout() {
+    view.addSubview(appTitleView)
     view.addSubview(loginView)
     view.addSubview(signInButton)
     view.addSubview(errorMessageLabel)
@@ -60,6 +67,11 @@ extension LoginViewController {
         equalToSystemSpacingAfter: loginView.trailingAnchor,
         multiplier: 1
       ),
+      loginView.topAnchor.constraint(
+        equalToSystemSpacingBelow: appTitleView.bottomAnchor, multiplier: 1
+      ),
+      appTitleView.leadingAnchor.constraint(equalTo: loginView.leadingAnchor),
+      appTitleView.trailingAnchor.constraint(equalTo: loginView.trailingAnchor),
     ])
     
     //Button
@@ -84,3 +96,34 @@ extension LoginViewController {
   }
 }
 
+extension LoginViewController {
+  @objc func signInTapped(_ sender: UIButton) {
+    errorMessageLabel.isHidden = true
+    login()
+  }
+  
+  private func login() {
+    guard let username = username,
+          let password = password else {
+      assertionFailure("Username / password should never be nil")
+      return
+    }
+    
+    if username.isEmpty || password.isEmpty {
+      configureView(withMessage: "Username / password cannot be blank")
+      return
+    }
+    
+    if username == "Joons" && password == "Welcome" {
+      // Button에 acitivity indicator 넣기?
+      print("Welcome!")
+    } else {
+      configureView(withMessage: "Incorrect username / password")
+    }
+  }
+  
+  private func configureView(withMessage message: String) {
+    errorMessageLabel.isHidden = false
+    errorMessageLabel.text = message
+  }
+}
