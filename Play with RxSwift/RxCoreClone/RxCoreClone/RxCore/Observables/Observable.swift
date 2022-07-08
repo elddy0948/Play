@@ -20,7 +20,7 @@ public class Observable<Element>: ObservableType {
   
   public func subscribe<O: ObserverType>(
     observer: O
-  ) -> Disposable where E == O.E {
+  ) -> Disposable where O.E == E {
     let sink = Sink(forward: observer, subscriptionHandler: _subscribeHandler)
     sink.run()
     return sink

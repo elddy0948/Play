@@ -22,6 +22,7 @@
 		B46A6E0028773FD2001DE890 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6DFF28773FD2001DE890 /* Observer.swift */; };
 		B46A6E03287740AA001DE890 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E02287740AA001DE890 /* Observable.swift */; };
 		B46A6E0528774311001DE890 /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E0428774311001DE890 /* Sink.swift */; };
+		B46A6E082877ED20001DE890 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46A6E072877ED20001DE890 /* Map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B46A6DFF28773FD2001DE890 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		B46A6E02287740AA001DE890 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B46A6E0428774311001DE890 /* Sink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink.swift; sourceTree = "<group>"; };
+		B46A6E072877ED20001DE890 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		B46A6DF028773BBC001DE890 /* RxCore */ = {
 			isa = PBXGroup;
 			children = (
+				B46A6E062877ED14001DE890 /* Operators */,
 				B46A6E012877408C001DE890 /* Observables */,
 				B46A6DFE28773FC8001DE890 /* Observers */,
 				B46A6DFD28773F6F001DE890 /* Disposables */,
@@ -124,6 +127,14 @@
 				B46A6E02287740AA001DE890 /* Observable.swift */,
 			);
 			path = Observables;
+			sourceTree = "<group>";
+		};
+		B46A6E062877ED14001DE890 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				B46A6E072877ED20001DE890 /* Map.swift */,
+			);
+			path = Operators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 			files = (
 				B46A6E03287740AA001DE890 /* Observable.swift in Sources */,
 				B46A6DFC28773DE4001DE890 /* CompositeDisposable.swift in Sources */,
+				B46A6E082877ED20001DE890 /* Map.swift in Sources */,
 				B46A6E0528774311001DE890 /* Sink.swift in Sources */,
 				B46A6E0028773FD2001DE890 /* Observer.swift in Sources */,
 				B46A6DE128773B80001DE890 /* ViewController.swift in Sources */,
