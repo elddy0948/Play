@@ -14,6 +14,8 @@
 		B419309028794DF900712287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B419308F28794DF900712287 /* Assets.xcassets */; };
 		B419309328794DF900712287 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B419309128794DF900712287 /* LaunchScreen.storyboard */; };
 		B419309C28794EC600712287 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B419309B28794EC600712287 /* Moya */; };
+		B419309F28794F5700712287 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B419309E28794F5700712287 /* Repository.swift */; };
+		B41930A22879552500712287 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41930A12879552500712287 /* Repo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B419308F28794DF900712287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B419309228794DF900712287 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B419309428794DF900712287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B419309E28794F5700712287 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B41930A12879552500712287 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		B419308528794DF900712287 /* PlayWithMoya */ = {
 			isa = PBXGroup;
 			children = (
+				B41930A02879551E00712287 /* Model */,
+				B419309D28794F4C00712287 /* Network */,
 				B419308628794DF900712287 /* AppDelegate.swift */,
 				B419308828794DF900712287 /* SceneDelegate.swift */,
 				B419308A28794DF900712287 /* ViewController.swift */,
@@ -67,6 +73,22 @@
 				B419309428794DF900712287 /* Info.plist */,
 			);
 			path = PlayWithMoya;
+			sourceTree = "<group>";
+		};
+		B419309D28794F4C00712287 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B419309E28794F5700712287 /* Repository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B41930A02879551E00712287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B41930A12879552500712287 /* Repo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +170,9 @@
 			files = (
 				B419308B28794DF900712287 /* ViewController.swift in Sources */,
 				B419308728794DF900712287 /* AppDelegate.swift in Sources */,
+				B41930A22879552500712287 /* Repo.swift in Sources */,
 				B419308928794DF900712287 /* SceneDelegate.swift in Sources */,
+				B419309F28794F5700712287 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
