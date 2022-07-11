@@ -29,3 +29,6 @@ extension Presentable where Self: UIWindow {
     return Single.never()
   }
 }
+
+extension UIViewController: Presentable {}
+extension UIWindow: Presentable {}
