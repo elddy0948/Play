@@ -18,6 +18,9 @@
 		B4799006287C56E600D21EB3 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B4799005287C56E600D21EB3 /* RxRelay */; };
 		B4799008287C56E600D21EB3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B4799007287C56E600D21EB3 /* RxSwift */; };
 		B479900A287C579B00D21EB3 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799009287C579B00D21EB3 /* Stepper.swift */; };
+		B479900C287C5E6300D21EB3 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479900B287C5E6300D21EB3 /* Presentable.swift */; };
+		B479900F287C5EE800D21EB3 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479900E287C5EE800D21EB3 /* UIViewController+Rx.swift */; };
+		B4799011287C635A00D21EB3 /* UIWindow+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799010287C635A00D21EB3 /* UIWindow+Rx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		B41D3B5B287C518E00C877A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41D3B62287C55BB00C877A3 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		B4799009287C579B00D21EB3 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		B479900B287C5E6300D21EB3 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		B479900E287C5EE800D21EB3 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		B4799010287C635A00D21EB3 /* UIWindow+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		B41D3B4C287C518D00C877A3 /* RxFlowClone */ = {
 			isa = PBXGroup;
 			children = (
+				B479900D287C5EDC00D21EB3 /* Extensions */,
 				B41D3B61287C55AE00C877A3 /* Flow */,
 				B41D3B4D287C518D00C877A3 /* AppDelegate.swift */,
 				B41D3B4F287C518D00C877A3 /* SceneDelegate.swift */,
@@ -83,8 +90,18 @@
 			children = (
 				B41D3B62287C55BB00C877A3 /* Step.swift */,
 				B4799009287C579B00D21EB3 /* Stepper.swift */,
+				B479900B287C5E6300D21EB3 /* Presentable.swift */,
 			);
 			path = Flow;
+			sourceTree = "<group>";
+		};
+		B479900D287C5EDC00D21EB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B479900E287C5EE800D21EB3 /* UIViewController+Rx.swift */,
+				B4799010287C635A00D21EB3 /* UIWindow+Rx.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +188,9 @@
 				B479900A287C579B00D21EB3 /* Stepper.swift in Sources */,
 				B41D3B4E287C518D00C877A3 /* AppDelegate.swift in Sources */,
 				B41D3B50287C518D00C877A3 /* SceneDelegate.swift in Sources */,
+				B479900C287C5E6300D21EB3 /* Presentable.swift in Sources */,
+				B479900F287C5EE800D21EB3 /* UIViewController+Rx.swift in Sources */,
+				B4799011287C635A00D21EB3 /* UIWindow+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
