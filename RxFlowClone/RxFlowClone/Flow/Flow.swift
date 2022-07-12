@@ -10,4 +10,8 @@ protocol Flow: AnyObject, Presentable {
   func navigate(to step: Step) -> FlowContributors
 }
 
-
+extension Flow {
+  func adapt(step: Step) -> Single<Step> {
+    return .just(step)
+  }
+}

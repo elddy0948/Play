@@ -4,12 +4,11 @@ enum DemoStep: Step {
   case apiKey
   case apiKeyIsComplete
   
-  case movieList
+  case articleList
   
-  case moviePicked(withMovieId: Int)
-  case castPicked(withCastId: Int)
+  case articlePicked(article: Article)
   
   case settings
   case settingsDone
-  case about  
+  case about
 }

@@ -20,6 +20,16 @@ extension Presentable where Self: UIViewController {
   }
 }
 
+extension Presentable where Self: Flow {
+  var rxVisible: Observable<Bool> {
+    return self.root.rxVisible
+  }
+  
+  var rxDismissed: Single<Void> {
+    return self.root.rxDismissed
+  }
+}
+
 extension Presentable where Self: UIWindow {
   var rxVisible: Observable<Bool> {
     return self.rx.windowDidAppear.asObservable().map({ return true })

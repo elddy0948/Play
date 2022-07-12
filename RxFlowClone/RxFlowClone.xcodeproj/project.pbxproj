@@ -25,6 +25,10 @@
 		B4799015287C6CDD00D21EB3 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799014287C6CDD00D21EB3 /* Flow.swift */; };
 		B4799018287C722800D21EB3 /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799017287C722800D21EB3 /* DemoStep.swift */; };
 		B479901B287C72E600D21EB3 /* WatchedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479901A287C72E600D21EB3 /* WatchedFlow.swift */; };
+		B479901E287D21C700D21EB3 /* WatchedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479901D287D21C700D21EB3 /* WatchedViewModel.swift */; };
+		B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799024287D2D1800D21EB3 /* Privacy.swift */; };
+		B4799027287D2DA100D21EB3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799026287D2DA100D21EB3 /* Article.swift */; };
+		B4799029287D2E1300D21EB3 /* ArticlesFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		B4799014287C6CDD00D21EB3 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		B4799017287C722800D21EB3 /* DemoStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStep.swift; sourceTree = "<group>"; };
 		B479901A287C72E600D21EB3 /* WatchedFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedFlow.swift; sourceTree = "<group>"; };
+		B479901D287D21C700D21EB3 /* WatchedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedViewModel.swift; sourceTree = "<group>"; };
+		B4799024287D2D1800D21EB3 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		B4799026287D2DA100D21EB3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 		B41D3B4C287C518D00C877A3 /* RxFlowClone */ = {
 			isa = PBXGroup;
 			children = (
+				B479901F287D22BC00D21EB3 /* Models */,
+				B479901C287D21B800D21EB3 /* ViewModels */,
 				B4799019287C72DB00D21EB3 /* Flows */,
 				B4799016287C722000D21EB3 /* Steps */,
 				B479900D287C5EDC00D21EB3 /* Extensions */,
@@ -91,6 +101,7 @@
 				B41D3B56287C518E00C877A3 /* Assets.xcassets */,
 				B41D3B58287C518E00C877A3 /* LaunchScreen.storyboard */,
 				B41D3B5B287C518E00C877A3 /* Info.plist */,
+				B4799024287D2D1800D21EB3 /* Privacy.swift */,
 			);
 			path = RxFlowClone;
 			sourceTree = "<group>";
@@ -128,8 +139,25 @@
 			isa = PBXGroup;
 			children = (
 				B479901A287C72E600D21EB3 /* WatchedFlow.swift */,
+				B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		B479901C287D21B800D21EB3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B479901D287D21C700D21EB3 /* WatchedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B479901F287D22BC00D21EB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4799026287D2DA100D21EB3 /* Article.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,18 +239,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B479901E287D21C700D21EB3 /* WatchedViewModel.swift in Sources */,
 				B479901B287C72E600D21EB3 /* WatchedFlow.swift in Sources */,
 				B41D3B52287C518D00C877A3 /* ViewController.swift in Sources */,
 				B4799018287C722800D21EB3 /* DemoStep.swift in Sources */,
 				B4799015287C6CDD00D21EB3 /* Flow.swift in Sources */,
+				B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */,
 				B41D3B63287C55BB00C877A3 /* Step.swift in Sources */,
 				B479900A287C579B00D21EB3 /* Stepper.swift in Sources */,
+				B4799029287D2E1300D21EB3 /* ArticlesFlow.swift in Sources */,
 				B41D3B4E287C518D00C877A3 /* AppDelegate.swift in Sources */,
 				B41D3B50287C518D00C877A3 /* SceneDelegate.swift in Sources */,
 				B479900C287C5E6300D21EB3 /* Presentable.swift in Sources */,
 				B4799013287C694D00D21EB3 /* FlowContributor.swift in Sources */,
 				B479900F287C5EE800D21EB3 /* UIViewController+Rx.swift in Sources */,
 				B4799011287C635A00D21EB3 /* UIWindow+Rx.swift in Sources */,
+				B4799027287D2DA100D21EB3 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

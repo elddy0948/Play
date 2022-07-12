@@ -1,7 +1,7 @@
 import UIKit
 
 class WatchedFlow: Flow {
-  var root: UIViewController {
+  var root: Presentable {
     return self.rootViewController
   }
   
