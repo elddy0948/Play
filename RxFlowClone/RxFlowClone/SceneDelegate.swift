@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import RxSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
-
+  var coordinator = FlowCoordinator()
+  var disposeBag = DisposeBag()
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -18,7 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     self.window = window
     
     let appFlow = AppFlow(window: window)
-    
+    self.coordinator.coordinate(
+      flow: appFlow, with: AppStepper() 
+    )
     window.makeKeyAndVisible()
   }
 

@@ -26,13 +26,15 @@
 		B4799018287C722800D21EB3 /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799017287C722800D21EB3 /* DemoStep.swift */; };
 		B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799024287D2D1800D21EB3 /* Privacy.swift */; };
 		B4799027287D2DA100D21EB3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799026287D2DA100D21EB3 /* Article.swift */; };
-		B4799029287D2E1300D21EB3 /* ArticlesFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */; };
-		B479902B287D389400D21EB3 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479902A287D389400D21EB3 /* AppFlow.swift */; };
 		B479902E287D519B00D21EB3 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479902D287D519B00D21EB3 /* AppStepper.swift */; };
-		B4799031287D7D8F00D21EB3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */; };
 		B4799033287D8BEF00D21EB3 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799032287D8BEF00D21EB3 /* FlowCoordinator.swift */; };
 		B4799035287DCD8100D21EB3 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799034287DCD8100D21EB3 /* Synchronizable.swift */; };
 		B4799037287DCF9E00D21EB3 /* ObservableType+Pausable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799036287DCF9E00D21EB3 /* ObservableType+Pausable.swift */; };
+		B4799039287DD8C300D21EB3 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799038287DD8C300D21EB3 /* LoginFlow.swift */; };
+		B479903B287DD99400D21EB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479903A287DD99400D21EB3 /* LoginViewController.swift */; };
+		B479903D287DDC3600D21EB3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479903C287DDC3600D21EB3 /* HomeViewController.swift */; };
+		B479903F287DDD1100D21EB3 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479903E287DDD1100D21EB3 /* AppFlow.swift */; };
+		B4799041287DDFF100D21EB3 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799040287DDFF100D21EB3 /* HomeFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,13 +56,15 @@
 		B4799017287C722800D21EB3 /* DemoStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStep.swift; sourceTree = "<group>"; };
 		B4799024287D2D1800D21EB3 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		B4799026287D2DA100D21EB3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesFlow.swift; sourceTree = "<group>"; };
-		B479902A287D389400D21EB3 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		B479902D287D519B00D21EB3 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
-		B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		B4799032287D8BEF00D21EB3 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 		B4799034287DCD8100D21EB3 /* Synchronizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizable.swift; sourceTree = "<group>"; };
 		B4799036287DCF9E00D21EB3 /* ObservableType+Pausable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Pausable.swift"; sourceTree = "<group>"; };
+		B4799038287DD8C300D21EB3 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
+		B479903A287DD99400D21EB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B479903C287DDC3600D21EB3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B479903E287DDD1100D21EB3 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		B4799040287DDFF100D21EB3 /* HomeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +155,9 @@
 		B4799019287C72DB00D21EB3 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */,
-				B479902A287D389400D21EB3 /* AppFlow.swift */,
+				B4799038287DD8C300D21EB3 /* LoginFlow.swift */,
+				B479903E287DDD1100D21EB3 /* AppFlow.swift */,
+				B4799040287DDFF100D21EB3 /* HomeFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -183,7 +188,8 @@
 		B479902F287D7D8600D21EB3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */,
+				B479903A287DD99400D21EB3 /* LoginViewController.swift */,
+				B479903C287DDC3600D21EB3 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,16 +274,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B479902E287D519B00D21EB3 /* AppStepper.swift in Sources */,
-				B479902B287D389400D21EB3 /* AppFlow.swift in Sources */,
 				B41D3B52287C518D00C877A3 /* ViewController.swift in Sources */,
 				B4799018287C722800D21EB3 /* DemoStep.swift in Sources */,
-				B4799031287D7D8F00D21EB3 /* LoadingViewController.swift in Sources */,
+				B4799039287DD8C300D21EB3 /* LoginFlow.swift in Sources */,
+				B479903D287DDC3600D21EB3 /* HomeViewController.swift in Sources */,
 				B4799015287C6CDD00D21EB3 /* Flow.swift in Sources */,
+				B4799041287DDFF100D21EB3 /* HomeFlow.swift in Sources */,
 				B4799033287D8BEF00D21EB3 /* FlowCoordinator.swift in Sources */,
+				B479903F287DDD1100D21EB3 /* AppFlow.swift in Sources */,
 				B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */,
+				B479903B287DD99400D21EB3 /* LoginViewController.swift in Sources */,
 				B41D3B63287C55BB00C877A3 /* Step.swift in Sources */,
 				B479900A287C579B00D21EB3 /* Stepper.swift in Sources */,
-				B4799029287D2E1300D21EB3 /* ArticlesFlow.swift in Sources */,
 				B41D3B4E287C518D00C877A3 /* AppDelegate.swift in Sources */,
 				B41D3B50287C518D00C877A3 /* SceneDelegate.swift in Sources */,
 				B479900C287C5E6300D21EB3 /* Presentable.swift in Sources */,
