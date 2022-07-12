@@ -24,11 +24,15 @@
 		B4799013287C694D00D21EB3 /* FlowContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799012287C694D00D21EB3 /* FlowContributor.swift */; };
 		B4799015287C6CDD00D21EB3 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799014287C6CDD00D21EB3 /* Flow.swift */; };
 		B4799018287C722800D21EB3 /* DemoStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799017287C722800D21EB3 /* DemoStep.swift */; };
-		B479901B287C72E600D21EB3 /* WatchedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479901A287C72E600D21EB3 /* WatchedFlow.swift */; };
-		B479901E287D21C700D21EB3 /* WatchedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479901D287D21C700D21EB3 /* WatchedViewModel.swift */; };
 		B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799024287D2D1800D21EB3 /* Privacy.swift */; };
 		B4799027287D2DA100D21EB3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799026287D2DA100D21EB3 /* Article.swift */; };
 		B4799029287D2E1300D21EB3 /* ArticlesFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */; };
+		B479902B287D389400D21EB3 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479902A287D389400D21EB3 /* AppFlow.swift */; };
+		B479902E287D519B00D21EB3 /* AppStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B479902D287D519B00D21EB3 /* AppStepper.swift */; };
+		B4799031287D7D8F00D21EB3 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */; };
+		B4799033287D8BEF00D21EB3 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799032287D8BEF00D21EB3 /* FlowCoordinator.swift */; };
+		B4799035287DCD8100D21EB3 /* Synchronizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799034287DCD8100D21EB3 /* Synchronizable.swift */; };
+		B4799037287DCF9E00D21EB3 /* ObservableType+Pausable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4799036287DCF9E00D21EB3 /* ObservableType+Pausable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,11 +52,15 @@
 		B4799012287C694D00D21EB3 /* FlowContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowContributor.swift; sourceTree = "<group>"; };
 		B4799014287C6CDD00D21EB3 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		B4799017287C722800D21EB3 /* DemoStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStep.swift; sourceTree = "<group>"; };
-		B479901A287C72E600D21EB3 /* WatchedFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedFlow.swift; sourceTree = "<group>"; };
-		B479901D287D21C700D21EB3 /* WatchedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchedViewModel.swift; sourceTree = "<group>"; };
 		B4799024287D2D1800D21EB3 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		B4799026287D2DA100D21EB3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesFlow.swift; sourceTree = "<group>"; };
+		B479902A287D389400D21EB3 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		B479902D287D519B00D21EB3 /* AppStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStepper.swift; sourceTree = "<group>"; };
+		B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		B4799032287D8BEF00D21EB3 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		B4799034287DCD8100D21EB3 /* Synchronizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizable.swift; sourceTree = "<group>"; };
+		B4799036287DCF9E00D21EB3 /* ObservableType+Pausable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Pausable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,8 @@
 		B41D3B4C287C518D00C877A3 /* RxFlowClone */ = {
 			isa = PBXGroup;
 			children = (
+				B479902F287D7D8600D21EB3 /* Controllers */,
+				B479902C287D519500D21EB3 /* Steppers */,
 				B479901F287D22BC00D21EB3 /* Models */,
 				B479901C287D21B800D21EB3 /* ViewModels */,
 				B4799019287C72DB00D21EB3 /* Flows */,
@@ -114,6 +124,8 @@
 				B479900B287C5E6300D21EB3 /* Presentable.swift */,
 				B4799012287C694D00D21EB3 /* FlowContributor.swift */,
 				B4799014287C6CDD00D21EB3 /* Flow.swift */,
+				B4799032287D8BEF00D21EB3 /* FlowCoordinator.swift */,
+				B4799034287DCD8100D21EB3 /* Synchronizable.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -123,6 +135,7 @@
 			children = (
 				B479900E287C5EE800D21EB3 /* UIViewController+Rx.swift */,
 				B4799010287C635A00D21EB3 /* UIWindow+Rx.swift */,
+				B4799036287DCF9E00D21EB3 /* ObservableType+Pausable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -138,8 +151,8 @@
 		B4799019287C72DB00D21EB3 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				B479901A287C72E600D21EB3 /* WatchedFlow.swift */,
 				B4799028287D2E1300D21EB3 /* ArticlesFlow.swift */,
+				B479902A287D389400D21EB3 /* AppFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -147,7 +160,6 @@
 		B479901C287D21B800D21EB3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B479901D287D21C700D21EB3 /* WatchedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -158,6 +170,22 @@
 				B4799026287D2DA100D21EB3 /* Article.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B479902C287D519500D21EB3 /* Steppers */ = {
+			isa = PBXGroup;
+			children = (
+				B479902D287D519B00D21EB3 /* AppStepper.swift */,
+			);
+			path = Steppers;
+			sourceTree = "<group>";
+		};
+		B479902F287D7D8600D21EB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4799030287D7D8F00D21EB3 /* LoadingViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +267,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B479901E287D21C700D21EB3 /* WatchedViewModel.swift in Sources */,
-				B479901B287C72E600D21EB3 /* WatchedFlow.swift in Sources */,
+				B479902E287D519B00D21EB3 /* AppStepper.swift in Sources */,
+				B479902B287D389400D21EB3 /* AppFlow.swift in Sources */,
 				B41D3B52287C518D00C877A3 /* ViewController.swift in Sources */,
 				B4799018287C722800D21EB3 /* DemoStep.swift in Sources */,
+				B4799031287D7D8F00D21EB3 /* LoadingViewController.swift in Sources */,
 				B4799015287C6CDD00D21EB3 /* Flow.swift in Sources */,
+				B4799033287D8BEF00D21EB3 /* FlowCoordinator.swift in Sources */,
 				B4799025287D2D1800D21EB3 /* Privacy.swift in Sources */,
 				B41D3B63287C55BB00C877A3 /* Step.swift in Sources */,
 				B479900A287C579B00D21EB3 /* Stepper.swift in Sources */,
@@ -252,8 +282,10 @@
 				B41D3B50287C518D00C877A3 /* SceneDelegate.swift in Sources */,
 				B479900C287C5E6300D21EB3 /* Presentable.swift in Sources */,
 				B4799013287C694D00D21EB3 /* FlowContributor.swift in Sources */,
+				B4799037287DCF9E00D21EB3 /* ObservableType+Pausable.swift in Sources */,
 				B479900F287C5EE800D21EB3 /* UIViewController+Rx.swift in Sources */,
 				B4799011287C635A00D21EB3 /* UIWindow+Rx.swift in Sources */,
+				B4799035287DCD8100D21EB3 /* Synchronizable.swift in Sources */,
 				B4799027287D2DA100D21EB3 /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
