@@ -1,8 +1,12 @@
-//
-//  AppStepper.swift
-//  RxFlowExample
-//
-//  Created by 김호준 on 2022/07/15.
-//
+import RxFlow
+import RxRelay
 
-import Foundation
+final class AppStepper: Stepper {
+  var steps = PublishRelay<Step>()
+  
+  init() {}
+  
+  var initialStep: Step {
+    return ExampleStep.launchIsRequired
+  }
+}

@@ -16,9 +16,27 @@ final class AppFlow: Flow {
     guard let step = step as? ExampleStep else { return .none }
     switch step {
     case .launchIsRequired:
-      <#code#>
+      return navigateToLaunchScreen()
     case .homeIsRequired:
-      <#code#>
+      return navigateToHome()
     }
+  }
+  
+  private func navigateToLaunchScreen() -> FlowContributors {
+    let viewController = LaunchViewController()
+    window.rootViewController = viewController
+    return .one(flowContributor: .contribute(withNext: viewController))
+  }
+  
+  private func navigateToHome() -> FlowContributors {
+    let flow = HomeFlow()
+    Flows.use(flow, when: .created, block: { [unowned self] root in
+      self.window.rootViewController = root
+    })
+    
+    return .one(flowContributor: .contribute(
+      withNextPresentable: flow,
+      withNextStepper: OneStepper(withSingleStep: ExampleStep.homeIsRequired)
+    ))
   }
 }
