@@ -1,7 +1,7 @@
 import RxFlow
 import UIKit
 
-final class HomeFlow: Flow {
+final class MainFlow: Flow {
   var root: Presentable {
     return self.tabBarController
   }

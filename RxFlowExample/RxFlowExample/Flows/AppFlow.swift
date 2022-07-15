@@ -19,6 +19,8 @@ final class AppFlow: Flow {
       return navigateToLaunchScreen()
     case .homeIsRequired:
       return navigateToHome()
+    default:
+      return .none
     }
   }
   
@@ -29,7 +31,7 @@ final class AppFlow: Flow {
   }
   
   private func navigateToHome() -> FlowContributors {
-    let flow = HomeFlow()
+    let flow = MainFlow()
     Flows.use(flow, when: .created, block: { [unowned self] root in
       self.window.rootViewController = root
     })
