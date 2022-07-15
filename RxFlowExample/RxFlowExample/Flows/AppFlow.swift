@@ -17,8 +17,8 @@ final class AppFlow: Flow {
     switch step {
     case .launchIsRequired:
       return navigateToLaunchScreen()
-    case .homeIsRequired:
-      return navigateToHome()
+    case .mainIsRequired:
+      return navigateToMainTabBar()
     default:
       return .none
     }
@@ -30,15 +30,18 @@ final class AppFlow: Flow {
     return .one(flowContributor: .contribute(withNext: viewController))
   }
   
-  private func navigateToHome() -> FlowContributors {
+  private func navigateToMainTabBar() -> FlowContributors {
     let flow = MainFlow()
+    
     Flows.use(flow, when: .created, block: { [unowned self] root in
       self.window.rootViewController = root
     })
     
     return .one(flowContributor: .contribute(
       withNextPresentable: flow,
-      withNextStepper: OneStepper(withSingleStep: ExampleStep.homeIsRequired)
+      withNextStepper: OneStepper(
+        withSingleStep: ExampleStep.mainIsRequired
+      )
     ))
   }
 }

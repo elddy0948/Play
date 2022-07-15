@@ -2,7 +2,9 @@ import RxFlow
 
 enum ExampleStep: Step {
   case launchIsRequired
-  case homeIsRequired
   
+  case mainIsRequired
+  
+  case homeIsRequired
   case mypageIsRequired
 }

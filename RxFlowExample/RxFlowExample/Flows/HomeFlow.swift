@@ -1,7 +1,7 @@
 import RxFlow
 import UIKit
 
-final class MyPageFlow: Flow {
+final class HomeFlow: Flow {
   var root: Presentable {
     return self.navigationController
   }
@@ -10,17 +10,18 @@ final class MyPageFlow: Flow {
   
   func navigate(to step: Step) -> FlowContributors {
     guard let step = step as? ExampleStep else { return .none }
+    
     switch step {
-    case .mypageIsRequired:
-      return navigateToMyPage()
+    case .homeIsRequired:
+      return navigateToHome()
     default:
       return .none
     }
   }
   
-  private func navigateToMyPage() -> FlowContributors {
-    let viewController = MyPageViewController()
-    viewController.title = "My Page"
+  private func navigateToHome() -> FlowContributors {
+    let viewController = HomeViewController()
+    viewController.title = "Home"
     navigationController.pushViewController(
       viewController, animated: false
     )
