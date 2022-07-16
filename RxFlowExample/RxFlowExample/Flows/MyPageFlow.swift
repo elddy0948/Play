@@ -1,4 +1,5 @@
 import RxFlow
+import RxRelay
 import UIKit
 
 final class MyPageFlow: Flow {
@@ -25,5 +26,13 @@ final class MyPageFlow: Flow {
       viewController, animated: false
     )
     return .none
+  }
+}
+
+class MyPageFlowStepper: Stepper {
+  var steps = PublishRelay<Step>()
+  
+  var initialStep: Step {
+    return ExampleStep.mypageIsRequired
   }
 }

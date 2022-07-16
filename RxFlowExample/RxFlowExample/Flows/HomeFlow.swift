@@ -1,4 +1,5 @@
 import RxFlow
+import RxRelay
 import UIKit
 
 final class HomeFlow: Flow {
@@ -26,5 +27,13 @@ final class HomeFlow: Flow {
       viewController, animated: false
     )
     return .none
+  }
+}
+
+class HomeFlowStepper: Stepper {
+  var steps = PublishRelay<Step>()
+  
+  var initialStep: Step {
+    return ExampleStep.homeIsRequired
   }
 }

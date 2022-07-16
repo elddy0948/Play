@@ -32,6 +32,7 @@ final class AppFlow: Flow {
   
   private func navigateToMainTabBar() -> FlowContributors {
     let flow = MainFlow()
+    let stepper = MainStepper()
     
     Flows.use(flow, when: .created, block: { [unowned self] root in
       self.window.rootViewController = root
@@ -39,9 +40,7 @@ final class AppFlow: Flow {
     
     return .one(flowContributor: .contribute(
       withNextPresentable: flow,
-      withNextStepper: OneStepper(
-        withSingleStep: ExampleStep.mainIsRequired
-      )
+      withNextStepper: stepper
     ))
   }
 }

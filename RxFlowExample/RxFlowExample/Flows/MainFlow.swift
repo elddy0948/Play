@@ -1,4 +1,5 @@
 import RxFlow
+import RxRelay
 import UIKit
 
 final class MainFlow: Flow {
@@ -19,8 +20,45 @@ final class MainFlow: Flow {
   }
   
   private func navigateToHome() -> FlowContributors {
-    let viewController = HomeViewController()
-    tabBarController.setViewControllers([viewController], animated: false)
-    return .none
+    let homeFlow = HomeFlow()
+    let mypageFlow = MyPageFlow()
+    
+    let homeStepper = HomeFlowStepper()
+    let mypageStepper = MyPageStepper()
+    
+    Flows.use(
+      homeFlow, mypageFlow,
+      when: .created,
+      block: { [unowned self] (root1: UINavigationController, root2: UINavigationController) in
+        let homeTabBarItem = UITabBarItem(title: "Home", image: nil, tag: 0)
+        let mypageTabBarItem = UITabBarItem(title: "MyPage", image: nil, tag: 1)
+        
+        root1.tabBarItem = homeTabBarItem
+        root1.title = "Home"
+        
+        root2.tabBarItem = mypageTabBarItem
+        root2.title = "MyPage"
+        
+        self.tabBarController.setViewControllers([root1, root2], animated: false)
+      })
+    return .multiple(flowContributors: [
+      .contribute(
+        withNextPresentable: homeFlow,
+        withNextStepper: homeStepper
+      ),
+      .contribute(
+        withNextPresentable: mypageFlow,
+        withNextStepper: mypageStepper
+      )
+    ])
   }
 }
+
+class MainStepper: Stepper {
+  var steps = PublishRelay<Step>()
+  
+  var initialStep: Step {
+    return ExampleStep.homeIsRequired
+  }
+}
+  
