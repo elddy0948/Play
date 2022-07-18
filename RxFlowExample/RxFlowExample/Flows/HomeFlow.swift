@@ -15,6 +15,8 @@ final class HomeFlow: Flow {
     switch step {
     case .homeIsRequired:
       return navigateToHome()
+    case .homeNext:
+      return navigateToNext()
     default:
       return .none
     }
@@ -26,6 +28,10 @@ final class HomeFlow: Flow {
     navigationController.pushViewController(
       viewController, animated: false
     )
+    return .none
+  }
+  
+  private func navigateToNext() -> FlowContributors {
     return .none
   }
 }

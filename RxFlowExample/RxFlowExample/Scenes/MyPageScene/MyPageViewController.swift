@@ -2,10 +2,12 @@ import UIKit
 import RxFlow
 import RxRelay
 
-final class MyPageViewController: UIViewController {
+final class MyPageViewController: UIViewController, Stepper {
+  var steps = PublishRelay<Step>()
+  
   private lazy var button: UIButton = {
     let button = UIButton()
-    button.setTitle("Next Page", for: [])
+    button.setTitle("Present ViewController", for: [])
     button.setTitleColor(UIColor.link, for: [])
     return button
   }()
@@ -17,6 +19,10 @@ final class MyPageViewController: UIViewController {
     
     view.addSubview(button)
     
+    button.addTarget(self,
+                     action: #selector(didTappedButton),
+                     for: .touchUpInside
+    )
     button.translatesAutoresizingMaskIntoConstraints = false
     
     NSLayoutConstraint.activate([
@@ -27,6 +33,10 @@ final class MyPageViewController: UIViewController {
         equalTo: view.safeAreaLayoutGuide.centerYAnchor
       )
     ])
+  }
+  
+  @objc func didTappedButton() {
+    self.steps.accept(ExampleStep.mypageNext)
   }
 }
 

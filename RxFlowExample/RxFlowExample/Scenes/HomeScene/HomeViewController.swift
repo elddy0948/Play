@@ -18,6 +18,10 @@ final class HomeViewController: UIViewController {
     
     view.addSubview(button)
     
+    button.addTarget(self,
+                     action: #selector(didTappedButton),
+                     for: .touchUpInside
+    )
     button.translatesAutoresizingMaskIntoConstraints = false
     
     NSLayoutConstraint.activate([
@@ -28,6 +32,10 @@ final class HomeViewController: UIViewController {
         equalTo: view.safeAreaLayoutGuide.centerYAnchor
       )
     ])
+  }
+  
+  @objc func didTappedButton() {
+    
   }
 }
 

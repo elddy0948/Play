@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44E10CB2885371F004A6E9C /* MyPageNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44E10CA2885371F004A6E9C /* MyPageNextViewController.swift */; };
 		B45B4B05288042BE006D1A8D /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = B45B4B04288042BE006D1A8D /* RxFlow */; };
 		B45B4B09288046AF006D1A8D /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B4B08288046AF006D1A8D /* LaunchViewController.swift */; };
 		B45B4B0E288046EA006D1A8D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45B4B0D288046EA006D1A8D /* HomeViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B44E10CA2885371F004A6E9C /* MyPageNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNextViewController.swift; sourceTree = "<group>"; };
 		B45B4B08288046AF006D1A8D /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		B45B4B0D288046EA006D1A8D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B45B4B0F28804A53006D1A8D /* ExampleStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleStep.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				B45B4B1928814426006D1A8D /* MyPageViewController.swift */,
+				B44E10CA2885371F004A6E9C /* MyPageNextViewController.swift */,
 			);
 			path = MyPageScene;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				B45B4B0E288046EA006D1A8D /* HomeViewController.swift in Sources */,
 				B45B4B1A28814426006D1A8D /* MyPageViewController.swift in Sources */,
+				B44E10CB2885371F004A6E9C /* MyPageNextViewController.swift in Sources */,
 				B45B4B122880586C006D1A8D /* AppFlow.swift in Sources */,
 				B45B4B142880771F006D1A8D /* MainFlow.swift in Sources */,
 				B4E1ADDF28803EA9000AA187 /* AppDelegate.swift in Sources */,

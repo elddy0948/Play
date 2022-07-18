@@ -14,6 +14,8 @@ final class MyPageFlow: Flow {
     switch step {
     case .mypageIsRequired:
       return navigateToMyPage()
+    case .mypageNext:
+      return navigateToNext()
     default:
       return .none
     }
@@ -24,6 +26,14 @@ final class MyPageFlow: Flow {
     viewController.title = "My Page"
     navigationController.pushViewController(
       viewController, animated: false
+    )
+    return .one(flowContributor: .contribute(withNext: viewController))
+  }
+  
+  private func navigateToNext() -> FlowContributors {
+    let viewController = MyPageNextViewController()
+    navigationController.present(
+      viewController, animated: true
     )
     return .none
   }
