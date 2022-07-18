@@ -29,11 +29,3 @@ final class HomeFlow: Flow {
     return .none
   }
 }
-
-class HomeFlowStepper: Stepper {
-  var steps = PublishRelay<Step>()
-  
-  var initialStep: Step {
-    return ExampleStep.homeIsRequired
-  }
-}

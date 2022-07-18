@@ -23,7 +23,7 @@ final class MainFlow: Flow {
     let homeFlow = HomeFlow()
     let mypageFlow = MyPageFlow()
     
-    let homeStepper = HomeFlowStepper()
+    let homeStepper = HomeStepper()
     let mypageStepper = MyPageStepper()
     
     Flows.use(

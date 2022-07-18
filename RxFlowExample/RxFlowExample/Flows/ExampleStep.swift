@@ -7,4 +7,7 @@ enum ExampleStep: Step {
   
   case homeIsRequired
   case mypageIsRequired
+  
+  case homeNext
+  case mypageNext
 }

@@ -28,11 +28,3 @@ final class MyPageFlow: Flow {
     return .none
   }
 }
-
-class MyPageFlowStepper: Stepper {
-  var steps = PublishRelay<Step>()
-  
-  var initialStep: Step {
-    return ExampleStep.mypageIsRequired
-  }
-}
