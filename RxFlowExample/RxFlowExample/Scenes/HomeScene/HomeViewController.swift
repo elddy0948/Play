@@ -2,11 +2,12 @@ import UIKit
 import RxRelay
 import RxFlow
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController, Stepper {
+  var steps = PublishRelay<Step>()
   
   private lazy var button: UIButton = {
     let button = UIButton()
-    button.setTitle("Next Page", for: [])
+    button.setTitle("Push ViewController", for: [])
     button.setTitleColor(UIColor.link, for: [])
     return button
   }()
@@ -35,7 +36,7 @@ final class HomeViewController: UIViewController {
   }
   
   @objc func didTappedButton() {
-    
+    self.steps.accept(ExampleStep.homeNext)
   }
 }
 

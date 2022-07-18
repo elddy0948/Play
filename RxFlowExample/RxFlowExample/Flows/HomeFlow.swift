@@ -28,10 +28,15 @@ final class HomeFlow: Flow {
     navigationController.pushViewController(
       viewController, animated: false
     )
-    return .none
+    return .one(flowContributor: .contribute(withNext: viewController))
   }
   
   private func navigateToNext() -> FlowContributors {
+    let viewController = HomeNextViewController()
+    viewController.title = "Home_Next"
+    navigationController.pushViewController(
+      viewController, animated: true
+    )
     return .none
   }
 }
