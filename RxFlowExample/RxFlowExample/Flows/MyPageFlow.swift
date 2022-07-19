@@ -32,6 +32,7 @@ final class MyPageFlow: Flow {
   
   private func navigateToNext() -> FlowContributors {
     let viewController = MyPageNextViewController()
+    viewController.title = "MyPage_Next"
     navigationController.present(
       viewController, animated: true
     )
