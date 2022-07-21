@@ -8,6 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  private let baseURL = "wss://pubwss.bithumb.com/pub/ws"
 
   override func viewDidLoad() {
     super.viewDidLoad()
