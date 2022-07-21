@@ -8,23 +8,23 @@ public enum NetworkError: Error {
     case urlGeneration
 }
 
-public protocol NetworkCancellable {
+public protocol NetworkCancelable {
     func cancel()
 }
 
-extension URLSessionTask: NetworkCancellable { }
+extension URLSessionTask: NetworkCancelable { }
 
 public protocol NetworkService {
     typealias CompletionHandler = (Result<Data?, NetworkError>) -> Void
     
-    func request(endpoint: Requestable, completion: @escaping CompletionHandler) -> NetworkCancellable?
+    func request(endpoint: Requestable, completion: @escaping CompletionHandler) -> NetworkCancelable?
 }
 
 public protocol NetworkSessionManager {
     typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
     
     func request(_ request: URLRequest,
-                 completion: @escaping CompletionHandler) -> NetworkCancellable
+                 completion: @escaping CompletionHandler) -> NetworkCancelable
 }
 
 public protocol NetworkErrorLogger {
@@ -49,7 +49,7 @@ public final class DefaultNetworkService {
         self.logger = logger
     }
     
-    private func request(request: URLRequest, completion: @escaping CompletionHandler) -> NetworkCancellable {
+    private func request(request: URLRequest, completion: @escaping CompletionHandler) -> NetworkCancelable {
         
         let sessionDataTask = sessionManager.request(request) { data, response, requestError in
             
@@ -86,7 +86,7 @@ public final class DefaultNetworkService {
 
 extension DefaultNetworkService: NetworkService {
     
-    public func request(endpoint: Requestable, completion: @escaping CompletionHandler) -> NetworkCancellable? {
+    public func request(endpoint: Requestable, completion: @escaping CompletionHandler) -> NetworkCancelable? {
         do {
             let urlRequest = try endpoint.urlRequest(with: config)
             return request(request: urlRequest, completion: completion)
@@ -105,7 +105,7 @@ extension DefaultNetworkService: NetworkService {
 public class DefaultNetworkSessionManager: NetworkSessionManager {
     public init() {}
     public func request(_ request: URLRequest,
-                        completion: @escaping CompletionHandler) -> NetworkCancellable {
+                        completion: @escaping CompletionHandler) -> NetworkCancelable {
         let task = URLSession.shared.dataTask(with: request, completionHandler: completion)
         task.resume()
         return task

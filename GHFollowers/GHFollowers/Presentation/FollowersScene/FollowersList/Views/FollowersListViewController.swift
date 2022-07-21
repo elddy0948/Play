@@ -16,6 +16,8 @@ final class FollowersListViewController: UIViewController {
     super.viewDidLoad()
     
     bind(to: viewModel)
+    
+    test()
   }
   
   private func bind(to viewModel: FollowersListViewModel) {
@@ -34,5 +36,9 @@ final class FollowersListViewController: UIViewController {
   
   private func printError(_ error: String) {
     print(error)
+  }
+  
+  private func test() {
+    viewModel.didSearch(query: "elddy0948")
   }
 }

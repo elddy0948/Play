@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B46D957027D730DE004262DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D956F27D730DE004262DF /* AppDelegate.swift */; };
-		B46D957427D730DE004262DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D957327D730DE004262DF /* ViewController.swift */; };
 		B46D957727D730DE004262DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46D957527D730DE004262DF /* Main.storyboard */; };
 		B46D957927D730DF004262DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46D957827D730DF004262DF /* Assets.xcassets */; };
 		B46D957C27D730DF004262DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46D957A27D730DF004262DF /* LaunchScreen.storyboard */; };
@@ -30,12 +29,13 @@
 		B46D95B327DBBB81004262DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B227DBBB81004262DF /* NetworkService.swift */; };
 		B46D95B527DBBB95004262DF /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B427DBBB95004262DF /* NetworkConfig.swift */; };
 		B46D95B827DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */; };
+		B4AEB3D827DC6A3600CA14BC /* FollowersResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEB3D727DC6A3600CA14BC /* FollowersResponseDTO+Mapping.swift */; };
+		B4AEB3DB27DC778E00CA14BC /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AEB3DA27DC778E00CA14BC /* RepositoryTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B46D956C27D730DE004262DF /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46D956F27D730DE004262DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B46D957327D730DE004262DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B46D957627D730DE004262DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B46D957827D730DF004262DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46D957B27D730DF004262DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		B46D95B227DBBB81004262DF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B46D95B427DBBB95004262DF /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FollowersRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B4AEB3D727DC6A3600CA14BC /* FollowersResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FollowersResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		B4AEB3DA27DC778E00CA14BC /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,6 @@
 				B46D959227D73962004262DF /* Common */,
 				B46D958427D731DE004262DF /* Domain */,
 				B46D956F27D730DE004262DF /* AppDelegate.swift */,
-				B46D957327D730DE004262DF /* ViewController.swift */,
 				B46D957527D730DE004262DF /* Main.storyboard */,
 				B46D957827D730DF004262DF /* Assets.xcassets */,
 				B46D957A27D730DF004262DF /* LaunchScreen.storyboard */,
@@ -240,6 +241,7 @@
 		B46D95AD27DB3040004262DF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B4AEB3D927DC777F00CA14BC /* Utils */,
 				B46D95B627DBBC9A004262DF /* DataMapping */,
 				B46D95AE27DB30E6004262DF /* APIEndpoints.swift */,
 			);
@@ -250,8 +252,17 @@
 			isa = PBXGroup;
 			children = (
 				B46D95B727DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift */,
+				B4AEB3D727DC6A3600CA14BC /* FollowersResponseDTO+Mapping.swift */,
 			);
 			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		B4AEB3D927DC777F00CA14BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B4AEB3DA27DC778E00CA14BC /* RepositoryTask.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +339,6 @@
 				B46D959F27DA5904004262DF /* FollowersListViewModel.swift in Sources */,
 				B46D959627D9CD15004262DF /* FollowersQueriesRepository.swift in Sources */,
 				B46D958B27D73513004262DF /* FollowersPage.swift in Sources */,
-				B46D957427D730DE004262DF /* ViewController.swift in Sources */,
 				B46D95B327DBBB81004262DF /* NetworkService.swift in Sources */,
 				B46D959127D73894004262DF /* FollowersRepository.swift in Sources */,
 				B46D958F27D73698004262DF /* FollowerQuery.swift in Sources */,
@@ -339,9 +349,11 @@
 				B46D959A27DA5686004262DF /* Observable.swift in Sources */,
 				B46D95AF27DB30E6004262DF /* APIEndpoints.swift in Sources */,
 				B46D95B527DBBB95004262DF /* NetworkConfig.swift in Sources */,
+				B4AEB3D827DC6A3600CA14BC /* FollowersResponseDTO+Mapping.swift in Sources */,
 				B46D959427D7396A004262DF /* Cancelable.swift in Sources */,
 				B46D957027D730DE004262DF /* AppDelegate.swift in Sources */,
 				B46D95B827DBBCAB004262DF /* FollowersRequestDTO+Mapping.swift in Sources */,
+				B4AEB3DB27DC778E00CA14BC /* RepositoryTask.swift in Sources */,
 				B46D95A427DB1FDA004262DF /* FollowersListViewController.swift in Sources */,
 				B46D95B127DBBB56004262DF /* Endpoint.swift in Sources */,
 				B46D958D27D73664004262DF /* SearchFollowersUseCase.swift in Sources */,

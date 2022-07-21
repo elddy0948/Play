@@ -12,10 +12,10 @@ public protocol DataTransferService {
     
     @discardableResult
     func request<T: Decodable, E: ResponseRequestable>(with endpoint: E,
-                                                       completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T
+                                                       completion: @escaping CompletionHandler<T>) -> NetworkCancelable? where E.Response == T
     @discardableResult
     func request<E: ResponseRequestable>(with endpoint: E,
-                                         completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E.Response == Void
+                                         completion: @escaping CompletionHandler<Void>) -> NetworkCancelable? where E.Response == Void
 }
 
 public protocol DataTransferErrorResolver {
@@ -48,7 +48,7 @@ public final class DefaultDataTransferService {
 extension DefaultDataTransferService: DataTransferService {
     
     public func request<T: Decodable, E: ResponseRequestable>(with endpoint: E,
-                                                              completion: @escaping CompletionHandler<T>) -> NetworkCancellable? where E.Response == T {
+                                                              completion: @escaping CompletionHandler<T>) -> NetworkCancelable? where E.Response == T {
 
         return self.networkService.request(endpoint: endpoint) { result in
             switch result {
@@ -63,7 +63,7 @@ extension DefaultDataTransferService: DataTransferService {
         }
     }
 
-    public func request<E>(with endpoint: E, completion: @escaping CompletionHandler<Void>) -> NetworkCancellable? where E : ResponseRequestable, E.Response == Void {
+    public func request<E>(with endpoint: E, completion: @escaping CompletionHandler<Void>) -> NetworkCancelable? where E : ResponseRequestable, E.Response == Void {
         return self.networkService.request(endpoint: endpoint) { result in
             switch result {
             case .success:

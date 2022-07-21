@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct APIEndpoints {
+  static func getFollowers(
+    with username: String
+  ) -> Endpoint<FollowersResponseDTO> {
+    let path = "https://api.github.com/users/\(username)/followers"
+    return Endpoint(
+      path: path,
+      method: .get
+    )
+  }
+}
