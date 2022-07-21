@@ -20,6 +20,7 @@
 		B41DC51328898E3600370AE4 /* TickType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DC51228898E3600370AE4 /* TickType.swift */; };
 		B41DC5152889915600370AE4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DC5142889915600370AE4 /* Ticker.swift */; };
 		B41DC5172889917900370AE4 /* ETHResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DC5162889917900370AE4 /* ETHResponse.swift */; };
+		B41DC51A2889935500370AE4 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41DC5192889935500370AE4 /* WebSocket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B41DC51228898E3600370AE4 /* TickType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickType.swift; sourceTree = "<group>"; };
 		B41DC5142889915600370AE4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		B41DC5162889917900370AE4 /* ETHResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHResponse.swift; sourceTree = "<group>"; };
+		B41DC5192889935500370AE4 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		B41DC4F3288933E700370AE4 /* ETHTracker */ = {
 			isa = PBXGroup;
 			children = (
+				B41DC5182889934700370AE4 /* Network */,
 				B41DC50B2889893D00370AE4 /* Models */,
 				B41DC5082889340F00370AE4 /* Privacy */,
 				B41DC4F4288933E700370AE4 /* AppDelegate.swift */,
@@ -102,6 +105,14 @@
 				B41DC5162889917900370AE4 /* ETHResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B41DC5182889934700370AE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B41DC5192889935500370AE4 /* WebSocket.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +189,7 @@
 				B41DC4F9288933E700370AE4 /* ViewController.swift in Sources */,
 				B41DC4F5288933E700370AE4 /* AppDelegate.swift in Sources */,
 				B41DC50A2889341800370AE4 /* Privacy.swift in Sources */,
+				B41DC51A2889935500370AE4 /* WebSocket.swift in Sources */,
 				B41DC4F7288933E700370AE4 /* SceneDelegate.swift in Sources */,
 				B41DC5152889915600370AE4 /* Ticker.swift in Sources */,
 				B41DC51128898E2B00370AE4 /* Symbol.swift in Sources */,
