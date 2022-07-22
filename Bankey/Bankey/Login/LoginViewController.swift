@@ -1,13 +1,12 @@
-//
-//  ViewController.swift
-//  Bankey
-//
-//  Created by 김호준 on 2022/07/05.
-//
-
 import UIKit
 
+protocol LoginViewControllerDelegate: AnyObject {
+  func didLogin(_ sender: LoginViewController)
+}
+
 class LoginViewController: UIViewController {
+  
+  weak var delegate: LoginViewControllerDelegate?
   
   let appTitleView = AppTitleView()
   let loginView = LoginView()
@@ -115,8 +114,7 @@ extension LoginViewController {
     }
     
     if username == "Joons" && password == "Welcome" {
-      // Button에 acitivity indicator 넣기?
-      print("Welcome!")
+      delegate?.didLogin(self)
     } else {
       configureView(withMessage: "Incorrect username / password")
     }

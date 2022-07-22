@@ -1,6 +1,12 @@
 import UIKit
 
+protocol OnboardingContainerViewControllerDelegate: AnyObject {
+  func didFinishOnboarding(_ sender: OnboardingContainerViewController)
+}
+
 class OnboardingContainerViewController: UIViewController {
+  
+  weak var delegate: OnboardingContainerViewControllerDelegate?
   
   let pageViewController: UIPageViewController
   var pages = [UIViewController]()
@@ -142,6 +148,6 @@ extension OnboardingContainerViewController: UIPageViewControllerDataSource {
 //MARK: - Actions
 extension OnboardingContainerViewController {
   @objc func closeTapped() {
-    
+    delegate?.didFinishOnboarding(self)
   }
 }
