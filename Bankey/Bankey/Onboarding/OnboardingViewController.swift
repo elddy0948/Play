@@ -31,6 +31,8 @@ final class OnboardingViewController: UIViewController {
 
 extension OnboardingViewController {
   private func style() {
+    view.backgroundColor = .systemBackground
+    
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.alignment = .center
