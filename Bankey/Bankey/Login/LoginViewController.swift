@@ -113,7 +113,7 @@ extension LoginViewController {
       return
     }
     
-    if username == "Joons" && password == "Welcome" {
+    if username == "A" && password == "a" {
       delegate?.didLogin(self)
     } else {
       configureView(withMessage: "Incorrect username / password")
