@@ -12,6 +12,7 @@ class OnboardingContainerViewController: UIViewController {
   var pages = [UIViewController]()
   var currentVC: UIViewController
   let closeButton = UIButton(type: .system)
+  let doneButton = UIButton(type: .system)
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     self.pageViewController = UIPageViewController(
@@ -60,6 +61,7 @@ class OnboardingContainerViewController: UIViewController {
     pageViewController.didMove(toParent: self)
     
     pageViewController.dataSource = self
+    pageViewController.delegate = self
     pageViewController.view.translatesAutoresizingMaskIntoConstraints = false
     
     NSLayoutConstraint.activate([
@@ -83,7 +85,13 @@ class OnboardingContainerViewController: UIViewController {
     closeButton.setTitle("Close", for: [])
     closeButton.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
     
+    doneButton.translatesAutoresizingMaskIntoConstraints = false
+    doneButton.setTitle("Done", for: [])
+    doneButton.addTarget(self, action: #selector(doneButtonTapped), for: .touchUpInside)
+    doneButton.isHidden = true
+    
     view.addSubview(closeButton)
+    view.addSubview(doneButton)
   }
   
   private func layout() {
@@ -95,6 +103,12 @@ class OnboardingContainerViewController: UIViewController {
       closeButton.topAnchor.constraint(
         equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor,
         multiplier: 2
+      ),
+      view.safeAreaLayoutGuide.bottomAnchor.constraint(
+        equalToSystemSpacingBelow: doneButton.bottomAnchor, multiplier: 4
+      ),
+      view.safeAreaLayoutGuide.trailingAnchor.constraint(
+        equalToSystemSpacingAfter: doneButton.trailingAnchor, multiplier: 2
       ),
     ])
   }
@@ -145,9 +159,25 @@ extension OnboardingContainerViewController: UIPageViewControllerDataSource {
   }
 }
 
+extension OnboardingContainerViewController: UIPageViewControllerDelegate {
+  func pageViewController(
+    _ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]
+  ) {
+    if pendingViewControllers.first! === pages.last! {
+      doneButton.isHidden = false
+    } else {
+      doneButton.isHidden = true
+    }
+  }
+}
+
 //MARK: - Actions
 extension OnboardingContainerViewController {
   @objc func closeTapped() {
     delegate?.didFinishOnboarding(self)
+  }
+  
+  @objc func doneButtonTapped() {
+    
   }
 }
