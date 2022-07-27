@@ -16,6 +16,9 @@
 		B41CDF432891645100076301 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF422891645100076301 /* Coordinator.swift */; };
 		B41CDF45289178A900076301 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF44289178A900076301 /* AppRouter.swift */; };
 		B41CDF4728917A5F00076301 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4628917A5F00076301 /* AppCoordinator.swift */; };
+		B41CDF4B289182B600076301 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4A289182B600076301 /* Todo.swift */; };
+		B41CDF4E2891892500076301 /* TodosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4D2891892500076301 /* TodosUseCase.swift */; };
+		B41CDF5028918A8800076301 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4F28918A8800076301 /* UseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		B41CDF422891645100076301 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B41CDF44289178A900076301 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B41CDF4628917A5F00076301 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B41CDF4A289182B600076301 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		B41CDF4D2891892500076301 /* TodosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosUseCase.swift; sourceTree = "<group>"; };
+		B41CDF4F28918A8800076301 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		B41CDF2828915E3000076301 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				B41CDF48289182A000076301 /* Domain */,
 				B41CDF3F2891643800076301 /* Application */,
 				B41CDF2928915E3000076301 /* AppDelegate.swift */,
 				B41CDF2B28915E3000076301 /* SceneDelegate.swift */,
@@ -98,6 +105,32 @@
 				B41CDF3D2891642900076301 /* Coordinator */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		B41CDF48289182A000076301 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B41CDF4C289188FF00076301 /* UseCases */,
+				B41CDF49289182A400076301 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B41CDF49289182A400076301 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B41CDF4A289182B600076301 /* Todo.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B41CDF4C289188FF00076301 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B41CDF4D2891892500076301 /* TodosUseCase.swift */,
+				B41CDF4F28918A8800076301 /* UseCaseProvider.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +204,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41CDF412891644C00076301 /* Router.swift in Sources */,
+				B41CDF4E2891892500076301 /* TodosUseCase.swift in Sources */,
 				B41CDF2E28915E3000076301 /* ViewController.swift in Sources */,
 				B41CDF45289178A900076301 /* AppRouter.swift in Sources */,
+				B41CDF4B289182B600076301 /* Todo.swift in Sources */,
 				B41CDF432891645100076301 /* Coordinator.swift in Sources */,
+				B41CDF5028918A8800076301 /* UseCaseProvider.swift in Sources */,
 				B41CDF2A28915E3000076301 /* AppDelegate.swift in Sources */,
 				B41CDF2C28915E3000076301 /* SceneDelegate.swift in Sources */,
 				B41CDF4728917A5F00076301 /* AppCoordinator.swift in Sources */,
