@@ -14,6 +14,8 @@
 		B41CDF3628915E3100076301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41CDF3428915E3100076301 /* LaunchScreen.storyboard */; };
 		B41CDF412891644C00076301 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF402891644C00076301 /* Router.swift */; };
 		B41CDF432891645100076301 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF422891645100076301 /* Coordinator.swift */; };
+		B41CDF45289178A900076301 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF44289178A900076301 /* AppRouter.swift */; };
+		B41CDF4728917A5F00076301 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4628917A5F00076301 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B41CDF3728915E3100076301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B41CDF402891644C00076301 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B41CDF422891645100076301 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B41CDF44289178A900076301 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B41CDF4628917A5F00076301 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				B41CDF422891645100076301 /* Coordinator.swift */,
+				B41CDF4628917A5F00076301 /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B41CDF402891644C00076301 /* Router.swift */,
+				B41CDF44289178A900076301 /* AppRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -166,9 +172,11 @@
 			files = (
 				B41CDF412891644C00076301 /* Router.swift in Sources */,
 				B41CDF2E28915E3000076301 /* ViewController.swift in Sources */,
+				B41CDF45289178A900076301 /* AppRouter.swift in Sources */,
 				B41CDF432891645100076301 /* Coordinator.swift in Sources */,
 				B41CDF2A28915E3000076301 /* AppDelegate.swift in Sources */,
 				B41CDF2C28915E3000076301 /* SceneDelegate.swift in Sources */,
+				B41CDF4728917A5F00076301 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

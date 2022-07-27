@@ -10,9 +10,25 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
+  
+  private var router: AppRouter? {
+    guard let window = window else {
+      return nil
+    }
+    return AppRouter(window: window)
+  }
+  
+  private var coordinator: AppCoordinator? {
+    guard let router = router else {
+      return nil
+    }
+    return AppCoordinator(router: router)
+  }
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
+    window = UIWindow(windowScene: windowScene)
+    coordinator?.present(animated: false, onDismissed: nil)
     
   }
 
