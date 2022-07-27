@@ -1,7 +1,7 @@
 import Foundation
 
-public struct Todo {
+public struct DomainTodo {
   let title: String
-  let description: String
+  let body: String
   let isComplete: Bool
 }
