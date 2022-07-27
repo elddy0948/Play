@@ -36,10 +36,19 @@ class ViewController: UIViewController {
     filter3.radius = 2
     filter3.inputImage = filter2.outputImage
     
-    let finishedImage = filter3.outputImage?.cropped(to: image.extent)
+    guard let finishedImage = filter3.outputImage?.cropped(to: image.extent) else { return }
+//    let context = CIContext()
+//    guard let cgImage = context.createCGImage(finishedImage, from: finishedImage.extent) else { return }
+//
+    let context = CIContext()
+    guard let jpegURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
     
-    guard let output = finishedImage else { return }
-    imageView.image = UIImage(ciImage: output)
+    let writeURL = jpegURL.appendingPathComponent("IMG_7577.jpeg")
+    print(writeURL)
+    
+    try! context.writeJPEGRepresentation(of: finishedImage, to: writeURL, colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!)
+    
+//    imageView.image = UIImage(cgImage: cgImage)
   }
 }
 
