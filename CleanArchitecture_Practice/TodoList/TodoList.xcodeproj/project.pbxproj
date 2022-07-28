@@ -20,6 +20,7 @@
 		B41CDF4E2891892500076301 /* TodosUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4D2891892500076301 /* TodosUseCase.swift */; };
 		B41CDF5028918A8800076301 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF4F28918A8800076301 /* UseCaseProvider.swift */; };
 		B41CDF5428918C4C00076301 /* TodoDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B41CDF5228918C4C00076301 /* TodoDataModel.xcdatamodeld */; };
+		B4887B35289246AD00944D1D /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4887B34289246AD00944D1D /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B41CDF4D2891892500076301 /* TodosUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosUseCase.swift; sourceTree = "<group>"; };
 		B41CDF4F28918A8800076301 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		B41CDF5328918C4C00076301 /* TodoDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoDataModel.xcdatamodel; sourceTree = "<group>"; };
+		B4887B34289246AD00944D1D /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		B41CDF2828915E3000076301 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				B4887B33289246A700944D1D /* CoreDataStack */,
 				B41CDF5128918BF200076301 /* CoreDataPlatform */,
 				B41CDF48289182A000076301 /* Domain */,
 				B41CDF3F2891643800076301 /* Application */,
@@ -142,6 +145,14 @@
 				B41CDF5228918C4C00076301 /* TodoDataModel.xcdatamodeld */,
 			);
 			path = CoreDataPlatform;
+			sourceTree = "<group>";
+		};
+		B4887B33289246A700944D1D /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				B4887B34289246AD00944D1D /* CoreDataStack.swift */,
+			);
+			path = CoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				B41CDF412891644C00076301 /* Router.swift in Sources */,
 				B41CDF4E2891892500076301 /* TodosUseCase.swift in Sources */,
 				B41CDF2E28915E3000076301 /* ViewController.swift in Sources */,
+				B4887B35289246AD00944D1D /* CoreDataStack.swift in Sources */,
 				B41CDF5428918C4C00076301 /* TodoDataModel.xcdatamodeld in Sources */,
 				B41CDF45289178A900076301 /* AppRouter.swift in Sources */,
 				B41CDF4B289182B600076301 /* DomainTodo.swift in Sources */,
