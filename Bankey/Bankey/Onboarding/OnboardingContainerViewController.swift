@@ -178,6 +178,6 @@ extension OnboardingContainerViewController {
   }
   
   @objc func doneButtonTapped() {
-    
+    delegate?.didFinishOnboarding(self)
   }
 }

@@ -1,5 +1,9 @@
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+  func didLogout()
+}
+
 protocol LoginViewControllerDelegate: AnyObject {
   func didLogin(_ sender: LoginViewController)
 }
