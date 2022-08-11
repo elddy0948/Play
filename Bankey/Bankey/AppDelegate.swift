@@ -1,15 +1,9 @@
-//
-//  AppDelegate.swift
-//  Bankey
-//
-//  Created by 김호준 on 2022/07/05.
-//
-
 import UIKit
+
+let appColor = UIColor.systemRed
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  
   var window: UIWindow?
   let viewController = LoginViewController()
   let onboardingContainerViewController = OnboardingContainerViewController()
