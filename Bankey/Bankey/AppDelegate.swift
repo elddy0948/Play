@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   let viewController = LoginViewController()
   let onboardingContainerViewController = OnboardingContainerViewController()
   let dummyViewController = DummyViewController()
+  let mainViewController = MainViewController()
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     
@@ -19,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     onboardingContainerViewController.delegate = self
     dummyViewController.logoutDelegate = self
     
-    window?.rootViewController = viewController
+//    window?.rootViewController = viewController
+    window?.rootViewController = mainViewController
     
     return true
   }
