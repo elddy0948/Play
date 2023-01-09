@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B4B7B9662965E4FF0070E0FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7B9652965E4FF0070E0FA /* AppDelegate.swift */; };
 		B4B7B9682965E4FF0070E0FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7B9672965E4FF0070E0FA /* SceneDelegate.swift */; };
-		B4B7B96A2965E4FF0070E0FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7B9692965E4FF0070E0FA /* ViewController.swift */; };
 		B4B7B96F2965E4FF0070E0FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4B7B96E2965E4FF0070E0FA /* Assets.xcassets */; };
 		B4B7B9722965E4FF0070E0FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4B7B9702965E4FF0070E0FA /* LaunchScreen.storyboard */; };
 		B4CB18D2296C49DF0031C161 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18D1296C49DF0031C161 /* NetworkService.swift */; };
@@ -17,13 +16,15 @@
 		B4CB18D7296C54410031C161 /* XkcdResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18D6296C54410031C161 /* XkcdResponseDTO+Mapping.swift */; };
 		B4CB18DB296C55410031C161 /* Xkcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18DA296C55410031C161 /* Xkcd.swift */; };
 		B4CB18DF296C6E640031C161 /* DefaultXkcdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18DE296C6E640031C161 /* DefaultXkcdRepository.swift */; };
+		B4CB18E2296C71690031C161 /* ViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18E1296C71690031C161 /* ViewerViewController.swift */; };
+		B4CB18E5296C72460031C161 /* ViewerToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18E4296C72460031C161 /* ViewerToolBar.swift */; };
+		B4CB18E7296C724D0031C161 /* ViewerTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB18E6296C724D0031C161 /* ViewerTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4B7B9622965E4FF0070E0FA /* xkcdViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xkcdViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4B7B9652965E4FF0070E0FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4B7B9672965E4FF0070E0FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4B7B9692965E4FF0070E0FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4B7B96E2965E4FF0070E0FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4B7B9712965E4FF0070E0FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4B7B9732965E4FF0070E0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +33,9 @@
 		B4CB18D6296C54410031C161 /* XkcdResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XkcdResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		B4CB18DA296C55410031C161 /* Xkcd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xkcd.swift; sourceTree = "<group>"; };
 		B4CB18DE296C6E640031C161 /* DefaultXkcdRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultXkcdRepository.swift; sourceTree = "<group>"; };
+		B4CB18E1296C71690031C161 /* ViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerViewController.swift; sourceTree = "<group>"; };
+		B4CB18E4296C72460031C161 /* ViewerToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerToolBar.swift; sourceTree = "<group>"; };
+		B4CB18E6296C724D0031C161 /* ViewerTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,12 @@
 		B4B7B9642965E4FF0070E0FA /* xkcdViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B4CB18E0296C715B0031C161 /* Presentation */,
 				B4CB18D8296C55390031C161 /* Domain */,
 				B4CB18D3296C4AF40031C161 /* Extensions */,
 				B4CB18CF296C49D40031C161 /* Data */,
 				B4B7B9652965E4FF0070E0FA /* AppDelegate.swift */,
 				B4B7B9672965E4FF0070E0FA /* SceneDelegate.swift */,
-				B4B7B9692965E4FF0070E0FA /* ViewController.swift */,
 				B4B7B96E2965E4FF0070E0FA /* Assets.xcassets */,
 				B4B7B9702965E4FF0070E0FA /* LaunchScreen.storyboard */,
 				B4B7B9732965E4FF0070E0FA /* Info.plist */,
@@ -125,6 +129,24 @@
 				B4CB18DE296C6E640031C161 /* DefaultXkcdRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		B4CB18E0296C715B0031C161 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB18E3296C71F20031C161 /* ViewerScreen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B4CB18E3296C71F20031C161 /* ViewerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB18E1296C71690031C161 /* ViewerViewController.swift */,
+				B4CB18E4296C72460031C161 /* ViewerToolBar.swift */,
+				B4CB18E6296C724D0031C161 /* ViewerTabBar.swift */,
+			);
+			path = ViewerScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,11 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CB18E2296C71690031C161 /* ViewerViewController.swift in Sources */,
 				B4CB18DB296C55410031C161 /* Xkcd.swift in Sources */,
 				B4CB18DF296C6E640031C161 /* DefaultXkcdRepository.swift in Sources */,
-				B4B7B96A2965E4FF0070E0FA /* ViewController.swift in Sources */,
 				B4CB18D7296C54410031C161 /* XkcdResponseDTO+Mapping.swift in Sources */,
+				B4CB18E5296C72460031C161 /* ViewerToolBar.swift in Sources */,
 				B4B7B9662965E4FF0070E0FA /* AppDelegate.swift in Sources */,
+				B4CB18E7296C724D0031C161 /* ViewerTabBar.swift in Sources */,
 				B4B7B9682965E4FF0070E0FA /* SceneDelegate.swift in Sources */,
 				B4CB18D5296C4B010031C161 /* URLSession+Ext.swift in Sources */,
 				B4CB18D2296C49DF0031C161 /* NetworkService.swift in Sources */,
