@@ -2,7 +2,7 @@ import Foundation
 
 @available (iOS, deprecated: 15.0, message: "this can be used earlier than iOS 15")
 extension URLSession {
-  func data(from url: URL) async throws -> (Data, URLResponse) {
+  func dataTask(from url: URL) async throws -> (Data, URLResponse) {
     return try await data(for: URLRequest(url: url))
   }
   
