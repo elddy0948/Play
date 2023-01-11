@@ -14,6 +14,7 @@
 		B4A52771296E932A00F07DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A5276F296E932A00F07DCC /* LaunchScreen.storyboard */; };
 		B4A52779296ED93A00F07DCC /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52778296ED93A00F07DCC /* StorageProvider.swift */; };
 		B4A5277C296EDA6400F07DCC /* HelloCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4A5277A296EDA6400F07DCC /* HelloCoreData.xcdatamodeld */; };
+		B4A5277E296F171700F07DCC /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A5277D296F171700F07DCC /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B4A52772296E932A00F07DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4A52778296ED93A00F07DCC /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 		B4A5277B296EDA6400F07DCC /* HelloCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloCoreData.xcdatamodel; sourceTree = "<group>"; };
+		B4A5277D296F171700F07DCC /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B4A52772296E932A00F07DCC /* Info.plist */,
 				B4A52778296ED93A00F07DCC /* StorageProvider.swift */,
 				B4A5277A296EDA6400F07DCC /* HelloCoreData.xcdatamodeld */,
+				B4A5277D296F171700F07DCC /* MovieListViewController.swift */,
 			);
 			path = CoreDataPractice;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				B4A52779296ED93A00F07DCC /* StorageProvider.swift in Sources */,
 				B4A52769296E932900F07DCC /* ViewController.swift in Sources */,
 				B4A52765296E932900F07DCC /* AppDelegate.swift in Sources */,
+				B4A5277E296F171700F07DCC /* MovieListViewController.swift in Sources */,
 				B4A5277C296EDA6400F07DCC /* HelloCoreData.xcdatamodeld in Sources */,
 				B4A52767296E932900F07DCC /* SceneDelegate.swift in Sources */,
 			);

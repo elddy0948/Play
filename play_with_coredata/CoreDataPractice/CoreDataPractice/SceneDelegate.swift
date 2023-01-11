@@ -12,7 +12,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     let storageProvider = StorageProvider(name: "HelloCoreData")
     
-    window?.rootViewController = ViewController(storageProvider: storageProvider)
+//    window?.rootViewController = ViewController(storageProvider: storageProvider)
+//    window?.rootViewController = MovieListViewController(storageProvider: storageProvider)
+    
+    let tabBarController = UITabBarController()
+    tabBarController.viewControllers = [
+      ViewController(storageProvider: storageProvider),
+      MovieListViewController(storageProvider: storageProvider),
+    ]
+    
+    window?.rootViewController = tabBarController
     
     window?.makeKeyAndVisible()
   }

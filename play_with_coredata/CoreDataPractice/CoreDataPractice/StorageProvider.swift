@@ -26,4 +26,14 @@ extension StorageProvider {
       print("Failed to save movie : \(error)")
     }
   }
+  
+  func getAllMovies() -> [Movie] {
+    let fetchRequest: NSFetchRequest<Movie> = Movie.fetchRequest()
+    do {
+      return try persistentContainer.viewContext.fetch(fetchRequest)
+    } catch {
+      print("Failed to fetch all movies : \(error)")
+      return []
+    }
+  }
 }
