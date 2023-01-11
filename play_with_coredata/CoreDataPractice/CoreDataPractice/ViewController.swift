@@ -27,6 +27,11 @@ class ViewController: UIViewController {
   
   @objc func didTappedSaveButton() {
     // Do Something
+    guard let movieName = movieNameTextField.text else {
+      return
+    }
+    
+    storageProvider.saveMovie(named: movieName)
   }
 }
 

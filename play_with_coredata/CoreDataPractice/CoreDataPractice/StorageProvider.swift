@@ -12,3 +12,18 @@ class StorageProvider {
     })
   }
 }
+
+extension StorageProvider {
+  func saveMovie(named name: String) {
+    let movie = Movie(context: persistentContainer.viewContext)
+    movie.name = name
+    
+    do {
+      try persistentContainer.viewContext.save()
+      print("Movie saved successfully!")
+    } catch {
+      persistentContainer.viewContext.rollback()
+      print("Failed to save movie : \(error)")
+    }
+  }
+}
