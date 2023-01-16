@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B405AD012975296B0049A4BC /* EditMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405AD002975296B0049A4BC /* EditMovieViewController.swift */; };
 		B4A52765296E932900F07DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52764296E932900F07DCC /* AppDelegate.swift */; };
 		B4A52767296E932900F07DCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52766296E932900F07DCC /* SceneDelegate.swift */; };
 		B4A52769296E932900F07DCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52768296E932900F07DCC /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B405AD002975296B0049A4BC /* EditMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMovieViewController.swift; sourceTree = "<group>"; };
 		B4A52761296E932900F07DCC /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A52764296E932900F07DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A52766296E932900F07DCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				B4A52778296ED93A00F07DCC /* StorageProvider.swift */,
 				B4A5277A296EDA6400F07DCC /* HelloCoreData.xcdatamodeld */,
 				B4A5277D296F171700F07DCC /* MovieListViewController.swift */,
+				B405AD002975296B0049A4BC /* EditMovieViewController.swift */,
 			);
 			path = CoreDataPractice;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				B4A52779296ED93A00F07DCC /* StorageProvider.swift in Sources */,
 				B4A52769296E932900F07DCC /* ViewController.swift in Sources */,
 				B4A52765296E932900F07DCC /* AppDelegate.swift in Sources */,
+				B405AD012975296B0049A4BC /* EditMovieViewController.swift in Sources */,
 				B4A5277E296F171700F07DCC /* MovieListViewController.swift in Sources */,
 				B4A5277C296EDA6400F07DCC /* HelloCoreData.xcdatamodeld in Sources */,
 				B4A52767296E932900F07DCC /* SceneDelegate.swift in Sources */,

@@ -76,6 +76,12 @@ extension MovieListViewController: UITableViewDataSource {
 }
 
 extension MovieListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let movie = movies[indexPath.row]
+    let viewController = EditMovieViewController(movie: movie, storageProvider: storageProvider)
+    self.present(viewController, animated: true)
+  }
+  
   func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
     return true
   }

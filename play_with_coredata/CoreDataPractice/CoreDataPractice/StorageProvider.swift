@@ -47,4 +47,13 @@ extension StorageProvider {
       print("Failed to save context: \(error)")
     }
   }
+  
+  func updateMovie() {
+    do {
+      try persistentContainer.viewContext.save()
+    } catch {
+      persistentContainer.viewContext.rollback()
+      print("Failed to save context: \(error)")
+    }
+  }
 }
