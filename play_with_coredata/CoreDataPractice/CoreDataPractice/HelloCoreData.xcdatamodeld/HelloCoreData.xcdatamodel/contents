@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Movie" representedClassName="Movie" syncable="YES" codeGenerationType="class">
-        <attribute name="name" attributeType="String"/>
+    <entity name="Movie" representedClassName="Movie" syncable="YES">
+        <attribute name="duration" attributeType="Integer 64" usesScalarValueType="YES"/>
+        <attribute name="posterImage" optional="YES" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
+        <attribute name="rating" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <attribute name="releaseDate" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="watched" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
     </entity>
 </model>

@@ -69,7 +69,7 @@ extension MovieListViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
     var content = cell.defaultContentConfiguration()
-    content.text = movies[indexPath.row].name ?? "No name"
+    content.text = movies[indexPath.row].title ?? "No title"
     cell.contentConfiguration = content
     return cell
   }

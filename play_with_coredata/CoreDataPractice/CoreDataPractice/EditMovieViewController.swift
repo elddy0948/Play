@@ -26,7 +26,7 @@ final class EditMovieViewController: UIViewController {
   
   @objc func didTappedSave() {
     guard let editedName = textField.text else { return }
-    movie.name = editedName
+    movie.title = editedName
     storageProvider.updateMovie()
     self.dismiss(animated: true)
   }
@@ -39,7 +39,7 @@ extension EditMovieViewController {
     textField.layer.borderWidth = 1
     textField.layer.cornerRadius = 8
     textField.layer.masksToBounds = true
-    textField.text = movie.name
+    textField.text = movie.title
     
     textField.backgroundColor = .systemBackground
     textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
