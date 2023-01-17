@@ -1,8 +1,15 @@
 import UIKit
 
+protocol ViewerTabBarDelegate: AnyObject {
+  func fetchNextImage()
+  func fetchPrevImage()
+}
+
 final class ViewerTabBar: UIView {
   private let nextButton = UIButton(type: .system)
   private let prevButton = UIButton(type: .system)
+  
+  weak var delegate: ViewerTabBarDelegate?
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -16,6 +23,14 @@ final class ViewerTabBar: UIView {
     fatalError("init(coder:) has not been implemented")
   }
   
+  @objc private func didTappedNextButton() {
+    delegate?.fetchNextImage()
+  }
+  
+  @objc private func didTappedPrevButton() {
+    delegate?.fetchPrevImage()
+  }
+  
   // TODO: - notch가 있을 때 없을 때 tabbar의 높이 설정
 }
 
@@ -27,10 +42,12 @@ extension ViewerTabBar {
     nextButton.backgroundColor = nil
     nextButton.setImage(forwardImage, for: .normal)
     nextButton.tintColor = .label
+    nextButton.addTarget(self, action: #selector(didTappedNextButton), for: .touchUpInside)
     
     prevButton.backgroundColor = nil
     prevButton.setImage(backwardImage, for: .normal)
     prevButton.tintColor = .label
+    prevButton.addTarget(self, action: #selector(didTappedPrevButton), for: .touchUpInside)
   }
   
   private func layout() {

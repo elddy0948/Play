@@ -45,6 +45,8 @@ extension ViewerViewController {
   private func style() {
     mockView.backgroundColor = .systemYellow
     mockView.addGestureRecognizer(tapGestureRecognizer)
+    
+    tabBar.delegate = self
   }
   
   private func layout() {
@@ -76,5 +78,16 @@ extension ViewerViewController {
       tabBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       tabBar.heightAnchor.constraint(equalToConstant: height)
     ])
+  }
+}
+
+extension ViewerViewController: ViewerTabBarDelegate {
+  // TODO: - implementation network call
+  func fetchNextImage() {
+    print("Next")
+  }
+  
+  func fetchPrevImage() {
+    print("Prev")
   }
 }
