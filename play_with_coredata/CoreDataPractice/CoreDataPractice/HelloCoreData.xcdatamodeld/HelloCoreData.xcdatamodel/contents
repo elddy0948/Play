@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Actor" representedClassName="Actor" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="movies" toMany="YES" deletionRule="Deny" destinationEntity="Movie" inverseName="cast" inverseEntity="Movie"/>
+        <relationship name="roles" toMany="YES" deletionRule="Cascade" destinationEntity="Character" inverseName="actor" inverseEntity="Character"/>
+    </entity>
+    <entity name="Character" representedClassName="Character" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="actor" maxCount="1" deletionRule="Nullify" destinationEntity="Actor" inverseName="roles" inverseEntity="Actor"/>
+        <relationship name="movie" maxCount="1" deletionRule="Deny" destinationEntity="Movie" inverseName="characters" inverseEntity="Movie"/>
+    </entity>
     <entity name="Movie" representedClassName="Movie" syncable="YES">
         <attribute name="duration" attributeType="Integer 64" usesScalarValueType="YES"/>
         <attribute name="posterImage" optional="YES" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
@@ -7,5 +17,7 @@
         <attribute name="releaseDate" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="watched" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="cast" toMany="YES" deletionRule="Nullify" destinationEntity="Actor" inverseName="movies" inverseEntity="Actor"/>
+        <relationship name="characters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Character" inverseName="movie" inverseEntity="Character"/>
     </entity>
 </model>

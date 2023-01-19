@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B405AD012975296B0049A4BC /* EditMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B405AD002975296B0049A4BC /* EditMovieViewController.swift */; };
+		B443465A2979ADB400FD9B5C /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44346582979ADB400FD9B5C /* Movie+CoreDataClass.swift */; };
+		B443465B2979ADB400FD9B5C /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44346592979ADB400FD9B5C /* Movie+CoreDataProperties.swift */; };
 		B474AB942976E99D0075547B /* HelloCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B474AB922976E99D0075547B /* HelloCoreData.xcdatamodeld */; };
 		B474AB9629770A290075547B /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474AB9529770A290075547B /* UIImageTransformer.swift */; };
-		B474AB9929771E1A0075547B /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474AB9729771E1A0075547B /* Movie+CoreDataClass.swift */; };
-		B474AB9A29771E1A0075547B /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474AB9829771E1A0075547B /* Movie+CoreDataProperties.swift */; };
 		B4A52765296E932900F07DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52764296E932900F07DCC /* AppDelegate.swift */; };
 		B4A52767296E932900F07DCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52766296E932900F07DCC /* SceneDelegate.swift */; };
 		B4A52769296E932900F07DCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A52768296E932900F07DCC /* ViewController.swift */; };
@@ -23,10 +23,10 @@
 
 /* Begin PBXFileReference section */
 		B405AD002975296B0049A4BC /* EditMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMovieViewController.swift; sourceTree = "<group>"; };
+		B44346582979ADB400FD9B5C /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B44346592979ADB400FD9B5C /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B474AB932976E99D0075547B /* HelloCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloCoreData.xcdatamodel; sourceTree = "<group>"; };
 		B474AB9529770A290075547B /* UIImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
-		B474AB9729771E1A0075547B /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B474AB9829771E1A0075547B /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B4A52761296E932900F07DCC /* CoreDataPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A52764296E932900F07DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A52766296E932900F07DCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		B4A52763296E932900F07DCC /* CoreDataPractice */ = {
 			isa = PBXGroup;
 			children = (
-				B474AB9729771E1A0075547B /* Movie+CoreDataClass.swift */,
-				B474AB9829771E1A0075547B /* Movie+CoreDataProperties.swift */,
+				B44346582979ADB400FD9B5C /* Movie+CoreDataClass.swift */,
+				B44346592979ADB400FD9B5C /* Movie+CoreDataProperties.swift */,
 				B4A52764296E932900F07DCC /* AppDelegate.swift */,
 				B4A52766296E932900F07DCC /* SceneDelegate.swift */,
 				B4A52768296E932900F07DCC /* ViewController.swift */,
@@ -159,9 +159,9 @@
 				B4A52769296E932900F07DCC /* ViewController.swift in Sources */,
 				B4A52765296E932900F07DCC /* AppDelegate.swift in Sources */,
 				B405AD012975296B0049A4BC /* EditMovieViewController.swift in Sources */,
-				B474AB9929771E1A0075547B /* Movie+CoreDataClass.swift in Sources */,
+				B443465A2979ADB400FD9B5C /* Movie+CoreDataClass.swift in Sources */,
 				B4A5277E296F171700F07DCC /* MovieListViewController.swift in Sources */,
-				B474AB9A29771E1A0075547B /* Movie+CoreDataProperties.swift in Sources */,
+				B443465B2979ADB400FD9B5C /* Movie+CoreDataProperties.swift in Sources */,
 				B4A52767296E932900F07DCC /* SceneDelegate.swift in Sources */,
 				B474AB942976E99D0075547B /* HelloCoreData.xcdatamodeld in Sources */,
 				B474AB9629770A290075547B /* UIImageTransformer.swift in Sources */,
