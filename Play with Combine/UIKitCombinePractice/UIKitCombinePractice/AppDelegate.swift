@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Travlers
+//  UIKitCombinePractice
 //
-//  Created by 김호준 on 2021/11/19.
+//  Created by 김호준 on 2023/01/25.
 //
 
 import UIKit

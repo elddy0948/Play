@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Travlers
+//  UIKitCombinePractice
 //
-//  Created by 김호준 on 2021/11/19.
+//  Created by 김호준 on 2023/01/25.
 //
 
 import UIKit
@@ -13,37 +13,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-    guard let windowScene = (scene as? UIWindowScene) else { return }
-    setupTabBarAppearance()
-    setupNavigationBarAppearance()
-    
-    window = UIWindow(windowScene: windowScene)
-    window?.rootViewController = TabBarController()
-    window?.makeKeyAndVisible()
-    
-
-  }
-  
-  private func setupTabBarAppearance() {
-    let barAppearance = UIBarAppearance()
-    barAppearance.backgroundColor = .systemBackground
-    let tabBarAppearance = UITabBarAppearance(barAppearance: barAppearance)
-    UITabBar.appearance().standardAppearance = tabBarAppearance
-    if #available(iOS 15.0, *) {
-      UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
-    }
-  }
-  
-  private func setupNavigationBarAppearance() {
-    let barAppearance = UIBarAppearance()
-    barAppearance.configureWithOpaqueBackground()
-    barAppearance.backgroundColor = .systemBackground
-    let navigationBarAppearance = UINavigationBarAppearance(barAppearance: barAppearance)
-    UINavigationBar.appearance().standardAppearance = navigationBarAppearance
-    UINavigationBar.appearance().compactAppearance = navigationBarAppearance
-    if #available(iOS 15.0, *) {
-      UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
-    }
+    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    guard let _ = (scene as? UIWindowScene) else { return }
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
