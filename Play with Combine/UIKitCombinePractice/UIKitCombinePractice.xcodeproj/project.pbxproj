@@ -24,6 +24,7 @@
 		B45F70452980F0B30009E555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B45F70482980F0B30009E555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B45F704A2980F0B30009E555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B49488252980F1390039407F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		B45F70302980F0B30009E555 = {
 			isa = PBXGroup;
 			children = (
+				B49488252980F1390039407F /* README.md */,
 				B45F703B2980F0B30009E555 /* UIKitCombinePractice */,
 				B45F703A2980F0B30009E555 /* Products */,
 			);
