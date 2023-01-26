@@ -1,8 +1,7 @@
-//
-//  APIConstants.swift
-//  CombineMVVM
-//
-//  Created by 김호준 on 2023/01/26.
-//
-
 import Foundation
+
+struct APIConstants {
+  static let apiKey = Privacy.APIKey
+  static let baseURL = URL(string: "https://api.pexels.com/v1/curated")!
+  static let getPhotoURL = URL(string: "https://api.pexels.com/v1/photos")!
+}
