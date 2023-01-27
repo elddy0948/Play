@@ -12,6 +12,9 @@
 		B481DC27298397DC00CE8A00 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC26298397DC00CE8A00 /* ServiceProvider.swift */; };
 		B481DC2A29839A1200CE8A00 /* Resource+Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC2929839A1200CE8A00 /* Resource+Photos.swift */; };
 		B481DC2C29839C3C00CE8A00 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC2B29839C3C00CE8A00 /* Scheduler.swift */; };
+		B481DC302983A94200CE8A00 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC2F2983A94200CE8A00 /* ViewModelType.swift */; };
+		B481DC332983AA8600CE8A00 /* CuratedPhotosListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC322983AA8600CE8A00 /* CuratedPhotosListViewModel.swift */; };
+		B481DC352983AFD900CE8A00 /* CuratedPhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC342983AFD900CE8A00 /* CuratedPhotosListViewController.swift */; };
 		B4829DD52982CA880088398C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD42982CA880088398C /* AppDelegate.swift */; };
 		B4829DD72982CA880088398C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD62982CA880088398C /* SceneDelegate.swift */; };
 		B4829DD92982CA880088398C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD82982CA880088398C /* ViewController.swift */; };
@@ -33,6 +36,9 @@
 		B481DC26298397DC00CE8A00 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		B481DC2929839A1200CE8A00 /* Resource+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Photos.swift"; sourceTree = "<group>"; };
 		B481DC2B29839C3C00CE8A00 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		B481DC2F2983A94200CE8A00 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		B481DC322983AA8600CE8A00 /* CuratedPhotosListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedPhotosListViewModel.swift; sourceTree = "<group>"; };
+		B481DC342983AFD900CE8A00 /* CuratedPhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedPhotosListViewController.swift; sourceTree = "<group>"; };
 		B4829DD12982CA880088398C /* CombineMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4829DD42982CA880088398C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4829DD62982CA880088398C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,8 +78,27 @@
 		B481DC2D2983A72800CE8A00 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B481DC312983AA6C00CE8A00 /* CuratedPhotosList */,
+				B481DC2E2983A93800CE8A00 /* Common */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B481DC2E2983A93800CE8A00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B481DC2F2983A94200CE8A00 /* ViewModelType.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B481DC312983AA6C00CE8A00 /* CuratedPhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				B481DC322983AA8600CE8A00 /* CuratedPhotosListViewModel.swift */,
+				B481DC342983AFD900CE8A00 /* CuratedPhotosListViewController.swift */,
+			);
+			path = CuratedPhotosList;
 			sourceTree = "<group>";
 		};
 		B4829DC82982CA880088398C = {
@@ -245,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B481DC352983AFD900CE8A00 /* CuratedPhotosListViewController.swift in Sources */,
 				B481DC252983927D00CE8A00 /* Resource.swift in Sources */,
 				B4829DFE2982CF770088398C /* ImageCache.swift in Sources */,
 				B481DC27298397DC00CE8A00 /* ServiceProvider.swift in Sources */,
@@ -255,9 +281,11 @@
 				B4829DEC2982CB370088398C /* Privacy.swift in Sources */,
 				B4829DFC2982CF530088398C /* ImageLoaderService.swift in Sources */,
 				B481DC2C29839C3C00CE8A00 /* Scheduler.swift in Sources */,
+				B481DC302983A94200CE8A00 /* ViewModelType.swift in Sources */,
 				B4829DD92982CA880088398C /* ViewController.swift in Sources */,
 				B4829DD52982CA880088398C /* AppDelegate.swift in Sources */,
 				B4829DD72982CA880088398C /* SceneDelegate.swift in Sources */,
+				B481DC332983AA8600CE8A00 /* CuratedPhotosListViewModel.swift in Sources */,
 				B4829DF12982CDBE0088398C /* SRC.swift in Sources */,
 				B481DC23298391F400CE8A00 /* NetworkService.swift in Sources */,
 				B4829DF32982CE270088398C /* Photos.swift in Sources */,

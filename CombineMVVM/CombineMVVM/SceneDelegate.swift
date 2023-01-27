@@ -14,7 +14,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(windowScene: windowScene)
-    window?.rootViewController = ViewController()
+    let serviceProvider = ServiceProvider.defaultProvider()
+    let usecase = PhotosUseCase(
+      networkService: serviceProvider.network,
+      imageLoaderService: serviceProvider.imageLoader)
+    let viewModel = CuratedPhotosListViewModel(
+      photosUseCase: usecase)
+    window?.rootViewController = CuratedPhotosListViewController(viewModel: viewModel)
     window?.backgroundColor = .systemBackground
     window?.makeKeyAndVisible()
   }

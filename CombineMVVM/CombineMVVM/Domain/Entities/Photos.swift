@@ -18,3 +18,16 @@ extension Photos: Decodable {
     case nextPage = "next_page"
   }
 }
+
+extension Photos {
+  static func empty() -> Photos {
+    return Photos(
+      photos: [],
+      page: 0,
+      perPage: 15,
+      totalResults: 0,
+      prevPage: nil,
+      nextPage: nil
+    )
+  }
+}
