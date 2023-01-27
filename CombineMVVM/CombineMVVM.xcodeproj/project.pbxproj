@@ -10,6 +10,8 @@
 		B481DC23298391F400CE8A00 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC22298391F400CE8A00 /* NetworkService.swift */; };
 		B481DC252983927D00CE8A00 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC242983927D00CE8A00 /* Resource.swift */; };
 		B481DC27298397DC00CE8A00 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC26298397DC00CE8A00 /* ServiceProvider.swift */; };
+		B481DC2A29839A1200CE8A00 /* Resource+Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC2929839A1200CE8A00 /* Resource+Photos.swift */; };
+		B481DC2C29839C3C00CE8A00 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B481DC2B29839C3C00CE8A00 /* Scheduler.swift */; };
 		B4829DD52982CA880088398C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD42982CA880088398C /* AppDelegate.swift */; };
 		B4829DD72982CA880088398C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD62982CA880088398C /* SceneDelegate.swift */; };
 		B4829DD92982CA880088398C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4829DD82982CA880088398C /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		B481DC22298391F400CE8A00 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B481DC242983927D00CE8A00 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		B481DC26298397DC00CE8A00 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		B481DC2929839A1200CE8A00 /* Resource+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource+Photos.swift"; sourceTree = "<group>"; };
+		B481DC2B29839C3C00CE8A00 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
 		B4829DD12982CA880088398C /* CombineMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4829DD42982CA880088398C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4829DD62982CA880088398C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B481DC2829839A0900CE8A00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B481DC2929839A1200CE8A00 /* Resource+Photos.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B4829DC82982CA880088398C = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +135,7 @@
 				B4829DFA2982CF370088398C /* ImageLoader */,
 				B4829DF92982CF350088398C /* Network */,
 				B481DC26298397DC00CE8A00 /* ServiceProvider.swift */,
+				B481DC2B29839C3C00CE8A00 /* Scheduler.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -130,6 +143,7 @@
 		B4829DF82982CF300088398C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				B481DC2829839A0900CE8A00 /* Extensions */,
 				B4829DF72982CF2A0088398C /* Services */,
 			);
 			path = Data;
@@ -226,11 +240,13 @@
 				B481DC252983927D00CE8A00 /* Resource.swift in Sources */,
 				B4829DFE2982CF770088398C /* ImageCache.swift in Sources */,
 				B481DC27298397DC00CE8A00 /* ServiceProvider.swift in Sources */,
+				B481DC2A29839A1200CE8A00 /* Resource+Photos.swift in Sources */,
 				B4829DF62982CEF20088398C /* PhotosUseCase.swift in Sources */,
 				B4829DEF2982CC790088398C /* Photo.swift in Sources */,
 				B4829DEA2982CB290088398C /* APIConstants.swift in Sources */,
 				B4829DEC2982CB370088398C /* Privacy.swift in Sources */,
 				B4829DFC2982CF530088398C /* ImageLoaderService.swift in Sources */,
+				B481DC2C29839C3C00CE8A00 /* Scheduler.swift in Sources */,
 				B4829DD92982CA880088398C /* ViewController.swift in Sources */,
 				B4829DD52982CA880088398C /* AppDelegate.swift in Sources */,
 				B4829DD72982CA880088398C /* SceneDelegate.swift in Sources */,
