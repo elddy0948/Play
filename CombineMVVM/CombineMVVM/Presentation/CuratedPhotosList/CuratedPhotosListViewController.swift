@@ -41,7 +41,7 @@ final class CuratedPhotosListViewController: UIViewController {
     
     output.photos
       .sink(receiveValue: { photos in
-        print(photos.photos.count)
+        print(photos.count)
       })
       .store(in: &cancellables)
   }

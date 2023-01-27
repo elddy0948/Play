@@ -7,7 +7,7 @@ final class CuratedPhotosListViewModel: ViewModelType {
   }
   
   struct Output {
-    let photos: AnyPublisher<Photos, Never>
+    let photos: AnyPublisher<[PhotoCellViewModel], Never>
   }
   
   private let photosUseCase: PhotosUseCase
@@ -29,13 +29,26 @@ final class CuratedPhotosListViewModel: ViewModelType {
       .map({ result in
         switch result {
         case .success(let photos):
-          return photos
+          return self.viewModels(from: photos.photos)
         case .failure(_):
-          return Photos.empty()
+          return []
         }
       })
       .eraseToAnyPublisher()
     
     return Output(photos: photos)
+  }
+  
+  private func viewModels(from photos: [Photo]) -> [PhotoCellViewModel] {
+    return photos.map({ [unowned self] photo in
+      return PhotoCellViewModelBuilder.createViewModel(
+        from: photo,
+        imageLoader: { [unowned self] photoToLoad in
+          self.photosUseCase.loadImage(
+            for: photoToLoad,
+            sizedURL: photoToLoad.src.small
+          )
+        })
+    })
   }
 }
