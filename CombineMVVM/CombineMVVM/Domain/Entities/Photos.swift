@@ -5,8 +5,8 @@ struct Photos {
   let page: Int
   let perPage: Int
   let totalResults: Int
-  let prevPage: Int?
-  let nextPage: Int?
+  let prevPage: String?
+  let nextPage: String?
 }
 
 extension Photos: Decodable {

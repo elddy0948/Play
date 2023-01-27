@@ -15,7 +15,11 @@ struct Resource<T: Decodable> {
     })
     
     guard let url = components.url else { return nil }
-    return URLRequest(url: url)
+    var request = URLRequest(url: url)
+    request.addValue(
+      APIConstants.apiKey,
+      forHTTPHeaderField: "Authorization")
+    return request
   }
   
   init(
