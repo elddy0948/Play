@@ -24,7 +24,7 @@ extension Photos {
     return Photos(
       photos: [],
       page: 0,
-      perPage: 15,
+      perPage: 10,
       totalResults: 0,
       prevPage: nil,
       nextPage: nil

@@ -24,7 +24,7 @@ final class CuratedPhotosListViewModel: ViewModelType {
     let photos = input.fetchPhotosByPage
       .flatMap({ [unowned self] page in
         self.photosUseCase.fetchCuratedPhotos(
-          page: page, perPage: 15)
+          page: page, perPage: 10)
       })
       .map({ result in
         switch result {
