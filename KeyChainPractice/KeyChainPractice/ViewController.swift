@@ -2,32 +2,52 @@ import UIKit
 import LocalAuthentication
 
 //Codable 모델을 사용해서 저장하면 된다!!
+struct Auth: Codable {
+  let uid: String
+  let accessToken: String
+  let refreshToken: String
+  let accessTokenExpired: Int
+  let refreshTokenExpired: Int
+}
 
 class ViewController: UIViewController {
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    deleteAccessToken()
-    readAccessToken()
-  }
-  
-  func saveAccessToken() {
-    let accessToken = "dummy-hojoon-access-token"
-    let data = Data(accessToken.utf8)
-    
-    KeychainHelper.standard.save(
-      data, service: "access-token", account: "holuck"
+    let mockAuth = Auth(
+      uid: "5k2p131o2p",
+      accessToken: "mock-access-token",
+      refreshToken: "mock-refresh-token",
+      accessTokenExpired: 100,
+      refreshTokenExpired: 100
     )
+    
+    save(mockAuth)
+    var readedAuth = read()
+    print(readedAuth)
+    delete()
+    readedAuth = read()
   }
   
-  func readAccessToken() {
-    let data = KeychainHelper.standard.read(service: "access-token", account: "holuck")!
-    let accessToken = String(data: data, encoding: .utf8) ?? "no data"
-    print(accessToken)
+  func save(_ auth: Auth) {
+    do {
+      try KeychainHelperWithGeneric.standard.save(auth, service: "auth-info", account: "user")
+      print("Saved")
+    } catch {
+      print(error)
+    }
   }
   
-  func deleteAccessToken() {
-    KeychainHelper.standard.delete(service: "access-token", account: "holuck")
+  func read() -> Auth? {
+    do {
+      return try KeychainHelperWithGeneric.standard.read(service: "auth-info", account: "user", type: Auth.self)
+    } catch {
+      print(error)
+      return nil
+    }
+  }
+  
+  func delete() {
+    KeychainHelperWithGeneric.standard.delete(service: "auth-info", account: "user")
   }
 }
 
