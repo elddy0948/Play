@@ -7,6 +7,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    deleteAccessToken()
+    readAccessToken()
   }
   
   func saveAccessToken() {
@@ -22,6 +24,10 @@ class ViewController: UIViewController {
     let data = KeychainHelper.standard.read(service: "access-token", account: "holuck")!
     let accessToken = String(data: data, encoding: .utf8) ?? "no data"
     print(accessToken)
+  }
+  
+  func deleteAccessToken() {
+    KeychainHelper.standard.delete(service: "access-token", account: "holuck")
   }
 }
 
