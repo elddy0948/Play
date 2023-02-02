@@ -32,4 +32,18 @@ final class KeychainHelper {
       SecItemUpdate(query, attributesToUpdate)
     }
   }
+  
+  func read(service: String, account: String) -> Data? {
+    let query = [
+      kSecAttrService: service,
+      kSecAttrAccount: account,
+      kSecClass: kSecClassGenericPassword,
+      kSecReturnData: true
+    ] as CFDictionary
+    
+    var result: AnyObject?
+    SecItemCopyMatching(query, &result)
+    
+    return (result as? Data)
+  }
 }
